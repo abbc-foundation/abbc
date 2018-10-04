@@ -1,0 +1,174 @@
+# -*- mode: Makefile; -*-
+# Copyright (c) 2011 Bitcoin Developers
+# Distributed under the MIT/X11 software license, see the accompanying
+# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+# Mac OS X makefile for ABBCCoin
+# Originally by Laszlo Hanyecz (solar@heliacal.net)
+
+CXX=llvm-g++
+DEPSDIR=/opt/local
+
+INCLUDEPATHS= \
+ -I"$(CURDIR)" \
+ -I"$(CURDIR)"/build \
+ -I"$(DEPSDIR)/include" \
+ -I"$(DEPSDIR)/include/db48"
+
+LIBPATHS= \
+ -L"$(DEPSDIR)/lib" \
+ -L"$(DEPSDIR)/lib/db48"
+
+USE_UPNP:=1
+USE_IPV6:=1
+
+LIBS= -dead_strip
+
+ifdef STATIC
+# Build STATIC if you are redistributing the ABBCCoind binary
+LIBS += \
+ $(DEPSDIR)/lib/db48/libdb_cxx-4.8.a \
+ $(DEPSDIR)/lib/libboost_system-mt.a \
+ $(DEPSDIR)/lib/libboost_filesystem-mt.a \
+ $(DEPSDIR)/lib/libboost_program_options-mt.a \
+ $(DEPSDIR)/lib/libboost_thread-mt.a \
+ $(DEPSDIR)/lib/libssl.a \
+ $(DEPSDIR)/lib/libcrypto.a \
+ -lz
+else
+LIBS += \
+ -ldb_cxx-4.8 \
+ -lboost_system-mt \
+ -lboost_filesystem-mt \
+ -lboost_program_options-mt \
+ -lboost_thread-mt \
+ -lssl \
+ -lcrypto \
+ -lz
+endif
+
+DEFS=-DMAC_OSX -DMSG_NOSIGNAL=0 -DBOOST_SPIRIT_THREADSAFE
+
+ifdef RELEASE
+# Compile for maximum compatibility and smallest size.
+# This requires that dependencies are compiled
+# the same way.
+CFLAGS = -mmacosx-version-min=10.5 -arch x86_64 -O3 -msse2
+else
+CFLAGS = -g -msse2
+endif
+
+# ppc doesn't work because we don't support big-endian
+CFLAGS += -Wall -Wextra -Wformat -Wno-ignored-qualifiers -Wformat-security -Wno-unused-parameter \
+    $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS)
+
+buildS= \
+    build/fugue.o \
+    build/hamsi.o \
+    build/groestl.o \
+    build/blake.o \
+    build/bmw.o \
+    build/skein.o \
+    build/keccak.o \
+    build/shavite.o \
+    build/jh.o \
+    build/luffa.o \
+    build/cubehash.o \
+    build/echo.o \
+    build/simd.o \
+    build/alert.o \
+    build/version.o \
+    build/checkpoints.o \
+    build/netbase.o \
+    build/addrman.o \
+    build/crypter.o \
+    build/key.o \
+    build/db.o \
+    build/init.o \
+    build/irc.o \
+    build/keystore.o \
+    build/miner.o \
+    build/main.o \
+    build/net.o \
+    build/protocol.o \
+    build/bitcoinrpc.o \
+    build/rpcdump.o \
+    build/rpcnet.o \
+    build/rpcmining.o \
+    build/rpcwallet.o \
+    build/rpcblockchain.o \
+    build/rpcrawtransaction.o \
+    build/script.o \
+    build/sync.o \
+    build/util.o \
+    build/wallet.o \
+    build/walletdb.o \
+    build/noui.o \
+    build/kernel.o \
+    build/pbkdf2.o \
+    build/scrypt.o \
+    build/scrypt-arm.o \
+    build/scrypt-x86.o \
+    build/scrypt-x86_64.o 
+
+ifndef USE_UPNP
+	override USE_UPNP = -
+endif
+ifneq (${USE_UPNP}, -)
+	DEFS += -DUSE_UPNP=$(USE_UPNP)
+ifdef STATIC
+	LIBS += $(DEPSDIR)/lib/libminiupnpc.a
+else
+	LIBS += -lminiupnpc
+endif
+endif
+
+ifneq (${USE_IPV6}, -)
+	DEFS += -DUSE_IPV6=$(USE_IPV6)
+endif
+
+all: ABBCCoind
+
+LIBS += $(CURDIR)/leveldb/libleveldb.a $(CURDIR)/leveldb/libmemenv.a
+DEFS += $(addprefix -I,$(CURDIR)/leveldb/include)
+DEFS += $(addprefix -I,$(CURDIR)/leveldb/helpers)
+buildS += build/txdb-leveldb.o
+leveldb/libleveldb.a:
+	@echo "Building LevelDB ..."; cd leveldb; make; cd ..
+build/txdb-leveldb.o: leveldb/libleveldb.a
+
+# auto-generated dependencies:
+-include build/*.P
+
+build/build.h: FORCE
+	/bin/sh ../share/genbuild.sh build/build.h
+version.cpp: build/build.h
+DEFS += -DHAVE_BUILD_INFO
+
+build/%.o: %.cpp
+	$(CXX) -c $(CFLAGS) -MMD -MF $(@:%.o=%.d) -o $@ $<
+	@cp $(@:%.o=%.d) $(@:%.o=%.P); \
+	  sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$$//' \
+	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
+	  rm -f $(@:%.o=%.d)
+
+build/scrypt-x86.o: scrypt-x86.S
+	$(CXX) -c $(xCXXFLAGS) -MMD -o $@ $<
+
+build/scrypt-x86_64.o: scrypt-x86_64.S
+	$(CXX) -c $(xCXXFLAGS) -MMD -o $@ $<
+
+ABBCCoind: $(buildS:build/%=build/%)
+	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
+
+clean:
+	-rm -f ABBCCoind
+	-rm -f build/*.o
+	-rm -f build/*.P
+	-rm -f build-test/*.o
+	-rm -f build-test/*.P
+	-rm -f build/build.h
+	-rm -f leveldb/libleveldb.a
+	-rm -f leveldb/libmemenv.a
+
+FORCE:
