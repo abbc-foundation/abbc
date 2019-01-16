@@ -1,0 +1,98 @@
+\hypertarget{namespace_checkpoints}{}\section{Checkpoints Namespace Reference}
+\label{namespace_checkpoints}\index{Checkpoints@{Checkpoints}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a996cca530c4568a2eb4516e8f351b9a2}\label{namespace_checkpoints_a996cca530c4568a2eb4516e8f351b9a2}} 
+typedef std\+::map$<$ int, \mbox{\hyperlink{classuint256}{uint256}} $>$ {\bfseries Map\+Checkpoints}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_checkpoints_ab7f99b2c7e9fc7152af4f4bf36816c83}{C\+P\+Mode}} \{ {\bfseries S\+T\+R\+I\+CT} = 0, 
+{\bfseries A\+D\+V\+I\+S\+O\+RY} = 1, 
+{\bfseries P\+E\+R\+M\+I\+S\+S\+I\+VE} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a896b098d769129c8e84c511f838baaa7}\label{namespace_checkpoints_a896b098d769129c8e84c511f838baaa7}} 
+bool {\bfseries Check\+Hardened} (int n\+Height, const \mbox{\hyperlink{classuint256}{uint256}} \&hash)
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_ac4dc0a0ba00009be52fee3eef694c2c0}\label{namespace_checkpoints_ac4dc0a0ba00009be52fee3eef694c2c0}} 
+int {\bfseries Get\+Total\+Blocks\+Estimate} ()
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_ad91375160e77c30d6e6ccbfe1c682195}\label{namespace_checkpoints_ad91375160e77c30d6e6ccbfe1c682195}} 
+\mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$ {\bfseries Get\+Last\+Checkpoint} (const std\+::map$<$ \mbox{\hyperlink{classuint256}{uint256}}, \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$ $>$ \&map\+Block\+Index)
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a6cadddff358b499f440031e2a7742f83}\label{namespace_checkpoints_a6cadddff358b499f440031e2a7742f83}} 
+\mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$ {\bfseries Get\+Last\+Sync\+Checkpoint} ()
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_ac6574fbf8b628b97e16c654e7a33dc5a}\label{namespace_checkpoints_ac6574fbf8b628b97e16c654e7a33dc5a}} 
+bool {\bfseries Validate\+Sync\+Checkpoint} (\mbox{\hyperlink{classuint256}{uint256}} hash\+Checkpoint)
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a05fbd0d061c0a17e6b9dab5c504514f1}\label{namespace_checkpoints_a05fbd0d061c0a17e6b9dab5c504514f1}} 
+bool {\bfseries Write\+Sync\+Checkpoint} (const \mbox{\hyperlink{classuint256}{uint256}} \&hash\+Checkpoint)
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a01c23da1c0dd0281ef17ce2aec29fb52}\label{namespace_checkpoints_a01c23da1c0dd0281ef17ce2aec29fb52}} 
+bool {\bfseries Accept\+Pending\+Sync\+Checkpoint} ()
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a640698220ee22f3459c6a6b2938b8922}\label{namespace_checkpoints_a640698220ee22f3459c6a6b2938b8922}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries Auto\+Select\+Sync\+Checkpoint} ()
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_af2f03a7c88a233cb1d33d74aab85746a}\label{namespace_checkpoints_af2f03a7c88a233cb1d33d74aab85746a}} 
+bool {\bfseries Check\+Sync} (const \mbox{\hyperlink{classuint256}{uint256}} \&hash\+Block, const \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex\+Prev)
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a2eed551e1a1a2cd3eca310467a366bab}\label{namespace_checkpoints_a2eed551e1a1a2cd3eca310467a366bab}} 
+bool {\bfseries Wanted\+By\+Pending\+Sync\+Checkpoint} (\mbox{\hyperlink{classuint256}{uint256}} hash\+Block)
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a6dd31c2fa96b7cb7978012d17674a06c}\label{namespace_checkpoints_a6dd31c2fa96b7cb7978012d17674a06c}} 
+bool {\bfseries Reset\+Sync\+Checkpoint} ()
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_afe41495b7c21e0e8483a49f297b84135}\label{namespace_checkpoints_afe41495b7c21e0e8483a49f297b84135}} 
+void {\bfseries Ask\+For\+Pending\+Sync\+Checkpoint} (\mbox{\hyperlink{class_c_node}{C\+Node}} $\ast$pfrom)
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a2f818eaddbab269e7ee33f9ab827ff37}\label{namespace_checkpoints_a2f818eaddbab269e7ee33f9ab827ff37}} 
+bool {\bfseries Set\+Checkpoint\+Priv\+Key} (std\+::string str\+Priv\+Key)
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a9f6c8a7ddbd2ee310ffecfa1940d2750}\label{namespace_checkpoints_a9f6c8a7ddbd2ee310ffecfa1940d2750}} 
+bool {\bfseries Send\+Sync\+Checkpoint} (\mbox{\hyperlink{classuint256}{uint256}} hash\+Checkpoint)
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a95edc28445d58d6a56865f55bc4ee7f6}\label{namespace_checkpoints_a95edc28445d58d6a56865f55bc4ee7f6}} 
+bool {\bfseries Is\+Mature\+Sync\+Checkpoint} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_ae6bf7381439fe6995194c0b636bd6f37}\label{namespace_checkpoints_ae6bf7381439fe6995194c0b636bd6f37}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries hash\+Sync\+Checkpoint} = 0
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_ab5d6617d4fdb6d1551fc26de92ff89c5}\label{namespace_checkpoints_ab5d6617d4fdb6d1551fc26de92ff89c5}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries hash\+Pending\+Checkpoint} = 0
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a869cfb2e43e85cb96944fc1755535c09}\label{namespace_checkpoints_a869cfb2e43e85cb96944fc1755535c09}} 
+\mbox{\hyperlink{class_c_sync_checkpoint}{C\+Sync\+Checkpoint}} {\bfseries checkpoint\+Message}
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a04efccf8c2c8334f72a8052e9c9463ec}\label{namespace_checkpoints_a04efccf8c2c8334f72a8052e9c9463ec}} 
+\mbox{\hyperlink{class_c_sync_checkpoint}{C\+Sync\+Checkpoint}} {\bfseries checkpoint\+Message\+Pending}
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_ad11a12f62aaac4d6a870d266f76cec8e}\label{namespace_checkpoints_ad11a12f62aaac4d6a870d266f76cec8e}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries hash\+Invalid\+Checkpoint} = 0
+\item 
+\mbox{\Hypertarget{namespace_checkpoints_a14bcb9bf139c346d98bdf1db1c8f3e95}\label{namespace_checkpoints_a14bcb9bf139c346d98bdf1db1c8f3e95}} 
+C\+Critical\+Section {\bfseries cs\+\_\+hash\+Sync\+Checkpoint}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Block-\/chain checkpoints are compiled-\/in sanity checks. They are updated every release or three. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_checkpoints_ab7f99b2c7e9fc7152af4f4bf36816c83}\label{namespace_checkpoints_ab7f99b2c7e9fc7152af4f4bf36816c83}} 
+\index{Checkpoints@{Checkpoints}!CPMode@{CPMode}}
+\index{CPMode@{CPMode}!Checkpoints@{Checkpoints}}
+\subsubsection{\texorpdfstring{CPMode}{CPMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_checkpoints_ab7f99b2c7e9fc7152af4f4bf36816c83}{Checkpoints\+::\+C\+P\+Mode}}}
+
+Checkpointing mode 

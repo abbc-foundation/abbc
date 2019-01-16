@@ -1,0 +1,56 @@
+\hypertarget{class_c_tx_in}{}\section{C\+Tx\+In Class Reference}
+\label{class_c_tx_in}\index{CTxIn@{CTxIn}}
+
+
+{\ttfamily \#include $<$main.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_tx_in_a243c4c394d5534ed10999b31d025be13}\label{class_c_tx_in_a243c4c394d5534ed10999b31d025be13}} 
+{\bfseries C\+Tx\+In} (\mbox{\hyperlink{class_c_out_point}{C\+Out\+Point}} prevout\+In, \mbox{\hyperlink{class_c_script}{C\+Script}} script\+Sig\+In=\mbox{\hyperlink{class_c_script}{C\+Script}}(), unsigned int n\+Sequence\+In=std\+::numeric\+\_\+limits$<$ unsigned int $>$\+::max())
+\item 
+\mbox{\Hypertarget{class_c_tx_in_a168382e68612df987e0241740771ab4e}\label{class_c_tx_in_a168382e68612df987e0241740771ab4e}} 
+{\bfseries C\+Tx\+In} (\mbox{\hyperlink{classuint256}{uint256}} hash\+Prev\+Tx, unsigned int n\+Out, \mbox{\hyperlink{class_c_script}{C\+Script}} script\+Sig\+In=\mbox{\hyperlink{class_c_script}{C\+Script}}(), unsigned int n\+Sequence\+In=std\+::numeric\+\_\+limits$<$ unsigned int $>$\+::max())
+\item 
+\mbox{\Hypertarget{class_c_tx_in_ac66b05906d62064e1161efa954994a57}\label{class_c_tx_in_ac66b05906d62064e1161efa954994a57}} 
+{\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE} (R\+E\+A\+D\+W\+R\+I\+TE(prevout);R\+E\+A\+D\+W\+R\+I\+TE(script\+Sig);R\+E\+A\+D\+W\+R\+I\+TE(n\+Sequence);) bool Is\+Final() const
+\item 
+\mbox{\Hypertarget{class_c_tx_in_aa6d16345a77762209f0d8970f6fd4429}\label{class_c_tx_in_aa6d16345a77762209f0d8970f6fd4429}} 
+std\+::string {\bfseries To\+String\+Short} () const
+\item 
+\mbox{\Hypertarget{class_c_tx_in_a9f3dcba8a979ca7007448f8ad1d3c4c1}\label{class_c_tx_in_a9f3dcba8a979ca7007448f8ad1d3c4c1}} 
+std\+::string {\bfseries To\+String} () const
+\item 
+\mbox{\Hypertarget{class_c_tx_in_ab912b8ddc4410cdf16350b897cbcc6e2}\label{class_c_tx_in_ab912b8ddc4410cdf16350b897cbcc6e2}} 
+void {\bfseries print} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_tx_in_aed9312051a25380cbd7f123408ab7c20}\label{class_c_tx_in_aed9312051a25380cbd7f123408ab7c20}} 
+\mbox{\hyperlink{class_c_out_point}{C\+Out\+Point}} {\bfseries prevout}
+\item 
+\mbox{\Hypertarget{class_c_tx_in_aba540fd902366210a6ad6cd9a18fe763}\label{class_c_tx_in_aba540fd902366210a6ad6cd9a18fe763}} 
+\mbox{\hyperlink{class_c_script}{C\+Script}} {\bfseries script\+Sig}
+\item 
+\mbox{\Hypertarget{class_c_tx_in_aa0dd08a6ecd0a595d9ef4dad020c1ea5}\label{class_c_tx_in_aa0dd08a6ecd0a595d9ef4dad020c1ea5}} 
+unsigned int {\bfseries n\+Sequence}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_tx_in_a1bb37c4cd8573c3014a194e8ce4d8daa}\label{class_c_tx_in_a1bb37c4cd8573c3014a194e8ce4d8daa}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_c_tx_in}{C\+Tx\+In}} \&a, const \mbox{\hyperlink{class_c_tx_in}{C\+Tx\+In}} \&b)
+\item 
+\mbox{\Hypertarget{class_c_tx_in_a4188c5f0807185c03e80598a7a3ace72}\label{class_c_tx_in_a4188c5f0807185c03e80598a7a3ace72}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_c_tx_in}{C\+Tx\+In}} \&a, const \mbox{\hyperlink{class_c_tx_in}{C\+Tx\+In}} \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An input of a transaction. It contains the location of the previous transaction\textquotesingle{}s output that it claims and a signature that matches the output\textquotesingle{}s public key. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+main.\+h\end{DoxyCompactItemize}

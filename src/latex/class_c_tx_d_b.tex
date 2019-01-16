@@ -1,0 +1,107 @@
+\hypertarget{class_c_tx_d_b}{}\section{C\+Tx\+DB Class Reference}
+\label{class_c_tx_d_b}\index{CTxDB@{CTxDB}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a15efd656b7f86b0abf8d99183cae493a}\label{class_c_tx_d_b_a15efd656b7f86b0abf8d99183cae493a}} 
+{\bfseries C\+Tx\+DB} (const char $\ast$psz\+Mode=\char`\"{}r+\char`\"{})
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_ad319e9c15a7a03b9b80d7affb7fb655e}\label{class_c_tx_d_b_ad319e9c15a7a03b9b80d7affb7fb655e}} 
+void {\bfseries Close} ()
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_af3c27c5cb8f922b5c03840feda844016}\label{class_c_tx_d_b_af3c27c5cb8f922b5c03840feda844016}} 
+bool {\bfseries Txn\+Begin} ()
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_aff04f078df2fc3640d559ce62fc9a6a2}\label{class_c_tx_d_b_aff04f078df2fc3640d559ce62fc9a6a2}} 
+bool {\bfseries Txn\+Commit} ()
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_ac984bce763c97af6fd90f3056367b521}\label{class_c_tx_d_b_ac984bce763c97af6fd90f3056367b521}} 
+bool {\bfseries Txn\+Abort} ()
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a24938c7578577c08b2a3eae7617dfa1e}\label{class_c_tx_d_b_a24938c7578577c08b2a3eae7617dfa1e}} 
+bool {\bfseries Read\+Version} (int \&n\+Version)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_aa30dbf235b1c229896097e1eb1ea9520}\label{class_c_tx_d_b_aa30dbf235b1c229896097e1eb1ea9520}} 
+bool {\bfseries Write\+Version} (int n\+Version)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a8a138e5dcc3ef98991abaa16eaa8ddeb}\label{class_c_tx_d_b_a8a138e5dcc3ef98991abaa16eaa8ddeb}} 
+bool {\bfseries Read\+Tx\+Index} (\mbox{\hyperlink{classuint256}{uint256}} hash, \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} \&txindex)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a62fb371022854dc8cb247bed36302df2}\label{class_c_tx_d_b_a62fb371022854dc8cb247bed36302df2}} 
+bool {\bfseries Update\+Tx\+Index} (\mbox{\hyperlink{classuint256}{uint256}} hash, const \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} \&txindex)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a6c0d7c688e8fd7ac28afde78ae6b624e}\label{class_c_tx_d_b_a6c0d7c688e8fd7ac28afde78ae6b624e}} 
+bool {\bfseries Add\+Tx\+Index} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx, const \mbox{\hyperlink{class_c_disk_tx_pos}{C\+Disk\+Tx\+Pos}} \&pos, int n\+Height)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a5e0f0ed39529758a90953a2a08fc9412}\label{class_c_tx_d_b_a5e0f0ed39529758a90953a2a08fc9412}} 
+bool {\bfseries Erase\+Tx\+Index} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a09b87317101ed16b6ad99794279f4c2d}\label{class_c_tx_d_b_a09b87317101ed16b6ad99794279f4c2d}} 
+bool {\bfseries Contains\+Tx} (\mbox{\hyperlink{classuint256}{uint256}} hash)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a32d0e546eee99724776352dd4bf0ae79}\label{class_c_tx_d_b_a32d0e546eee99724776352dd4bf0ae79}} 
+bool {\bfseries Read\+Disk\+Tx} (\mbox{\hyperlink{classuint256}{uint256}} hash, \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx, \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} \&txindex)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_ab32f32729feabef7162d5fa225dd0e22}\label{class_c_tx_d_b_ab32f32729feabef7162d5fa225dd0e22}} 
+bool {\bfseries Read\+Disk\+Tx} (\mbox{\hyperlink{classuint256}{uint256}} hash, \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a80ee65f82bb1a769b507dc5c701bfacc}\label{class_c_tx_d_b_a80ee65f82bb1a769b507dc5c701bfacc}} 
+bool {\bfseries Read\+Disk\+Tx} (\mbox{\hyperlink{class_c_out_point}{C\+Out\+Point}} outpoint, \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx, \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} \&txindex)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a4d7f67f600359473ddd2044030323215}\label{class_c_tx_d_b_a4d7f67f600359473ddd2044030323215}} 
+bool {\bfseries Read\+Disk\+Tx} (\mbox{\hyperlink{class_c_out_point}{C\+Out\+Point}} outpoint, \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a56f170187a609bd747c29b3a4adddd8e}\label{class_c_tx_d_b_a56f170187a609bd747c29b3a4adddd8e}} 
+bool {\bfseries Write\+Block\+Index} (const \mbox{\hyperlink{class_c_disk_block_index}{C\+Disk\+Block\+Index}} \&blockindex)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a9aae38d6e39ce57a1b8eaaeaea81e4de}\label{class_c_tx_d_b_a9aae38d6e39ce57a1b8eaaeaea81e4de}} 
+bool {\bfseries Read\+Hash\+Best\+Chain} (\mbox{\hyperlink{classuint256}{uint256}} \&hash\+Best\+Chain)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a2cf58de69c1c07e500a1f8d0b0709476}\label{class_c_tx_d_b_a2cf58de69c1c07e500a1f8d0b0709476}} 
+bool {\bfseries Write\+Hash\+Best\+Chain} (\mbox{\hyperlink{classuint256}{uint256}} hash\+Best\+Chain)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_ab0e2e8f95c4f891c0a9245d5ba6b0b68}\label{class_c_tx_d_b_ab0e2e8f95c4f891c0a9245d5ba6b0b68}} 
+bool {\bfseries Read\+Best\+Invalid\+Trust} (\mbox{\hyperlink{class_c_big_num}{C\+Big\+Num}} \&bn\+Best\+Invalid\+Trust)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_ad9593efae66f6a73fafba93ad05fd2b8}\label{class_c_tx_d_b_ad9593efae66f6a73fafba93ad05fd2b8}} 
+bool {\bfseries Write\+Best\+Invalid\+Trust} (\mbox{\hyperlink{class_c_big_num}{C\+Big\+Num}} bn\+Best\+Invalid\+Trust)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a85576980e059ee1471fe6ae2ae8f1b59}\label{class_c_tx_d_b_a85576980e059ee1471fe6ae2ae8f1b59}} 
+bool {\bfseries Read\+Sync\+Checkpoint} (\mbox{\hyperlink{classuint256}{uint256}} \&hash\+Checkpoint)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a6fed172063f2ec1f4688ac3f21b0608a}\label{class_c_tx_d_b_a6fed172063f2ec1f4688ac3f21b0608a}} 
+bool {\bfseries Write\+Sync\+Checkpoint} (\mbox{\hyperlink{classuint256}{uint256}} hash\+Checkpoint)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_ab05fe91e649658eebe0a05227fde3059}\label{class_c_tx_d_b_ab05fe91e649658eebe0a05227fde3059}} 
+bool {\bfseries Read\+Checkpoint\+Pub\+Key} (std\+::string \&str\+Pub\+Key)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_ab417d5e3a281ae192658dcac6f4a39a9}\label{class_c_tx_d_b_ab417d5e3a281ae192658dcac6f4a39a9}} 
+bool {\bfseries Write\+Checkpoint\+Pub\+Key} (const std\+::string \&str\+Pub\+Key)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_abcb9df0821d996f811f6604b452a26a0}\label{class_c_tx_d_b_abcb9df0821d996f811f6604b452a26a0}} 
+bool {\bfseries Load\+Block\+Index} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a7e9da91da591eb7672ae29bba6899fa0}\label{class_c_tx_d_b_a7e9da91da591eb7672ae29bba6899fa0}} 
+bool {\bfseries Scan\+Batch} (const \mbox{\hyperlink{class_c_data_stream}{C\+Data\+Stream}} \&key, std\+::string $\ast$value, bool $\ast$deleted) const
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a9e223a10434f8a73002e84cc75c682de}\label{class_c_tx_d_b_a9e223a10434f8a73002e84cc75c682de}} 
+{\footnotesize template$<$typename K , typename T $>$ }\\bool {\bfseries Read} (const K \&key, T \&value)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a58885f67364829a8e0957a5dc810886d}\label{class_c_tx_d_b_a58885f67364829a8e0957a5dc810886d}} 
+{\footnotesize template$<$typename K , typename T $>$ }\\bool {\bfseries Write} (const K \&key, const T \&value)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a57ccf71e92f654e6db68be530d43a837}\label{class_c_tx_d_b_a57ccf71e92f654e6db68be530d43a837}} 
+{\footnotesize template$<$typename K $>$ }\\bool {\bfseries Erase} (const K \&key)
+\item 
+\mbox{\Hypertarget{class_c_tx_d_b_a36002f063f6fef483226362a1350e22d}\label{class_c_tx_d_b_a36002f063f6fef483226362a1350e22d}} 
+{\footnotesize template$<$typename K $>$ }\\bool {\bfseries Exists} (const K \&key)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+txdb-\/leveldb.\+h\item 
+txdb-\/leveldb.\+cpp\end{DoxyCompactItemize}

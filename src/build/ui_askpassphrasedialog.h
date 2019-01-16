@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'askpassphrasedialog.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,17 +10,14 @@
 #define UI_ASKPASSPHRASEDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QDialog>
-#include <QtGui/QDialogButtonBox>
-#include <QtGui/QFormLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QVBoxLayout>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 
@@ -133,15 +130,15 @@ public:
 
     void retranslateUi(QDialog *AskPassphraseDialog)
     {
-        AskPassphraseDialog->setWindowTitle(QApplication::translate("AskPassphraseDialog", "Passphrase Dialog", 0, QApplication::UnicodeUTF8));
-        passLabel1->setText(QApplication::translate("AskPassphraseDialog", "Enter passphrase", 0, QApplication::UnicodeUTF8));
-        passLabel2->setText(QApplication::translate("AskPassphraseDialog", "New passphrase", 0, QApplication::UnicodeUTF8));
-        passLabel3->setText(QApplication::translate("AskPassphraseDialog", "Repeat new passphrase", 0, QApplication::UnicodeUTF8));
+        AskPassphraseDialog->setWindowTitle(QApplication::translate("AskPassphraseDialog", "Passphrase Dialog", nullptr));
+        passLabel1->setText(QApplication::translate("AskPassphraseDialog", "Enter passphrase", nullptr));
+        passLabel2->setText(QApplication::translate("AskPassphraseDialog", "New passphrase", nullptr));
+        passLabel3->setText(QApplication::translate("AskPassphraseDialog", "Repeat new passphrase", nullptr));
         capsLabel->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        stakingCheckBox->setToolTip(QApplication::translate("AskPassphraseDialog", "Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.", 0, QApplication::UnicodeUTF8));
+        stakingCheckBox->setToolTip(QApplication::translate("AskPassphraseDialog", "Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.", nullptr));
 #endif // QT_NO_TOOLTIP
-        stakingCheckBox->setText(QApplication::translate("AskPassphraseDialog", "For staking only", 0, QApplication::UnicodeUTF8));
+        stakingCheckBox->setText(QApplication::translate("AskPassphraseDialog", "For staking only", nullptr));
     } // retranslateUi
 
 };

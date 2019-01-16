@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'sendcoinsentry.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,15 +10,13 @@
 #define UI_SENDCOINSENTRY_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QFrame>
-#include <QtGui/QGridLayout>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QToolButton>
+#include <QtGui/QIcon>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QToolButton>
 #include "bitcoinamountfield.h"
 #include "qvalidatedlineedit.h"
 
@@ -134,28 +132,32 @@ public:
 
     void retranslateUi(QFrame *SendCoinsEntry)
     {
-        SendCoinsEntry->setWindowTitle(QApplication::translate("SendCoinsEntry", "Form", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("SendCoinsEntry", "A&mount:", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("SendCoinsEntry", "Pay &To:", 0, QApplication::UnicodeUTF8));
+        SendCoinsEntry->setWindowTitle(QApplication::translate("SendCoinsEntry", "Form", nullptr));
+        label->setText(QApplication::translate("SendCoinsEntry", "A&mount:", nullptr));
+        label_2->setText(QApplication::translate("SendCoinsEntry", "Pay &To:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        addAsLabel->setToolTip(QApplication::translate("SendCoinsEntry", "Enter a label for this address to add it to your address book", 0, QApplication::UnicodeUTF8));
+        addAsLabel->setToolTip(QApplication::translate("SendCoinsEntry", "Enter a label for this address to add it to your address book", nullptr));
 #endif // QT_NO_TOOLTIP
-        label_4->setText(QApplication::translate("SendCoinsEntry", "&Label:", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("SendCoinsEntry", "&Label:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        payTo->setToolTip(QApplication::translate("SendCoinsEntry", "The MOTA address to send the payment to  (e.g. MhuCKm3NfwYhBF0rmGXcFP2Po1NSexpRUEiK8km2)", 0, QApplication::UnicodeUTF8));
+        payTo->setToolTip(QApplication::translate("SendCoinsEntry", "The MOTA address to send the payment to  (e.g. MhuCKm3NfwYhBF0rmGXcFP2Po1NSexpRUEiK8km2)", nullptr));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
-        addressBookButton->setToolTip(QApplication::translate("SendCoinsEntry", "Choose address from address book", 0, QApplication::UnicodeUTF8));
+        addressBookButton->setToolTip(QApplication::translate("SendCoinsEntry", "Choose address from address book", nullptr));
 #endif // QT_NO_TOOLTIP
         addressBookButton->setText(QString());
-        addressBookButton->setShortcut(QApplication::translate("SendCoinsEntry", "Alt+A", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_SHORTCUT
+        addressBookButton->setShortcut(QApplication::translate("SendCoinsEntry", "Alt+A", nullptr));
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
-        pasteButton->setToolTip(QApplication::translate("SendCoinsEntry", "Paste address from clipboard", 0, QApplication::UnicodeUTF8));
+        pasteButton->setToolTip(QApplication::translate("SendCoinsEntry", "Paste address from clipboard", nullptr));
 #endif // QT_NO_TOOLTIP
         pasteButton->setText(QString());
-        pasteButton->setShortcut(QApplication::translate("SendCoinsEntry", "Alt+P", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_SHORTCUT
+        pasteButton->setShortcut(QApplication::translate("SendCoinsEntry", "Alt+P", nullptr));
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
-        deleteButton->setToolTip(QApplication::translate("SendCoinsEntry", "Remove this recipient", 0, QApplication::UnicodeUTF8));
+        deleteButton->setToolTip(QApplication::translate("SendCoinsEntry", "Remove this recipient", nullptr));
 #endif // QT_NO_TOOLTIP
         deleteButton->setText(QString());
     } // retranslateUi

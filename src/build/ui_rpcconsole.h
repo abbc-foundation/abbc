@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'rpcconsole.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,22 +10,20 @@
 #define UI_RPCCONSOLE_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QDialog>
-#include <QtGui/QGridLayout>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QTabWidget>
-#include <QtGui/QTextEdit>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtGui/QIcon>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTextEdit>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -305,7 +303,9 @@ public:
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
         clearButton->setIcon(icon);
+#ifndef QT_NO_SHORTCUT
         clearButton->setShortcut(QString::fromUtf8("Ctrl+L"));
+#endif // QT_NO_SHORTCUT
         clearButton->setAutoDefault(false);
 
         horizontalLayout->addWidget(clearButton);
@@ -328,46 +328,46 @@ public:
 
     void retranslateUi(QDialog *RPCConsole)
     {
-        RPCConsole->setWindowTitle(QApplication::translate("RPCConsole", "ABBCCoin - Debug window", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("RPCConsole", "ABBCCoin Core", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("RPCConsole", "Client name", 0, QApplication::UnicodeUTF8));
-        clientName->setText(QApplication::translate("RPCConsole", "N/A", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("RPCConsole", "Client version", 0, QApplication::UnicodeUTF8));
-        clientVersion->setText(QApplication::translate("RPCConsole", "N/A", 0, QApplication::UnicodeUTF8));
-        label_14->setText(QApplication::translate("RPCConsole", "Using OpenSSL version", 0, QApplication::UnicodeUTF8));
-        openSSLVersion->setText(QApplication::translate("RPCConsole", "N/A", 0, QApplication::UnicodeUTF8));
-        label_12->setText(QApplication::translate("RPCConsole", "Build date", 0, QApplication::UnicodeUTF8));
-        buildDate->setText(QApplication::translate("RPCConsole", "N/A", 0, QApplication::UnicodeUTF8));
-        label_13->setText(QApplication::translate("RPCConsole", "Startup time", 0, QApplication::UnicodeUTF8));
-        startupTime->setText(QApplication::translate("RPCConsole", "N/A", 0, QApplication::UnicodeUTF8));
-        label_11->setText(QApplication::translate("RPCConsole", "Network", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("RPCConsole", "Number of connections", 0, QApplication::UnicodeUTF8));
-        numberOfConnections->setText(QApplication::translate("RPCConsole", "N/A", 0, QApplication::UnicodeUTF8));
-        label_8->setText(QApplication::translate("RPCConsole", "On testnet", 0, QApplication::UnicodeUTF8));
+        RPCConsole->setWindowTitle(QApplication::translate("RPCConsole", "ABBCCoin - Debug window", nullptr));
+        label_9->setText(QApplication::translate("RPCConsole", "ABBCCoin Core", nullptr));
+        label_5->setText(QApplication::translate("RPCConsole", "Client name", nullptr));
+        clientName->setText(QApplication::translate("RPCConsole", "N/A", nullptr));
+        label_6->setText(QApplication::translate("RPCConsole", "Client version", nullptr));
+        clientVersion->setText(QApplication::translate("RPCConsole", "N/A", nullptr));
+        label_14->setText(QApplication::translate("RPCConsole", "Using OpenSSL version", nullptr));
+        openSSLVersion->setText(QApplication::translate("RPCConsole", "N/A", nullptr));
+        label_12->setText(QApplication::translate("RPCConsole", "Build date", nullptr));
+        buildDate->setText(QApplication::translate("RPCConsole", "N/A", nullptr));
+        label_13->setText(QApplication::translate("RPCConsole", "Startup time", nullptr));
+        startupTime->setText(QApplication::translate("RPCConsole", "N/A", nullptr));
+        label_11->setText(QApplication::translate("RPCConsole", "Network", nullptr));
+        label_7->setText(QApplication::translate("RPCConsole", "Number of connections", nullptr));
+        numberOfConnections->setText(QApplication::translate("RPCConsole", "N/A", nullptr));
+        label_8->setText(QApplication::translate("RPCConsole", "On testnet", nullptr));
         isTestNet->setText(QString());
-        label_10->setText(QApplication::translate("RPCConsole", "Block chain", 0, QApplication::UnicodeUTF8));
-        label_3->setText(QApplication::translate("RPCConsole", "Current number of blocks", 0, QApplication::UnicodeUTF8));
-        numberOfBlocks->setText(QApplication::translate("RPCConsole", "N/A", 0, QApplication::UnicodeUTF8));
-        label_4->setText(QApplication::translate("RPCConsole", "Estimated total blocks", 0, QApplication::UnicodeUTF8));
-        totalBlocks->setText(QApplication::translate("RPCConsole", "N/A", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("RPCConsole", "Last block time", 0, QApplication::UnicodeUTF8));
-        lastBlockTime->setText(QApplication::translate("RPCConsole", "N/A", 0, QApplication::UnicodeUTF8));
-        labelDebugLogfile->setText(QApplication::translate("RPCConsole", "Debug log file", 0, QApplication::UnicodeUTF8));
+        label_10->setText(QApplication::translate("RPCConsole", "Block chain", nullptr));
+        label_3->setText(QApplication::translate("RPCConsole", "Current number of blocks", nullptr));
+        numberOfBlocks->setText(QApplication::translate("RPCConsole", "N/A", nullptr));
+        label_4->setText(QApplication::translate("RPCConsole", "Estimated total blocks", nullptr));
+        totalBlocks->setText(QApplication::translate("RPCConsole", "N/A", nullptr));
+        label_2->setText(QApplication::translate("RPCConsole", "Last block time", nullptr));
+        lastBlockTime->setText(QApplication::translate("RPCConsole", "N/A", nullptr));
+        labelDebugLogfile->setText(QApplication::translate("RPCConsole", "Debug log file", nullptr));
 #ifndef QT_NO_TOOLTIP
-        openDebugLogfileButton->setToolTip(QApplication::translate("RPCConsole", "Open the ABBCCoin debug log file from the current data directory. This can take a few seconds for large log files.", 0, QApplication::UnicodeUTF8));
+        openDebugLogfileButton->setToolTip(QApplication::translate("RPCConsole", "Open the ABBCCoin debug log file from the current data directory. This can take a few seconds for large log files.", nullptr));
 #endif // QT_NO_TOOLTIP
-        openDebugLogfileButton->setText(QApplication::translate("RPCConsole", "&Open", 0, QApplication::UnicodeUTF8));
-        labelCLOptions->setText(QApplication::translate("RPCConsole", "Command-line options", 0, QApplication::UnicodeUTF8));
+        openDebugLogfileButton->setText(QApplication::translate("RPCConsole", "&Open", nullptr));
+        labelCLOptions->setText(QApplication::translate("RPCConsole", "Command-line options", nullptr));
 #ifndef QT_NO_TOOLTIP
-        showCLOptionsButton->setToolTip(QApplication::translate("RPCConsole", "Show the ABBCCoin-Qt help message to get a list with possible ABBCCoin command-line options.", 0, QApplication::UnicodeUTF8));
+        showCLOptionsButton->setToolTip(QApplication::translate("RPCConsole", "Show the ABBCCoin-Qt help message to get a list with possible ABBCCoin command-line options.", nullptr));
 #endif // QT_NO_TOOLTIP
-        showCLOptionsButton->setText(QApplication::translate("RPCConsole", "&Show", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tab_info), QApplication::translate("RPCConsole", "&Information", 0, QApplication::UnicodeUTF8));
+        showCLOptionsButton->setText(QApplication::translate("RPCConsole", "&Show", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_info), QApplication::translate("RPCConsole", "&Information", nullptr));
 #ifndef QT_NO_TOOLTIP
-        clearButton->setToolTip(QApplication::translate("RPCConsole", "Clear console", 0, QApplication::UnicodeUTF8));
+        clearButton->setToolTip(QApplication::translate("RPCConsole", "Clear console", nullptr));
 #endif // QT_NO_TOOLTIP
         clearButton->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab_console), QApplication::translate("RPCConsole", "&Console", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tab_console), QApplication::translate("RPCConsole", "&Console", nullptr));
     } // retranslateUi
 
 };

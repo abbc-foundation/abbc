@@ -1,0 +1,40 @@
+\hypertarget{class_c_check_queue}{}\section{C\+Check\+Queue$<$ T $>$ Class Template Reference}
+\label{class_c_check_queue}\index{CCheckQueue$<$ T $>$@{CCheckQueue$<$ T $>$}}
+
+
+{\ttfamily \#include $<$checkqueue.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_check_queue_ad0e6a979f8433c05770350bc6b90a849}\label{class_c_check_queue_ad0e6a979f8433c05770350bc6b90a849}} 
+{\bfseries C\+Check\+Queue} (unsigned int n\+Batch\+Size\+In)
+\item 
+\mbox{\Hypertarget{class_c_check_queue_ad3602cd305b07612e634363b31c1d46c}\label{class_c_check_queue_ad3602cd305b07612e634363b31c1d46c}} 
+void {\bfseries Thread} ()
+\item 
+\mbox{\Hypertarget{class_c_check_queue_a4ff3e0e8241491efa1803eeb3a53e7fa}\label{class_c_check_queue_a4ff3e0e8241491efa1803eeb3a53e7fa}} 
+bool {\bfseries Wait} ()
+\item 
+\mbox{\Hypertarget{class_c_check_queue_aee8e83bcdeef17740937e6c1dc84c478}\label{class_c_check_queue_aee8e83bcdeef17740937e6c1dc84c478}} 
+void {\bfseries Add} (std\+::vector$<$ T $>$ \&v\+Checks)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_check_queue_a29e7010df2410e36f2aed87eae2053f2}\label{class_c_check_queue_a29e7010df2410e36f2aed87eae2053f2}} 
+class {\bfseries C\+Check\+Queue\+Control$<$ T $>$}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class C\+Check\+Queue$<$ T $>$}
+
+Queue for verifications that have to be performed. The verifications are represented by a type T, which must provide an operator(), returning a bool.
+
+One thread (the master) is assumed to push batches of verifications onto the queue, where they are processed by N-\/1 worker threads. When the master is done adding work, it temporarily joins the worker pool as an N\textquotesingle{}th worker, until all jobs are done. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+checkqueue.\+h\end{DoxyCompactItemize}

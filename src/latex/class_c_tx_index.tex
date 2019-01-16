@@ -1,0 +1,48 @@
+\hypertarget{class_c_tx_index}{}\section{C\+Tx\+Index Class Reference}
+\label{class_c_tx_index}\index{CTxIndex@{CTxIndex}}
+
+
+{\ttfamily \#include $<$main.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_tx_index_ad01109597d73bef7ea576d1e1613415f}\label{class_c_tx_index_ad01109597d73bef7ea576d1e1613415f}} 
+{\bfseries C\+Tx\+Index} (const \mbox{\hyperlink{class_c_disk_tx_pos}{C\+Disk\+Tx\+Pos}} \&pos\+In, unsigned int n\+Outputs)
+\item 
+\mbox{\Hypertarget{class_c_tx_index_ab6cf8a97430df57a520037bacdd9c6d0}\label{class_c_tx_index_ab6cf8a97430df57a520037bacdd9c6d0}} 
+{\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE} (if(!(n\+Type \&S\+E\+R\+\_\+\+G\+E\+T\+H\+A\+SH)) R\+E\+A\+D\+W\+R\+I\+TE(n\+Version);R\+E\+A\+D\+W\+R\+I\+TE(pos);R\+E\+A\+D\+W\+R\+I\+TE(v\+Spent);) void Set\+Null()
+\item 
+\mbox{\Hypertarget{class_c_tx_index_a27f2d2e6bc1fad724bd5bff9eeb694fc}\label{class_c_tx_index_a27f2d2e6bc1fad724bd5bff9eeb694fc}} 
+bool {\bfseries Is\+Null} ()
+\item 
+\mbox{\Hypertarget{class_c_tx_index_ae18990b9796ee365ae2f384a2b334fe0}\label{class_c_tx_index_ae18990b9796ee365ae2f384a2b334fe0}} 
+int {\bfseries Get\+Depth\+In\+Main\+Chain} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_tx_index_ac68a69ed4335b3f50b954c71ec0a9c32}\label{class_c_tx_index_ac68a69ed4335b3f50b954c71ec0a9c32}} 
+\mbox{\hyperlink{class_c_disk_tx_pos}{C\+Disk\+Tx\+Pos}} {\bfseries pos}
+\item 
+\mbox{\Hypertarget{class_c_tx_index_a88317d56c02acd1faec4863bcb293d2c}\label{class_c_tx_index_a88317d56c02acd1faec4863bcb293d2c}} 
+std\+::vector$<$ \mbox{\hyperlink{class_c_disk_tx_pos}{C\+Disk\+Tx\+Pos}} $>$ {\bfseries v\+Spent}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_tx_index_acad959e5335e3527d1d94d7da3d5725d}\label{class_c_tx_index_acad959e5335e3527d1d94d7da3d5725d}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} \&a, const \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} \&b)
+\item 
+\mbox{\Hypertarget{class_c_tx_index_a959f40582946a134bc75e7b3092419eb}\label{class_c_tx_index_a959f40582946a134bc75e7b3092419eb}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} \&a, const \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A txdb record that contains the disk location of a transaction and the locations of transactions that spend its outputs. v\+Spent is really only used as a flag, but having the location is very helpful for debugging. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+main.\+h\item 
+main.\+cpp\end{DoxyCompactItemize}

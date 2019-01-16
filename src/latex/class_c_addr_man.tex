@@ -1,0 +1,87 @@
+\hypertarget{class_c_addr_man}{}\section{C\+Addr\+Man Class Reference}
+\label{class_c_addr_man}\index{CAddrMan@{CAddrMan}}
+
+
+{\ttfamily \#include $<$addrman.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a8eb4fa0a6666916b155ada726ca7c54e}\label{class_c_addr_man_a8eb4fa0a6666916b155ada726ca7c54e}} 
+{\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE} ((\{ \{ L\+O\+CK(cs);unsigned char n\+Version=0;R\+E\+A\+D\+W\+R\+I\+TE(n\+Version);R\+E\+A\+D\+W\+R\+I\+TE(n\+Key);R\+E\+A\+D\+W\+R\+I\+TE(n\+New);R\+E\+A\+D\+W\+R\+I\+TE(n\+Tried);\mbox{\hyperlink{class_c_addr_man}{C\+Addr\+Man}} $\ast$am=const\+\_\+cast$<$ \mbox{\hyperlink{class_c_addr_man}{C\+Addr\+Man}} $\ast$ $>$(this);if(f\+Write) \{ int n\+U\+Buckets=A\+D\+D\+R\+M\+A\+N\+\_\+\+N\+E\+W\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+C\+O\+U\+NT;R\+E\+A\+D\+W\+R\+I\+TE(n\+U\+Buckets);std\+::map$<$ int, int $>$ map\+Unk\+Ids;int n\+Ids=0;for(std\+::map$<$ int, \mbox{\hyperlink{class_c_addr_info}{C\+Addr\+Info}} $>$\+::iterator it=am-\/$>$map\+Info.\+begin();it !=am-\/$>$map\+Info.\+end();it++) \{ if(n\+Ids==n\+New) break;map\+Unk\+Ids\mbox{[}($\ast$it).first\mbox{]}=n\+Ids;\mbox{\hyperlink{class_c_addr_info}{C\+Addr\+Info}} \&info=($\ast$it).second;if(info.\+n\+Ref\+Count) \{ R\+E\+A\+D\+W\+R\+I\+TE(info);n\+Ids++;\} \} n\+Ids=0;for(std\+::map$<$ int, \mbox{\hyperlink{class_c_addr_info}{C\+Addr\+Info}} $>$\+::iterator it=am-\/$>$map\+Info.\+begin();it !=am-\/$>$map\+Info.\+end();it++) \{ if(n\+Ids==n\+Tried) break;\mbox{\hyperlink{class_c_addr_info}{C\+Addr\+Info}} \&info=($\ast$it).second;if(info.\+f\+In\+Tried) \{ R\+E\+A\+D\+W\+R\+I\+TE(info);n\+Ids++;\} \} for(std\+::vector$<$ std\+::set$<$ int $>$ $>$\+::iterator it=am-\/$>$vv\+New.\+begin();it !=am-\/$>$vv\+New.\+end();it++) \{ const std\+::set$<$ int $>$ \&v\+New=($\ast$it);int n\+Size=v\+New.\+size();R\+E\+A\+D\+W\+R\+I\+TE(n\+Size);for(std\+::set$<$ int $>$\+::iterator it2=v\+New.\+begin();it2 !=v\+New.\+end();it2++) \{ int n\+Index=map\+Unk\+Ids\mbox{[}$\ast$it2\mbox{]};R\+E\+A\+D\+W\+R\+I\+TE(n\+Index);\} \} \} else \{ int n\+U\+Buckets=0;R\+E\+A\+D\+W\+R\+I\+TE(n\+U\+Buckets);am-\/$>$n\+Id\+Count=0;am-\/$>$map\+Info.\+clear();am-\/$>$map\+Addr.\+clear();am-\/$>$v\+Random.\+clear();am-\/$>$vv\+Tried=std\+::vector$<$ std\+::vector$<$ int $>$ $>$(A\+D\+D\+R\+M\+A\+N\+\_\+\+T\+R\+I\+E\+D\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+C\+O\+U\+NT, std\+::vector$<$ int $>$(0));am-\/$>$vv\+New=std\+::vector$<$ std\+::set$<$ int $>$ $>$(A\+D\+D\+R\+M\+A\+N\+\_\+\+N\+E\+W\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+C\+O\+U\+NT, std\+::set$<$ int $>$());for(int n=0;n$<$ am-\/$>$n\+New;n++) \{ \mbox{\hyperlink{class_c_addr_info}{C\+Addr\+Info}} \&info=am-\/$>$map\+Info\mbox{[}n\mbox{]};R\+E\+A\+D\+W\+R\+I\+TE(info);am-\/$>$map\+Addr\mbox{[}info\mbox{]}=n;info.\+n\+Random\+Pos=v\+Random.\+size();am-\/$>$v\+Random.\+push\+\_\+back(n);if(n\+U\+Buckets !=A\+D\+D\+R\+M\+A\+N\+\_\+\+N\+E\+W\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+C\+O\+U\+NT) \{ am-\/$>$vv\+New\mbox{[}info.\+Get\+New\+Bucket(am-\/$>$n\+Key)\mbox{]}.insert(n);info.\+n\+Ref\+Count++;\} \} am-\/$>$n\+Id\+Count=am-\/$>$n\+New;int n\+Lost=0;for(int n=0;n$<$ am-\/$>$n\+Tried;n++) \{ \mbox{\hyperlink{class_c_addr_info}{C\+Addr\+Info}} info;R\+E\+A\+D\+W\+R\+I\+TE(info);std\+::vector$<$ int $>$ \&v\+Tried=am-\/$>$vv\+Tried\mbox{[}info.\+Get\+Tried\+Bucket(am-\/$>$n\+Key)\mbox{]};if(v\+Tried.\+size()$<$ A\+D\+D\+R\+M\+A\+N\+\_\+\+T\+R\+I\+E\+D\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+S\+I\+ZE) \{ info.\+n\+Random\+Pos=v\+Random.\+size();info.\+f\+In\+Tried=true;am-\/$>$v\+Random.\+push\+\_\+back(am-\/$>$n\+Id\+Count);am-\/$>$map\+Info\mbox{[}am-\/$>$n\+Id\+Count\mbox{]}=info;am-\/$>$map\+Addr\mbox{[}info\mbox{]}=am-\/$>$n\+Id\+Count;v\+Tried.\+push\+\_\+back(am-\/$>$n\+Id\+Count);am-\/$>$n\+Id\+Count++;\} else \{ n\+Lost++;\} \} am-\/$>$n\+Tried -\/=n\+Lost;for(int b=0;b$<$ n\+U\+Buckets;b++) \{ std\+::set$<$ int $>$ \&v\+New=am-\/$>$vv\+New\mbox{[}b\mbox{]};int n\+Size=0;R\+E\+A\+D\+W\+R\+I\+TE(n\+Size);for(int n=0;n$<$ n\+Size;n++) \{ int n\+Index=0;R\+E\+A\+D\+W\+R\+I\+TE(n\+Index);\mbox{\hyperlink{class_c_addr_info}{C\+Addr\+Info}} \&info=am-\/$>$map\+Info\mbox{[}n\+Index\mbox{]};if(n\+U\+Buckets==A\+D\+D\+R\+M\+A\+N\+\_\+\+N\+E\+W\+\_\+\+B\+U\+C\+K\+E\+T\+\_\+\+C\+O\+U\+NT \&\&info.\+n\+Ref\+Count$<$ A\+D\+D\+R\+M\+A\+N\+\_\+\+N\+E\+W\+\_\+\+B\+U\+C\+K\+E\+T\+S\+\_\+\+P\+E\+R\+\_\+\+A\+D\+D\+R\+E\+SS) \{ info.\+n\+Ref\+Count++;v\+New.\+insert(n\+Index);\} \} \} \} \} \});) \mbox{\hyperlink{class_c_addr_man}{C\+Addr\+Man}}()
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a15b8e72f55344b6fbd1bc1bda3cdc5bc}\label{class_c_addr_man_a15b8e72f55344b6fbd1bc1bda3cdc5bc}} 
+int {\bfseries size} ()
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a0c2677ae50ce0d680f0105b285d1f5d0}\label{class_c_addr_man_a0c2677ae50ce0d680f0105b285d1f5d0}} 
+void {\bfseries Check} ()
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a03fcc7109b5f014760dc50a81f68c5ec}\label{class_c_addr_man_a03fcc7109b5f014760dc50a81f68c5ec}} 
+bool {\bfseries Add} (const \mbox{\hyperlink{class_c_address}{C\+Address}} \&addr, const \mbox{\hyperlink{class_c_net_addr}{C\+Net\+Addr}} \&source, int64\+\_\+t n\+Time\+Penalty=0)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_aa2ae2abdf710b2d81fa37f072bab028e}\label{class_c_addr_man_aa2ae2abdf710b2d81fa37f072bab028e}} 
+bool {\bfseries Add} (const std\+::vector$<$ \mbox{\hyperlink{class_c_address}{C\+Address}} $>$ \&v\+Addr, const \mbox{\hyperlink{class_c_net_addr}{C\+Net\+Addr}} \&source, int64\+\_\+t n\+Time\+Penalty=0)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a993e80e74701d7bc6bb49880c387b847}\label{class_c_addr_man_a993e80e74701d7bc6bb49880c387b847}} 
+void {\bfseries Good} (const \mbox{\hyperlink{class_c_service}{C\+Service}} \&addr, int64\+\_\+t n\+Time=Get\+Adjusted\+Time())
+\item 
+\mbox{\Hypertarget{class_c_addr_man_afcddc2573121065177dc981cea710789}\label{class_c_addr_man_afcddc2573121065177dc981cea710789}} 
+void {\bfseries Attempt} (const \mbox{\hyperlink{class_c_service}{C\+Service}} \&addr, int64\+\_\+t n\+Time=Get\+Adjusted\+Time())
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a6aa6708d0ee55dba9ec6cefc9811c8e3}\label{class_c_addr_man_a6aa6708d0ee55dba9ec6cefc9811c8e3}} 
+\mbox{\hyperlink{class_c_address}{C\+Address}} {\bfseries Select} (int n\+Unk\+Bias=50)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a69cc6138e696cf88de60925d26023bf2}\label{class_c_addr_man_a69cc6138e696cf88de60925d26023bf2}} 
+std\+::vector$<$ \mbox{\hyperlink{class_c_address}{C\+Address}} $>$ {\bfseries Get\+Addr} ()
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a7aba66d9e9527522fed974567d34c322}\label{class_c_addr_man_a7aba66d9e9527522fed974567d34c322}} 
+void {\bfseries Connected} (const \mbox{\hyperlink{class_c_service}{C\+Service}} \&addr, int64\+\_\+t n\+Time=Get\+Adjusted\+Time())
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_addr_man_ac961ead1a1afde144fc486b6d7c7369d}\label{class_c_addr_man_ac961ead1a1afde144fc486b6d7c7369d}} 
+\mbox{\hyperlink{class_c_addr_info}{C\+Addr\+Info}} $\ast$ {\bfseries Find} (const \mbox{\hyperlink{class_c_net_addr}{C\+Net\+Addr}} \&addr, int $\ast$pn\+Id=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_aac93f51c0580e38a950a0f63b053bedb}\label{class_c_addr_man_aac93f51c0580e38a950a0f63b053bedb}} 
+\mbox{\hyperlink{class_c_addr_info}{C\+Addr\+Info}} $\ast$ {\bfseries Create} (const \mbox{\hyperlink{class_c_address}{C\+Address}} \&addr, const \mbox{\hyperlink{class_c_net_addr}{C\+Net\+Addr}} \&addr\+Source, int $\ast$pn\+Id=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a3074bc8e3dcfb5348054613f575dc38e}\label{class_c_addr_man_a3074bc8e3dcfb5348054613f575dc38e}} 
+void {\bfseries Swap\+Random} (unsigned int n\+Random\+Pos1, unsigned int n\+Random\+Pos2)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a9c466eca7afe5c12554da5734f89e656}\label{class_c_addr_man_a9c466eca7afe5c12554da5734f89e656}} 
+int {\bfseries Select\+Tried} (int n\+K\+Bucket)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_aebf83da3addc3bcee487a87ece3f9a2b}\label{class_c_addr_man_aebf83da3addc3bcee487a87ece3f9a2b}} 
+int {\bfseries Shrink\+New} (int n\+U\+Bucket)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a0fd16da2a89fb973e8e0e1bb6183264a}\label{class_c_addr_man_a0fd16da2a89fb973e8e0e1bb6183264a}} 
+void {\bfseries Make\+Tried} (\mbox{\hyperlink{class_c_addr_info}{C\+Addr\+Info}} \&info, int n\+Id, int n\+Origin)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a33ec6a4584cf4b17af821e6e35216459}\label{class_c_addr_man_a33ec6a4584cf4b17af821e6e35216459}} 
+void {\bfseries Good\+\_\+} (const \mbox{\hyperlink{class_c_service}{C\+Service}} \&addr, int64\+\_\+t n\+Time)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a9dd6df8b1904548a86054d19d4a90724}\label{class_c_addr_man_a9dd6df8b1904548a86054d19d4a90724}} 
+bool {\bfseries Add\+\_\+} (const \mbox{\hyperlink{class_c_address}{C\+Address}} \&addr, const \mbox{\hyperlink{class_c_net_addr}{C\+Net\+Addr}} \&source, int64\+\_\+t n\+Time\+Penalty)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_ab1a1bfa8b435ef139570c88de1a5245f}\label{class_c_addr_man_ab1a1bfa8b435ef139570c88de1a5245f}} 
+void {\bfseries Attempt\+\_\+} (const \mbox{\hyperlink{class_c_service}{C\+Service}} \&addr, int64\+\_\+t n\+Time)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_acd799cecb73e466d1369e6e2f23d3a8d}\label{class_c_addr_man_acd799cecb73e466d1369e6e2f23d3a8d}} 
+\mbox{\hyperlink{class_c_address}{C\+Address}} {\bfseries Select\+\_\+} (int n\+Unk\+Bias)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_aff86d04dc7c0e0afae3ff5998417db17}\label{class_c_addr_man_aff86d04dc7c0e0afae3ff5998417db17}} 
+void {\bfseries Get\+Addr\+\_\+} (std\+::vector$<$ \mbox{\hyperlink{class_c_address}{C\+Address}} $>$ \&v\+Addr)
+\item 
+\mbox{\Hypertarget{class_c_addr_man_a1ae72643c51293f3f3345e74ce0368ca}\label{class_c_addr_man_a1ae72643c51293f3f3345e74ce0368ca}} 
+void {\bfseries Connected\+\_\+} (const \mbox{\hyperlink{class_c_service}{C\+Service}} \&addr, int64\+\_\+t n\+Time)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stochastical (IP) address manager 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+addrman.\+h\item 
+addrman.\+cpp\end{DoxyCompactItemize}

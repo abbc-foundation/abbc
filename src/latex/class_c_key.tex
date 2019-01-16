@@ -1,0 +1,90 @@
+\hypertarget{class_c_key}{}\section{C\+Key Class Reference}
+\label{class_c_key}\index{CKey@{CKey}}
+
+
+{\ttfamily \#include $<$key.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_key_a99856683e0e4ca1953671bb7fd6047b9}\label{class_c_key_a99856683e0e4ca1953671bb7fd6047b9}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{class_c_key_a1a9b47d12e534954212efbbb4b166cdd}\label{class_c_key_a1a9b47d12e534954212efbbb4b166cdd}} 
+{\bfseries C\+Key} (const \mbox{\hyperlink{class_c_key}{C\+Key}} \&b)
+\item 
+\mbox{\Hypertarget{class_c_key_a5a1225c0c8e1faca60b951dc56cf0cad}\label{class_c_key_a5a1225c0c8e1faca60b951dc56cf0cad}} 
+\mbox{\hyperlink{class_c_key}{C\+Key}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_c_key}{C\+Key}} \&b)
+\item 
+\mbox{\Hypertarget{class_c_key_a05f11e652e8281d17314f11f5e54b0b3}\label{class_c_key_a05f11e652e8281d17314f11f5e54b0b3}} 
+bool {\bfseries Is\+Null} () const
+\item 
+\mbox{\Hypertarget{class_c_key_a96b017433a65335775cf3807d73f85ce}\label{class_c_key_a96b017433a65335775cf3807d73f85ce}} 
+bool {\bfseries Is\+Compressed} () const
+\item 
+\mbox{\Hypertarget{class_c_key_a9d12ed9d297e4286250fd7ea6b59e1a5}\label{class_c_key_a9d12ed9d297e4286250fd7ea6b59e1a5}} 
+void {\bfseries Make\+New\+Key} (bool f\+Compressed)
+\item 
+\mbox{\Hypertarget{class_c_key_a4f5fd24b068dbbe49a0f9e28d69fef5d}\label{class_c_key_a4f5fd24b068dbbe49a0f9e28d69fef5d}} 
+bool {\bfseries Set\+Priv\+Key} (const C\+Priv\+Key \&vch\+Priv\+Key)
+\item 
+\mbox{\Hypertarget{class_c_key_aac56b1d1732cc88ebde08c6fed6b1cfd}\label{class_c_key_aac56b1d1732cc88ebde08c6fed6b1cfd}} 
+bool {\bfseries Set\+Secret} (const C\+Secret \&vch\+Secret, bool f\+Compressed=false)
+\item 
+\mbox{\Hypertarget{class_c_key_a10fe8f3c2a97f7402120ec1f9beca3dd}\label{class_c_key_a10fe8f3c2a97f7402120ec1f9beca3dd}} 
+C\+Secret {\bfseries Get\+Secret} (bool \&f\+Compressed) const
+\item 
+\mbox{\Hypertarget{class_c_key_a91b6ecf71cc16e0b05ce79ec9276e729}\label{class_c_key_a91b6ecf71cc16e0b05ce79ec9276e729}} 
+C\+Priv\+Key {\bfseries Get\+Priv\+Key} () const
+\item 
+\mbox{\Hypertarget{class_c_key_a243517185c6bb7697640fe5d2639077f}\label{class_c_key_a243517185c6bb7697640fe5d2639077f}} 
+bool {\bfseries Set\+Pub\+Key} (const \mbox{\hyperlink{class_c_pub_key}{C\+Pub\+Key}} \&vch\+Pub\+Key)
+\item 
+\mbox{\Hypertarget{class_c_key_aa1085c59603a62db6ec776300f250337}\label{class_c_key_aa1085c59603a62db6ec776300f250337}} 
+\mbox{\hyperlink{class_c_pub_key}{C\+Pub\+Key}} {\bfseries Get\+Pub\+Key} () const
+\item 
+\mbox{\Hypertarget{class_c_key_a01a5bd0d698ae87715a3c3ed10322885}\label{class_c_key_a01a5bd0d698ae87715a3c3ed10322885}} 
+bool {\bfseries Sign} (\mbox{\hyperlink{classuint256}{uint256}} hash, std\+::vector$<$ unsigned char $>$ \&vch\+Sig)
+\item 
+\mbox{\Hypertarget{class_c_key_affc5fc73d9f24df5cf9ca43c54df66e5}\label{class_c_key_affc5fc73d9f24df5cf9ca43c54df66e5}} 
+bool {\bfseries Sign\+Compact} (\mbox{\hyperlink{classuint256}{uint256}} hash, std\+::vector$<$ unsigned char $>$ \&vch\+Sig)
+\item 
+\mbox{\Hypertarget{class_c_key_a244e1d93cb42ec6f064eb88593a80d61}\label{class_c_key_a244e1d93cb42ec6f064eb88593a80d61}} 
+bool {\bfseries Set\+Compact\+Signature} (\mbox{\hyperlink{classuint256}{uint256}} hash, const std\+::vector$<$ unsigned char $>$ \&vch\+Sig)
+\item 
+\mbox{\Hypertarget{class_c_key_a24d1bee17b43d9a5322a0827c3325e8a}\label{class_c_key_a24d1bee17b43d9a5322a0827c3325e8a}} 
+bool {\bfseries Verify} (\mbox{\hyperlink{classuint256}{uint256}} hash, const std\+::vector$<$ unsigned char $>$ \&vch\+Sig)
+\item 
+\mbox{\Hypertarget{class_c_key_a0bb1b5a5a011539b582b785330ef01ba}\label{class_c_key_a0bb1b5a5a011539b582b785330ef01ba}} 
+bool {\bfseries Verify\+Compact} (\mbox{\hyperlink{classuint256}{uint256}} hash, const std\+::vector$<$ unsigned char $>$ \&vch\+Sig)
+\item 
+\mbox{\Hypertarget{class_c_key_a1f368a65eb50efe5b4dff5a481795dec}\label{class_c_key_a1f368a65eb50efe5b4dff5a481795dec}} 
+bool {\bfseries Is\+Valid} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_key_ab1b7a4447a2d033865986bf4ab33c8d3}\label{class_c_key_ab1b7a4447a2d033865986bf4ab33c8d3}} 
+void {\bfseries Set\+Compressed\+Pub\+Key} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_key_aa00648b28abd6d8b1532abc4ae18942a}\label{class_c_key_aa00648b28abd6d8b1532abc4ae18942a}} 
+E\+C\+\_\+\+K\+EY $\ast$ {\bfseries pkey}
+\item 
+\mbox{\Hypertarget{class_c_key_a7129f82d574d193f5da394df91bd15fb}\label{class_c_key_a7129f82d574d193f5da394df91bd15fb}} 
+bool {\bfseries f\+Set}
+\item 
+\mbox{\Hypertarget{class_c_key_a9eb79b4a2375d58ac54d9a208a3e9be6}\label{class_c_key_a9eb79b4a2375d58ac54d9a208a3e9be6}} 
+bool {\bfseries f\+Compressed\+Pub\+Key}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An encapsulated Open\+S\+SL Elliptic Curve key (public and/or private) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+key.\+h\item 
+key.\+cpp\end{DoxyCompactItemize}

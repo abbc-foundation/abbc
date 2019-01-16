@@ -1,0 +1,67 @@
+\hypertarget{class_c_merkle_tx}{}\section{C\+Merkle\+Tx Class Reference}
+\label{class_c_merkle_tx}\index{CMerkleTx@{CMerkleTx}}
+
+
+{\ttfamily \#include $<$main.\+h$>$}
+
+Inheritance diagram for C\+Merkle\+Tx\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_merkle_tx}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_aaf4aeddb032c6bb34559fa443bfc3476}\label{class_c_merkle_tx_aaf4aeddb032c6bb34559fa443bfc3476}} 
+{\bfseries C\+Merkle\+Tx} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx\+In)
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_ac57628e321f98642976d06b6cc231162}\label{class_c_merkle_tx_ac57628e321f98642976d06b6cc231162}} 
+void {\bfseries Init} ()
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_a1cebdb140132c4af03a4cc264a21f118}\label{class_c_merkle_tx_a1cebdb140132c4af03a4cc264a21f118}} 
+{\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE} (n\+Ser\+Size+=Ser\+Read\+Write(s, $\ast$(\mbox{\hyperlink{class_c_transaction}{C\+Transaction}} $\ast$) this, n\+Type, n\+Version, ser\+\_\+action);n\+Version=this-\/$>$n\+Version;R\+E\+A\+D\+W\+R\+I\+TE(hash\+Block);R\+E\+A\+D\+W\+R\+I\+TE(v\+Merkle\+Branch);R\+E\+A\+D\+W\+R\+I\+TE(n\+Index);) int Set\+Merkle\+Branch(const \mbox{\hyperlink{class_c_block}{C\+Block}} $\ast$pblock
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_a5c341e09db0ee897cef3a1ceba9fddf8}\label{class_c_merkle_tx_a5c341e09db0ee897cef3a1ceba9fddf8}} 
+int {\bfseries Get\+Depth\+In\+Main\+Chain} (\mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$\&pindex\+Ret) const
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_a297197f9fc39553e527de4eb6c995004}\label{class_c_merkle_tx_a297197f9fc39553e527de4eb6c995004}} 
+int {\bfseries Get\+Depth\+In\+Main\+Chain} () const
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_ad4b3623fabf1924dba2a7694e3418e1e}\label{class_c_merkle_tx_ad4b3623fabf1924dba2a7694e3418e1e}} 
+bool {\bfseries Is\+In\+Main\+Chain} () const
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_a69ebd437f7b44169659c3527fe73b6ab}\label{class_c_merkle_tx_a69ebd437f7b44169659c3527fe73b6ab}} 
+int {\bfseries Get\+Blocks\+To\+Maturity} () const
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_ae4189c0dc060f1e6b1fb698c95577382}\label{class_c_merkle_tx_ae4189c0dc060f1e6b1fb698c95577382}} 
+bool {\bfseries Accept\+To\+Memory\+Pool} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb, bool f\+Check\+Inputs=true)
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_ab0d9bb868a004d5e0b5a41fff3784ee2}\label{class_c_merkle_tx_ab0d9bb868a004d5e0b5a41fff3784ee2}} 
+bool {\bfseries Accept\+To\+Memory\+Pool} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_a788ee54c14b6d9706eb3737404663238}\label{class_c_merkle_tx_a788ee54c14b6d9706eb3737404663238}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries hash\+Block}
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_a9ae6a408be914f486ebbb4161879ee69}\label{class_c_merkle_tx_a9ae6a408be914f486ebbb4161879ee69}} 
+std\+::vector$<$ \mbox{\hyperlink{classuint256}{uint256}} $>$ {\bfseries v\+Merkle\+Branch}
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_a829655e70702fdf97b6e534dd3227b0b}\label{class_c_merkle_tx_a829655e70702fdf97b6e534dd3227b0b}} 
+int {\bfseries n\+Index}
+\item 
+\mbox{\Hypertarget{class_c_merkle_tx_a3626572f7dbb86eb1c36a6570d740c7f}\label{class_c_merkle_tx_a3626572f7dbb86eb1c36a6570d740c7f}} 
+bool {\bfseries f\+Merkle\+Verified}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A transaction with a merkle branch linking it to the block chain. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+main.\+h\item 
+main.\+cpp\end{DoxyCompactItemize}

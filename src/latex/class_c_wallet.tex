@@ -1,0 +1,432 @@
+\hypertarget{class_c_wallet}{}\section{C\+Wallet Class Reference}
+\label{class_c_wallet}\index{CWallet@{CWallet}}
+
+
+{\ttfamily \#include $<$wallet.\+h$>$}
+
+Inheritance diagram for C\+Wallet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_wallet}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a0e21167a320a0ab8f15d0e11c6749a0e}\label{class_c_wallet_a0e21167a320a0ab8f15d0e11c6749a0e}} 
+typedef std\+::map$<$ unsigned int, \mbox{\hyperlink{class_c_master_key}{C\+Master\+Key}} $>$ {\bfseries Master\+Key\+Map}
+\item 
+\mbox{\Hypertarget{class_c_wallet_ad1557a7d200f70bc97319376a24c98a7}\label{class_c_wallet_ad1557a7d200f70bc97319376a24c98a7}} 
+typedef std\+::pair$<$ \mbox{\hyperlink{class_c_wallet_tx}{C\+Wallet\+Tx}} $\ast$, \mbox{\hyperlink{class_c_accounting_entry}{C\+Accounting\+Entry}} $\ast$ $>$ {\bfseries Tx\+Pair}
+\item 
+\mbox{\Hypertarget{class_c_wallet_ac35fb148c0967ad24db292435b54ad85}\label{class_c_wallet_ac35fb148c0967ad24db292435b54ad85}} 
+typedef std\+::multimap$<$ int64\+\_\+t, Tx\+Pair $>$ {\bfseries Tx\+Items}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a7d21c44ded441fedfc3754003ba087ce}\label{class_c_wallet_a7d21c44ded441fedfc3754003ba087ce}} 
+bool {\bfseries Mintable\+Coins} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_a43878f79c7bc54f7af0884aa1da07b59}\label{class_c_wallet_a43878f79c7bc54f7af0884aa1da07b59}} 
+{\bfseries C\+Wallet} (std\+::string str\+Wallet\+File\+In)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a83766f3d6797dba08c5ea136fa417c4d}\label{class_c_wallet_a83766f3d6797dba08c5ea136fa417c4d}} 
+bool {\bfseries Can\+Support\+Feature} (enum Wallet\+Feature wf)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a3bdc5f4aadcbecdca0610d7bc3987316}\label{class_c_wallet_a3bdc5f4aadcbecdca0610d7bc3987316}} 
+void {\bfseries Available\+Coins\+Min\+Conf} (std\+::vector$<$ \mbox{\hyperlink{class_c_output}{C\+Output}} $>$ \&v\+Coins, int n\+Conf) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a6c5034bf8fe04f46a43bfd7254559dff}\label{class_c_wallet_a6c5034bf8fe04f46a43bfd7254559dff}} 
+void {\bfseries Available\+Coins} (std\+::vector$<$ \mbox{\hyperlink{class_c_output}{C\+Output}} $>$ \&v\+Coins, bool f\+Only\+Confirmed=true, const \mbox{\hyperlink{class_c_coin_control}{C\+Coin\+Control}} $\ast$coin\+Control=N\+U\+LL) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a2c3d3a459f0482b7e7de693e743712eb}\label{class_c_wallet_a2c3d3a459f0482b7e7de693e743712eb}} 
+bool {\bfseries Select\+Coins\+Min\+Conf} (int64\+\_\+t n\+Target\+Value, unsigned int n\+Spend\+Time, int n\+Conf\+Mine, int n\+Conf\+Theirs, std\+::vector$<$ \mbox{\hyperlink{class_c_output}{C\+Output}} $>$ v\+Coins, std\+::set$<$ std\+::pair$<$ const \mbox{\hyperlink{class_c_wallet_tx}{C\+Wallet\+Tx}} $\ast$, unsigned int $>$ $>$ \&set\+Coins\+Ret, int64\+\_\+t \&n\+Value\+Ret) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a1fce4e041c8a34b24021b704595c9fe5}\label{class_c_wallet_a1fce4e041c8a34b24021b704595c9fe5}} 
+bool {\bfseries Select\+Coins\+Min\+Conf\+By\+Coin\+Age} (int64\+\_\+t n\+Target\+Value, unsigned int n\+Spend\+Time, int n\+Conf\+Mine, int n\+Conf\+Theirs, std\+::vector$<$ \mbox{\hyperlink{class_c_output}{C\+Output}} $>$ v\+Coins, std\+::set$<$ std\+::pair$<$ const \mbox{\hyperlink{class_c_wallet_tx}{C\+Wallet\+Tx}} $\ast$, unsigned int $>$ $>$ \&set\+Coins\+Ret, int64\+\_\+t \&n\+Value\+Ret) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a061fe7f54f80ec40f856b3e6365c2f4a}\label{class_c_wallet_a061fe7f54f80ec40f856b3e6365c2f4a}} 
+\mbox{\hyperlink{class_c_pub_key}{C\+Pub\+Key}} {\bfseries Generate\+New\+Key} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_a246d5532152777aeb04e7dfa01350b97}\label{class_c_wallet_a246d5532152777aeb04e7dfa01350b97}} 
+bool {\bfseries Add\+Key} (const \mbox{\hyperlink{class_c_key}{C\+Key}} \&key)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a94c9cdf069f0bb17c09aca0580271359}\label{class_c_wallet_a94c9cdf069f0bb17c09aca0580271359}} 
+bool {\bfseries Load\+Key} (const \mbox{\hyperlink{class_c_key}{C\+Key}} \&key)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a21e6580474514f838dfe1446890085a4}\label{class_c_wallet_a21e6580474514f838dfe1446890085a4}} 
+bool {\bfseries Load\+Key\+Metadata} (const \mbox{\hyperlink{class_c_pub_key}{C\+Pub\+Key}} \&pubkey, const \mbox{\hyperlink{class_c_key_metadata}{C\+Key\+Metadata}} \&metadata)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a88317da8dab80135b8db73e945e15b60}\label{class_c_wallet_a88317da8dab80135b8db73e945e15b60}} 
+bool {\bfseries Load\+Min\+Version} (int n\+Version)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a3e90096a903d49cd751f05fcdb7692ce}\label{class_c_wallet_a3e90096a903d49cd751f05fcdb7692ce}} 
+bool {\bfseries Add\+Crypted\+Key} (const \mbox{\hyperlink{class_c_pub_key}{C\+Pub\+Key}} \&vch\+Pub\+Key, const std\+::vector$<$ unsigned char $>$ \&vch\+Crypted\+Secret)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a01fbd78238d4ef833d059f12a7e8ac9f}\label{class_c_wallet_a01fbd78238d4ef833d059f12a7e8ac9f}} 
+bool {\bfseries Load\+Crypted\+Key} (const \mbox{\hyperlink{class_c_pub_key}{C\+Pub\+Key}} \&vch\+Pub\+Key, const std\+::vector$<$ unsigned char $>$ \&vch\+Crypted\+Secret)
+\item 
+\mbox{\Hypertarget{class_c_wallet_ad7edacad1c926bc4b7fe0dc1be95ce31}\label{class_c_wallet_ad7edacad1c926bc4b7fe0dc1be95ce31}} 
+bool {\bfseries Add\+C\+Script} (const \mbox{\hyperlink{class_c_script}{C\+Script}} \&redeem\+Script)
+\item 
+\mbox{\Hypertarget{class_c_wallet_adbf0abef9da8102f000d4afd5cec5bbc}\label{class_c_wallet_adbf0abef9da8102f000d4afd5cec5bbc}} 
+bool {\bfseries Load\+C\+Script} (const \mbox{\hyperlink{class_c_script}{C\+Script}} \&redeem\+Script)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a002c61a2b74f2c46063340c568e6cc1b}\label{class_c_wallet_a002c61a2b74f2c46063340c568e6cc1b}} 
+bool {\bfseries Unlock} (const Secure\+String \&str\+Wallet\+Passphrase)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a4abcec3066e7c462f4564c159fc15031}\label{class_c_wallet_a4abcec3066e7c462f4564c159fc15031}} 
+bool {\bfseries Change\+Wallet\+Passphrase} (const Secure\+String \&str\+Old\+Wallet\+Passphrase, const Secure\+String \&str\+New\+Wallet\+Passphrase)
+\item 
+\mbox{\Hypertarget{class_c_wallet_ab34fe5bf771619dcbe22a65f013e5469}\label{class_c_wallet_ab34fe5bf771619dcbe22a65f013e5469}} 
+bool {\bfseries Encrypt\+Wallet} (const Secure\+String \&str\+Wallet\+Passphrase)
+\item 
+\mbox{\Hypertarget{class_c_wallet_acb2fdaf647fa2d812d58e998848e681d}\label{class_c_wallet_acb2fdaf647fa2d812d58e998848e681d}} 
+void {\bfseries Get\+Key\+Birth\+Times} (std\+::map$<$ \mbox{\hyperlink{class_c_key_i_d}{C\+Key\+ID}}, int64\+\_\+t $>$ \&map\+Key\+Birth) const
+\item 
+int64\+\_\+t \mbox{\hyperlink{class_c_wallet_a7a76d68661e6879651ac0b11f2893e58}{Inc\+Order\+Pos\+Next}} (\mbox{\hyperlink{class_c_wallet_d_b}{C\+Wallet\+DB}} $\ast$pwalletdb=N\+U\+LL)
+\item 
+Tx\+Items \mbox{\hyperlink{class_c_wallet_a740572131004d77fbdb4617ec1aafb4a}{Ordered\+Tx\+Items}} (std\+::list$<$ \mbox{\hyperlink{class_c_accounting_entry}{C\+Accounting\+Entry}} $>$ \&acentries, std\+::string str\+Account=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{class_c_wallet_a26fd9a9f48230daf346500d2afb6115e}\label{class_c_wallet_a26fd9a9f48230daf346500d2afb6115e}} 
+void {\bfseries Mark\+Dirty} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_ad38e26cf88434b775fa85b1f62b87ee9}\label{class_c_wallet_ad38e26cf88434b775fa85b1f62b87ee9}} 
+bool {\bfseries Add\+To\+Wallet} (const \mbox{\hyperlink{class_c_wallet_tx}{C\+Wallet\+Tx}} \&wtx\+In)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a132a6b19a6bd190ab5b15da4104513af}\label{class_c_wallet_a132a6b19a6bd190ab5b15da4104513af}} 
+bool {\bfseries Add\+To\+Wallet\+If\+Involving\+Me} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx, const \mbox{\hyperlink{class_c_block}{C\+Block}} $\ast$pblock, bool f\+Update=false, bool f\+Find\+Block=false)
+\item 
+\mbox{\Hypertarget{class_c_wallet_adef08e0bbe4fc3ba8f0204223729289d}\label{class_c_wallet_adef08e0bbe4fc3ba8f0204223729289d}} 
+bool {\bfseries Erase\+From\+Wallet} (\mbox{\hyperlink{classuint256}{uint256}} hash)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a4220bc250d0d8087076197236139b8f8}\label{class_c_wallet_a4220bc250d0d8087076197236139b8f8}} 
+void {\bfseries Wallet\+Update\+Spent} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&prevout, bool f\+Block=false)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a979a17e80e4897ed1f4ae9a4be7c493c}\label{class_c_wallet_a979a17e80e4897ed1f4ae9a4be7c493c}} 
+int {\bfseries Scan\+For\+Wallet\+Transactions} (\mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex\+Start, bool f\+Update=false)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a4c4f404006f5fb2c1b9ae0ee738b1ab9}\label{class_c_wallet_a4c4f404006f5fb2c1b9ae0ee738b1ab9}} 
+int {\bfseries Scan\+For\+Wallet\+Transaction} (const \mbox{\hyperlink{classuint256}{uint256}} \&hash\+Tx)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a796c23450c8482e10e0c75ae5c1fa8ed}\label{class_c_wallet_a796c23450c8482e10e0c75ae5c1fa8ed}} 
+void {\bfseries Reaccept\+Wallet\+Transactions} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_ace33dcf23623d2036a38696bc3a94553}\label{class_c_wallet_ace33dcf23623d2036a38696bc3a94553}} 
+void {\bfseries Resend\+Wallet\+Transactions} (bool f\+Force=false)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a85ec3b3a325751400c756ac858c43e63}\label{class_c_wallet_a85ec3b3a325751400c756ac858c43e63}} 
+int64\+\_\+t {\bfseries Get\+Balance} () const
+\item 
+\mbox{\Hypertarget{class_c_wallet_af3dd77e5ac43afd9bbfedd8b59f22559}\label{class_c_wallet_af3dd77e5ac43afd9bbfedd8b59f22559}} 
+int64\+\_\+t {\bfseries Get\+Balance\+V1} () const
+\item 
+\mbox{\Hypertarget{class_c_wallet_aadf7bd2c2bc6e99e443e93d4b6173dde}\label{class_c_wallet_aadf7bd2c2bc6e99e443e93d4b6173dde}} 
+int64\+\_\+t {\bfseries Get\+Unconfirmed\+Balance} () const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a495d3f754ce0394890cf8d9a94361cf4}\label{class_c_wallet_a495d3f754ce0394890cf8d9a94361cf4}} 
+int64\+\_\+t {\bfseries Get\+Immature\+Balance} () const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a07ae1d514c793ae7c725b175ce45b13c}\label{class_c_wallet_a07ae1d514c793ae7c725b175ce45b13c}} 
+int64\+\_\+t {\bfseries Get\+Stake} () const
+\item 
+\mbox{\Hypertarget{class_c_wallet_aa9f9ec9a50d08cfd6a7897d7ba1b2d75}\label{class_c_wallet_aa9f9ec9a50d08cfd6a7897d7ba1b2d75}} 
+int64\+\_\+t {\bfseries Get\+New\+Mint} () const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a7dc39cec6ccacacfe71eea6210ee9f27}\label{class_c_wallet_a7dc39cec6ccacacfe71eea6210ee9f27}} 
+bool {\bfseries Stake\+For\+Charity} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_ace77e9b4ffcfdbc61a327d02168620a2}\label{class_c_wallet_ace77e9b4ffcfdbc61a327d02168620a2}} 
+bool {\bfseries Multi\+Send} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_a58c03c107801075caea4e4bd1058fcb6}\label{class_c_wallet_a58c03c107801075caea4e4bd1058fcb6}} 
+bool {\bfseries Create\+Transaction} (const std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_c_script}{C\+Script}}, int64\+\_\+t $>$ $>$ \&vec\+Send, \mbox{\hyperlink{class_c_wallet_tx}{C\+Wallet\+Tx}} \&wtx\+New, \mbox{\hyperlink{class_c_reserve_key}{C\+Reserve\+Key}} \&reservekey, int64\+\_\+t \&n\+Fee\+Ret, int n\+Split\+Block, const \mbox{\hyperlink{class_c_coin_control}{C\+Coin\+Control}} $\ast$coin\+Control=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a4b40b2b8fdb3fc9f848c5a8d3cae21ef}\label{class_c_wallet_a4b40b2b8fdb3fc9f848c5a8d3cae21ef}} 
+bool {\bfseries Create\+Transaction} (\mbox{\hyperlink{class_c_script}{C\+Script}} script\+Pub\+Key, int64\+\_\+t n\+Value, \mbox{\hyperlink{class_c_wallet_tx}{C\+Wallet\+Tx}} \&wtx\+New, \mbox{\hyperlink{class_c_reserve_key}{C\+Reserve\+Key}} \&reservekey, int64\+\_\+t \&n\+Fee\+Ret, const \mbox{\hyperlink{class_c_coin_control}{C\+Coin\+Control}} $\ast$coin\+Control=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{class_c_wallet_ac30e619488120651a6753195b77f3ad8}\label{class_c_wallet_ac30e619488120651a6753195b77f3ad8}} 
+bool {\bfseries Commit\+Transaction} (\mbox{\hyperlink{class_c_wallet_tx}{C\+Wallet\+Tx}} \&wtx\+New, \mbox{\hyperlink{class_c_reserve_key}{C\+Reserve\+Key}} \&reservekey)
+\item 
+\mbox{\Hypertarget{class_c_wallet_ad30f7bae633ec35e067d8e383be19534}\label{class_c_wallet_ad30f7bae633ec35e067d8e383be19534}} 
+bool {\bfseries Get\+Stake\+Weight} (const \mbox{\hyperlink{class_c_key_store}{C\+Key\+Store}} \&keystore, uint64\+\_\+t \&n\+Min\+Weight, uint64\+\_\+t \&n\+Max\+Weight, uint64\+\_\+t \&n\+Weight)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a99a70545583b75be7fe4bc35cc4ae454}\label{class_c_wallet_a99a70545583b75be7fe4bc35cc4ae454}} 
+bool {\bfseries Get\+Stake\+Weight2} (const \mbox{\hyperlink{class_c_key_store}{C\+Key\+Store}} \&keystore, uint64\+\_\+t \&n\+Min\+Weight, uint64\+\_\+t \&n\+Max\+Weight, uint64\+\_\+t \&n\+Weight, uint64\+\_\+t \&n\+Hours\+To\+Maturity, uint64\+\_\+t \&n\+Amount)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a8ec5f7e1dfd811ff2e3062f953a7eddc}\label{class_c_wallet_a8ec5f7e1dfd811ff2e3062f953a7eddc}} 
+bool {\bfseries Create\+Coin\+Stake} (const \mbox{\hyperlink{class_c_key_store}{C\+Key\+Store}} \&keystore, unsigned int n\+Bits, int64\+\_\+t n\+Search\+Interval, int64\+\_\+t n\+Fees, \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx\+New, \mbox{\hyperlink{class_c_key}{C\+Key}} \&key)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a84577c63ba9daf561fc54150c01316e0}\label{class_c_wallet_a84577c63ba9daf561fc54150c01316e0}} 
+bool {\bfseries Get\+Stake\+Weight\+From\+Value} (const int64\+\_\+t n\+Time, const int64\+\_\+t n\+Value, uint64\+\_\+t \&n\+Weight)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a9aed2013e3dbadade3a95d8a5fe0985f}\label{class_c_wallet_a9aed2013e3dbadade3a95d8a5fe0985f}} 
+std\+::string {\bfseries Send\+Money} (\mbox{\hyperlink{class_c_script}{C\+Script}} script\+Pub\+Key, int64\+\_\+t n\+Value, \mbox{\hyperlink{class_c_wallet_tx}{C\+Wallet\+Tx}} \&wtx\+New, bool f\+Ask\+Fee=false, bool f\+Allow\+Stake\+For\+Charity=false)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a7d706d0d4c4ed7b3cd79cd4f5f4ad722}\label{class_c_wallet_a7d706d0d4c4ed7b3cd79cd4f5f4ad722}} 
+std\+::string {\bfseries Send\+Money\+To\+Destination} (const C\+Tx\+Destination \&address, int64\+\_\+t n\+Value, \mbox{\hyperlink{class_c_wallet_tx}{C\+Wallet\+Tx}} \&wtx\+New, bool f\+Ask\+Fee=false, bool f\+Allow\+Stake\+For\+Charity=false)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a7353ba1e79fc4167fbfbe79b41698fa7}\label{class_c_wallet_a7353ba1e79fc4167fbfbe79b41698fa7}} 
+bool {\bfseries New\+Key\+Pool} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_aeeeca131336b2ec20cede9a2fccc203a}\label{class_c_wallet_aeeeca131336b2ec20cede9a2fccc203a}} 
+bool {\bfseries Top\+Up\+Key\+Pool} (unsigned int n\+Size=0)
+\item 
+\mbox{\Hypertarget{class_c_wallet_afecefdad197b3b021139cef1fd0e7a9b}\label{class_c_wallet_afecefdad197b3b021139cef1fd0e7a9b}} 
+int64\+\_\+t {\bfseries Add\+Reserve\+Key} (const \mbox{\hyperlink{class_c_key_pool}{C\+Key\+Pool}} \&keypool)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a9921854840668a1856998f041177dd2b}\label{class_c_wallet_a9921854840668a1856998f041177dd2b}} 
+void {\bfseries Reserve\+Key\+From\+Key\+Pool} (int64\+\_\+t \&n\+Index, \mbox{\hyperlink{class_c_key_pool}{C\+Key\+Pool}} \&keypool)
+\item 
+\mbox{\Hypertarget{class_c_wallet_ae460b8c824a1a6633615f95373e533f2}\label{class_c_wallet_ae460b8c824a1a6633615f95373e533f2}} 
+void {\bfseries Keep\+Key} (int64\+\_\+t n\+Index)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a4ee5566c2b4c8f4ed5cec628573b9275}\label{class_c_wallet_a4ee5566c2b4c8f4ed5cec628573b9275}} 
+void {\bfseries Return\+Key} (int64\+\_\+t n\+Index)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a9798a37f9715c5fd050fca22c67d92a4}\label{class_c_wallet_a9798a37f9715c5fd050fca22c67d92a4}} 
+bool {\bfseries Get\+Key\+From\+Pool} (\mbox{\hyperlink{class_c_pub_key}{C\+Pub\+Key}} \&key, bool f\+Allow\+Reuse=true)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a2555a9442e58b3c5593fef21f1b39d2d}\label{class_c_wallet_a2555a9442e58b3c5593fef21f1b39d2d}} 
+int64\+\_\+t {\bfseries Get\+Oldest\+Key\+Pool\+Time} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_aa182f6de943295062748ab42e64c9203}\label{class_c_wallet_aa182f6de943295062748ab42e64c9203}} 
+void {\bfseries Get\+All\+Reserve\+Keys} (std\+::set$<$ \mbox{\hyperlink{class_c_key_i_d}{C\+Key\+ID}} $>$ \&set\+Address) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a8eacbac6ad3697d90b98dfe02632f8ef}\label{class_c_wallet_a8eacbac6ad3697d90b98dfe02632f8ef}} 
+std\+::set$<$ std\+::set$<$ C\+Tx\+Destination $>$ $>$ {\bfseries Get\+Address\+Groupings} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_aadffdf5d0e2f2413cdcc2a39fc2e310d}\label{class_c_wallet_aadffdf5d0e2f2413cdcc2a39fc2e310d}} 
+std\+::map$<$ C\+Tx\+Destination, int64\+\_\+t $>$ {\bfseries Get\+Address\+Balances} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_a54b2373b83595e903dfc83e97fe43dfd}\label{class_c_wallet_a54b2373b83595e903dfc83e97fe43dfd}} 
+bool {\bfseries Is\+Mine} (const \mbox{\hyperlink{class_c_tx_in}{C\+Tx\+In}} \&txin) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_ab3686e8129c0fb21fa6be8a03d43d31d}\label{class_c_wallet_ab3686e8129c0fb21fa6be8a03d43d31d}} 
+int64\+\_\+t {\bfseries Get\+Debit} (const \mbox{\hyperlink{class_c_tx_in}{C\+Tx\+In}} \&txin) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a5bdb1842c7f5e1197d7bf73f2b494eef}\label{class_c_wallet_a5bdb1842c7f5e1197d7bf73f2b494eef}} 
+bool {\bfseries Is\+Mine} (const \mbox{\hyperlink{class_c_tx_out}{C\+Tx\+Out}} \&txout) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_ad4d149eacce4d494379d82a4062b80a7}\label{class_c_wallet_ad4d149eacce4d494379d82a4062b80a7}} 
+int64\+\_\+t {\bfseries Get\+Credit} (const \mbox{\hyperlink{class_c_tx_out}{C\+Tx\+Out}} \&txout) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_aba1c6108b7d2d3800dd487bab4c4c82e}\label{class_c_wallet_aba1c6108b7d2d3800dd487bab4c4c82e}} 
+bool {\bfseries Is\+Change} (const \mbox{\hyperlink{class_c_tx_out}{C\+Tx\+Out}} \&txout) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a4e65a1bd92e7c6057b16c15a3685ab8c}\label{class_c_wallet_a4e65a1bd92e7c6057b16c15a3685ab8c}} 
+int64\+\_\+t {\bfseries Get\+Change} (const \mbox{\hyperlink{class_c_tx_out}{C\+Tx\+Out}} \&txout) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_aacddba6a399e67f598d043a369d1ba7c}\label{class_c_wallet_aacddba6a399e67f598d043a369d1ba7c}} 
+bool {\bfseries Is\+Mine} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a553ae4c21d71d887c392ae7b147f9dd0}\label{class_c_wallet_a553ae4c21d71d887c392ae7b147f9dd0}} 
+bool {\bfseries Is\+From\+Me} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a156aa1ab790d1c2fae1bc378510e0f0d}\label{class_c_wallet_a156aa1ab790d1c2fae1bc378510e0f0d}} 
+int64\+\_\+t {\bfseries Get\+Debit} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a4a549b3a609d2af8970dc3ff0cb340f0}\label{class_c_wallet_a4a549b3a609d2af8970dc3ff0cb340f0}} 
+int64\+\_\+t {\bfseries Get\+Credit} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_aab8f4c37618d49e02abe96c9a14beda9}\label{class_c_wallet_aab8f4c37618d49e02abe96c9a14beda9}} 
+int64\+\_\+t {\bfseries Get\+Change} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx) const
+\item 
+\mbox{\Hypertarget{class_c_wallet_a1697a92171b4359f49b38aed643cf92b}\label{class_c_wallet_a1697a92171b4359f49b38aed643cf92b}} 
+void {\bfseries Set\+Best\+Chain} (const \mbox{\hyperlink{class_c_block_locator}{C\+Block\+Locator}} \&loc)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a5d7b244b8ed0cbe24233ee0b6ca3cae0}\label{class_c_wallet_a5d7b244b8ed0cbe24233ee0b6ca3cae0}} 
+D\+B\+Errors {\bfseries Load\+Wallet} (bool \&f\+First\+Run\+Ret)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a95d2dd3693db562aa11afbecf33e1276}\label{class_c_wallet_a95d2dd3693db562aa11afbecf33e1276}} 
+bool {\bfseries Set\+Address\+Book\+Name} (const C\+Tx\+Destination \&address, const std\+::string \&str\+Name)
+\item 
+\mbox{\Hypertarget{class_c_wallet_ac21ad6cf1271b08f0392259643ef5804}\label{class_c_wallet_ac21ad6cf1271b08f0392259643ef5804}} 
+bool {\bfseries Del\+Address\+Book\+Name} (const C\+Tx\+Destination \&address)
+\item 
+\mbox{\Hypertarget{class_c_wallet_aa1807c9ad3430a7c22c7eb0868c49403}\label{class_c_wallet_aa1807c9ad3430a7c22c7eb0868c49403}} 
+void {\bfseries Updated\+Transaction} (const \mbox{\hyperlink{classuint256}{uint256}} \&hash\+Tx)
+\item 
+\mbox{\Hypertarget{class_c_wallet_aa9e0d90b21e0bd041757589603d27e0a}\label{class_c_wallet_aa9e0d90b21e0bd041757589603d27e0a}} 
+void {\bfseries Print\+Wallet} (const \mbox{\hyperlink{class_c_block}{C\+Block}} \&block)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a1d8866fc8756a846058ea16c730b02e1}\label{class_c_wallet_a1d8866fc8756a846058ea16c730b02e1}} 
+void {\bfseries Inventory} (const \mbox{\hyperlink{classuint256}{uint256}} \&hash)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a9d7415d88d10655ff2188bc713dff662}\label{class_c_wallet_a9d7415d88d10655ff2188bc713dff662}} 
+unsigned int {\bfseries Get\+Key\+Pool\+Size} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_af11074b729403d68ee9e56f1a4654796}\label{class_c_wallet_af11074b729403d68ee9e56f1a4654796}} 
+bool {\bfseries Get\+Transaction} (const \mbox{\hyperlink{classuint256}{uint256}} \&hash\+Tx, \mbox{\hyperlink{class_c_wallet_tx}{C\+Wallet\+Tx}} \&wtx)
+\item 
+\mbox{\Hypertarget{class_c_wallet_ad54cca8f6e5e1d5535860f43ddb0246f}\label{class_c_wallet_ad54cca8f6e5e1d5535860f43ddb0246f}} 
+bool {\bfseries Set\+Default\+Key} (const \mbox{\hyperlink{class_c_pub_key}{C\+Pub\+Key}} \&vch\+Pub\+Key)
+\item 
+\mbox{\Hypertarget{class_c_wallet_afa48a3ee3096681650c8b9589579e9cb}\label{class_c_wallet_afa48a3ee3096681650c8b9589579e9cb}} 
+bool {\bfseries Set\+Min\+Version} (enum Wallet\+Feature, \mbox{\hyperlink{class_c_wallet_d_b}{C\+Wallet\+DB}} $\ast$pwalletdb\+In=N\+U\+LL, bool f\+Explicit=false)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a1bb7c19e7dd483f231f8077fb7fb942b}\label{class_c_wallet_a1bb7c19e7dd483f231f8077fb7fb942b}} 
+bool {\bfseries Set\+Max\+Version} (int n\+Version)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a3e37adcf1b2ad9fc02ae3e8da7c692c9}\label{class_c_wallet_a3e37adcf1b2ad9fc02ae3e8da7c692c9}} 
+int {\bfseries Get\+Version} ()
+\item 
+\mbox{\Hypertarget{class_c_wallet_a353254950063b83b6c96a0bfa96a7f4d}\label{class_c_wallet_a353254950063b83b6c96a0bfa96a7f4d}} 
+void {\bfseries Fix\+Spent\+Coins} (int \&n\+Mismatch\+Spent, int64\+\_\+t \&n\+Balance\+In\+Question, int \&n\+Orphans\+Found, bool f\+Check\+Only=false)
+\item 
+\mbox{\Hypertarget{class_c_wallet_a1782cbf0771e3c5dc440cbfd421a97b2}\label{class_c_wallet_a1782cbf0771e3c5dc440cbfd421a97b2}} 
+void {\bfseries Disable\+Transaction} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a4e6eb889f7638ed9695fdc0731581428}\label{class_c_wallet_a4e6eb889f7638ed9695fdc0731581428}} 
+C\+Critical\+Section {\bfseries cs\+\_\+wallet}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a1b2e285b4d7bd105c792941aa666249c}\label{class_c_wallet_a1b2e285b4d7bd105c792941aa666249c}} 
+bool {\bfseries f\+File\+Backed}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a3e886f3a3b20228770e082b3fc014fc7}\label{class_c_wallet_a3e886f3a3b20228770e082b3fc014fc7}} 
+std\+::string {\bfseries str\+Wallet\+File}
+\item 
+\mbox{\Hypertarget{class_c_wallet_aee0d38434fa6c6030acff3a678cce082}\label{class_c_wallet_aee0d38434fa6c6030acff3a678cce082}} 
+bool {\bfseries f\+Wallet\+Unlock\+Mint\+Only}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a835c4280fe4d91042eac0eadb65674e2}\label{class_c_wallet_a835c4280fe4d91042eac0eadb65674e2}} 
+bool {\bfseries f\+Stake\+For\+Charity}
+\item 
+\mbox{\Hypertarget{class_c_wallet_aebd98bfdd4ab20a7bfd0c881bb956cd9}\label{class_c_wallet_aebd98bfdd4ab20a7bfd0c881bb956cd9}} 
+int {\bfseries n\+Stake\+For\+Charity\+Percent}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a8673f711b34599e73e03eb03d3b29803}\label{class_c_wallet_a8673f711b34599e73e03eb03d3b29803}} 
+\mbox{\hyperlink{class_c_bitcoin_address}{C\+Bitcoin\+Address}} {\bfseries Stake\+For\+Charity\+Address}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a72dfdee9ef3d28f15e25f12321ea28bb}\label{class_c_wallet_a72dfdee9ef3d28f15e25f12321ea28bb}} 
+uint64\+\_\+t {\bfseries n\+Stake\+Split\+Threshold}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a9fcfad8c1580cbb246339d83ccd96b76}\label{class_c_wallet_a9fcfad8c1580cbb246339d83ccd96b76}} 
+int64\+\_\+t {\bfseries n\+Amount\+Selected}
+\item 
+\mbox{\Hypertarget{class_c_wallet_af855bf13364a7d0f24efe61f0ace251a}\label{class_c_wallet_af855bf13364a7d0f24efe61f0ace251a}} 
+std\+::string {\bfseries str\+Best\+Address}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a4b21040969aab6248c92be1dcea925e7}\label{class_c_wallet_a4b21040969aab6248c92be1dcea925e7}} 
+bool {\bfseries f\+Combine}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a4c7cc72849459fc27762775efbede146}\label{class_c_wallet_a4c7cc72849459fc27762775efbede146}} 
+bool {\bfseries f\+Split\+Block}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a44ee1b2e9ea4e3258ca7b1366f6b215a}\label{class_c_wallet_a44ee1b2e9ea4e3258ca7b1366f6b215a}} 
+unsigned int {\bfseries n\+Hash\+Drift}
+\item 
+\mbox{\Hypertarget{class_c_wallet_ab35577dacef10863f2c8623398341304}\label{class_c_wallet_ab35577dacef10863f2c8623398341304}} 
+unsigned int {\bfseries n\+Hash\+Interval}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a363fabb2b82d596c33e4fa3920a11c26}\label{class_c_wallet_a363fabb2b82d596c33e4fa3920a11c26}} 
+std\+::set$<$ int64\+\_\+t $>$ {\bfseries set\+Key\+Pool}
+\item 
+\mbox{\Hypertarget{class_c_wallet_acfd09bc5a2daee930f9f988efac8dbb7}\label{class_c_wallet_acfd09bc5a2daee930f9f988efac8dbb7}} 
+std\+::map$<$ \mbox{\hyperlink{class_c_key_i_d}{C\+Key\+ID}}, \mbox{\hyperlink{class_c_key_metadata}{C\+Key\+Metadata}} $>$ {\bfseries map\+Key\+Metadata}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a23c5badf56c297a95557af3073d4aa32}\label{class_c_wallet_a23c5badf56c297a95557af3073d4aa32}} 
+Master\+Key\+Map {\bfseries map\+Master\+Keys}
+\item 
+\mbox{\Hypertarget{class_c_wallet_aecfc6e4a6ea958ec369ca77d790271e3}\label{class_c_wallet_aecfc6e4a6ea958ec369ca77d790271e3}} 
+unsigned int {\bfseries n\+Master\+Key\+Max\+ID}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a8c8eda98d29dcf6220a922ee99dcd4e0}\label{class_c_wallet_a8c8eda98d29dcf6220a922ee99dcd4e0}} 
+std\+::vector$<$ std\+::pair$<$ std\+::string, int $>$ $>$ {\bfseries v\+Multi\+Send}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a8dacb7022870987a6810b63e0392c2fb}\label{class_c_wallet_a8dacb7022870987a6810b63e0392c2fb}} 
+bool {\bfseries f\+Multi\+Send}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a503e5719c1cc2cba7cc6c8ded780c5af}\label{class_c_wallet_a503e5719c1cc2cba7cc6c8ded780c5af}} 
+bool {\bfseries f\+Multi\+Send\+Notify}
+\item 
+\mbox{\Hypertarget{class_c_wallet_aacc3b001ea316cd1116a5defb86e262e}\label{class_c_wallet_aacc3b001ea316cd1116a5defb86e262e}} 
+std\+::string {\bfseries str\+Multi\+Send\+Change\+Address}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a600b9d6c61622bf8d21f41c9968cbdc4}\label{class_c_wallet_a600b9d6c61622bf8d21f41c9968cbdc4}} 
+int {\bfseries n\+Last\+Multi\+Send\+Height}
+\item 
+\mbox{\Hypertarget{class_c_wallet_afe3c81e6c9b2f2ba6708b472a59ef068}\label{class_c_wallet_afe3c81e6c9b2f2ba6708b472a59ef068}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries v\+Disabled\+Addresses}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a0b17f72f2170090f2de43a6c48af3214}\label{class_c_wallet_a0b17f72f2170090f2de43a6c48af3214}} 
+std\+::map$<$ \mbox{\hyperlink{classuint256}{uint256}}, \mbox{\hyperlink{class_c_wallet_tx}{C\+Wallet\+Tx}} $>$ {\bfseries map\+Wallet}
+\item 
+\mbox{\Hypertarget{class_c_wallet_af56cb17b19742506fc8d9449fc60884e}\label{class_c_wallet_af56cb17b19742506fc8d9449fc60884e}} 
+int64\+\_\+t {\bfseries n\+Order\+Pos\+Next}
+\item 
+\mbox{\Hypertarget{class_c_wallet_ade5f0fc0e722433b421c32f97bd873a8}\label{class_c_wallet_ade5f0fc0e722433b421c32f97bd873a8}} 
+std\+::map$<$ \mbox{\hyperlink{classuint256}{uint256}}, int $>$ {\bfseries map\+Request\+Count}
+\item 
+\mbox{\Hypertarget{class_c_wallet_afed31f2489c987e0f76233121ed84ab7}\label{class_c_wallet_afed31f2489c987e0f76233121ed84ab7}} 
+std\+::map$<$ C\+Tx\+Destination, std\+::string $>$ {\bfseries map\+Address\+Book}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a6d415899e530a91e6e28dd0fa4ecef8d}\label{class_c_wallet_a6d415899e530a91e6e28dd0fa4ecef8d}} 
+\mbox{\hyperlink{class_c_pub_key}{C\+Pub\+Key}} {\bfseries vch\+Default\+Key}
+\item 
+\mbox{\Hypertarget{class_c_wallet_a817c0d1034377a7bd70a714140a5a8ca}\label{class_c_wallet_a817c0d1034377a7bd70a714140a5a8ca}} 
+int64\+\_\+t {\bfseries n\+Time\+First\+Key}
+\item 
+boost\+::signals2\+::signal$<$ void(\mbox{\hyperlink{class_c_wallet}{C\+Wallet}} $\ast$wallet, const C\+Tx\+Destination \&address, const std\+::string \&label, bool is\+Mine, Change\+Type status)$>$ \mbox{\hyperlink{class_c_wallet_a86f4563888686dd3dbdee406f74f8d3f}{Notify\+Address\+Book\+Changed}}
+\item 
+boost\+::signals2\+::signal$<$ void(\mbox{\hyperlink{class_c_wallet}{C\+Wallet}} $\ast$wallet, const \mbox{\hyperlink{classuint256}{uint256}} \&hash\+Tx, Change\+Type status)$>$ \mbox{\hyperlink{class_c_wallet_acd26616ef558afbc5bc62d72603957fc}{Notify\+Transaction\+Changed}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{class_c_wallet}{C\+Wallet}} is an extension of a keystore, which also maintains a set of transactions and balances, and provides the ability to create new transactions. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_wallet_a7a76d68661e6879651ac0b11f2893e58}\label{class_c_wallet_a7a76d68661e6879651ac0b11f2893e58}} 
+\index{CWallet@{CWallet}!IncOrderPosNext@{IncOrderPosNext}}
+\index{IncOrderPosNext@{IncOrderPosNext}!CWallet@{CWallet}}
+\subsubsection{\texorpdfstring{IncOrderPosNext()}{IncOrderPosNext()}}
+{\footnotesize\ttfamily int64\+\_\+t C\+Wallet\+::\+Inc\+Order\+Pos\+Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_wallet_d_b}{C\+Wallet\+DB}} $\ast$}]{pwalletdb = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Increment the next transaction order id \begin{DoxyReturn}{Returns}
+next transaction order id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_wallet_a740572131004d77fbdb4617ec1aafb4a}\label{class_c_wallet_a740572131004d77fbdb4617ec1aafb4a}} 
+\index{CWallet@{CWallet}!OrderedTxItems@{OrderedTxItems}}
+\index{OrderedTxItems@{OrderedTxItems}!CWallet@{CWallet}}
+\subsubsection{\texorpdfstring{OrderedTxItems()}{OrderedTxItems()}}
+{\footnotesize\ttfamily C\+Wallet\+::\+Tx\+Items C\+Wallet\+::\+Ordered\+Tx\+Items (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{class_c_accounting_entry}{C\+Accounting\+Entry}} $>$ \&}]{acentries,  }\item[{std\+::string}]{str\+Account = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Get the wallet\textquotesingle{}s activity log \begin{DoxyReturn}{Returns}
+multimap of ordered transactions and accounting entries 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Returned pointers are {\itshape only} valid within the scope of passed acentries 
+\end{DoxyWarning}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_wallet_a86f4563888686dd3dbdee406f74f8d3f}\label{class_c_wallet_a86f4563888686dd3dbdee406f74f8d3f}} 
+\index{CWallet@{CWallet}!NotifyAddressBookChanged@{NotifyAddressBookChanged}}
+\index{NotifyAddressBookChanged@{NotifyAddressBookChanged}!CWallet@{CWallet}}
+\subsubsection{\texorpdfstring{NotifyAddressBookChanged}{NotifyAddressBookChanged}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (\mbox{\hyperlink{class_c_wallet}{C\+Wallet}} $\ast$wallet, const C\+Tx\+Destination \&address, const std\+::string \&label, bool is\+Mine, Change\+Type status)$>$ C\+Wallet\+::\+Notify\+Address\+Book\+Changed}
+
+Address book entry changed. \begin{DoxyNote}{Note}
+called with lock cs\+\_\+wallet held. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_c_wallet_acd26616ef558afbc5bc62d72603957fc}\label{class_c_wallet_acd26616ef558afbc5bc62d72603957fc}} 
+\index{CWallet@{CWallet}!NotifyTransactionChanged@{NotifyTransactionChanged}}
+\index{NotifyTransactionChanged@{NotifyTransactionChanged}!CWallet@{CWallet}}
+\subsubsection{\texorpdfstring{NotifyTransactionChanged}{NotifyTransactionChanged}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (\mbox{\hyperlink{class_c_wallet}{C\+Wallet}} $\ast$wallet, const \mbox{\hyperlink{classuint256}{uint256}} \&hash\+Tx, Change\+Type status)$>$ C\+Wallet\+::\+Notify\+Transaction\+Changed}
+
+Wallet transaction added, removed or updated. \begin{DoxyNote}{Note}
+called with lock cs\+\_\+wallet held. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+wallet.\+h\item 
+wallet.\+cpp\end{DoxyCompactItemize}

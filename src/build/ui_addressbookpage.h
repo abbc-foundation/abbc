@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'addressbookpage.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,19 +10,18 @@
 #define UI_ADDRESSBOOKPAGE_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QDialogButtonBox>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QTableView>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtGui/QIcon>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -150,33 +149,33 @@ public:
 
     void retranslateUi(QWidget *AddressBookPage)
     {
-        AddressBookPage->setWindowTitle(QApplication::translate("AddressBookPage", "Address Book", 0, QApplication::UnicodeUTF8));
-        labelExplanation->setText(QApplication::translate("AddressBookPage", "These are your ABBCCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.", 0, QApplication::UnicodeUTF8));
+        AddressBookPage->setWindowTitle(QApplication::translate("AddressBookPage", "Address Book", nullptr));
+        labelExplanation->setText(QApplication::translate("AddressBookPage", "These are your ABBCCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.", nullptr));
 #ifndef QT_NO_TOOLTIP
-        tableView->setToolTip(QApplication::translate("AddressBookPage", "Double-click to edit address or label", 0, QApplication::UnicodeUTF8));
+        tableView->setToolTip(QApplication::translate("AddressBookPage", "Double-click to edit address or label", nullptr));
 #endif // QT_NO_TOOLTIP
-        deleteCheckBox->setText(QApplication::translate("AddressBookPage", "Enable Deletion of Receiving Address - WARNING YOU WILL LOSE KEYS TO ANY COINS AT THE ADDRESS, BACK UP WALLET FIRST!", 0, QApplication::UnicodeUTF8));
+        deleteCheckBox->setText(QApplication::translate("AddressBookPage", "Enable Deletion of Receiving Address - WARNING YOU WILL LOSE KEYS TO ANY COINS AT THE ADDRESS, BACK UP WALLET FIRST!", nullptr));
 #ifndef QT_NO_TOOLTIP
-        newAddressButton->setToolTip(QApplication::translate("AddressBookPage", "Create a new address", 0, QApplication::UnicodeUTF8));
+        newAddressButton->setToolTip(QApplication::translate("AddressBookPage", "Create a new address", nullptr));
 #endif // QT_NO_TOOLTIP
-        newAddressButton->setText(QApplication::translate("AddressBookPage", "&New Address", 0, QApplication::UnicodeUTF8));
+        newAddressButton->setText(QApplication::translate("AddressBookPage", "&New Address", nullptr));
 #ifndef QT_NO_TOOLTIP
-        copyToClipboard->setToolTip(QApplication::translate("AddressBookPage", "Copy the currently selected address to the system clipboard", 0, QApplication::UnicodeUTF8));
+        copyToClipboard->setToolTip(QApplication::translate("AddressBookPage", "Copy the currently selected address to the system clipboard", nullptr));
 #endif // QT_NO_TOOLTIP
-        copyToClipboard->setText(QApplication::translate("AddressBookPage", "&Copy Address", 0, QApplication::UnicodeUTF8));
-        showQRCode->setText(QApplication::translate("AddressBookPage", "Show &QR Code", 0, QApplication::UnicodeUTF8));
+        copyToClipboard->setText(QApplication::translate("AddressBookPage", "&Copy Address", nullptr));
+        showQRCode->setText(QApplication::translate("AddressBookPage", "Show &QR Code", nullptr));
 #ifndef QT_NO_TOOLTIP
-        signMessage->setToolTip(QApplication::translate("AddressBookPage", "Sign a message to prove you own a ABBCCoin address", 0, QApplication::UnicodeUTF8));
+        signMessage->setToolTip(QApplication::translate("AddressBookPage", "Sign a message to prove you own a ABBCCoin address", nullptr));
 #endif // QT_NO_TOOLTIP
-        signMessage->setText(QApplication::translate("AddressBookPage", "Sign &Message", 0, QApplication::UnicodeUTF8));
+        signMessage->setText(QApplication::translate("AddressBookPage", "Sign &Message", nullptr));
 #ifndef QT_NO_TOOLTIP
-        verifyMessage->setToolTip(QApplication::translate("AddressBookPage", "Verify a message to ensure it was signed with a specified ABBCCoin address", 0, QApplication::UnicodeUTF8));
+        verifyMessage->setToolTip(QApplication::translate("AddressBookPage", "Verify a message to ensure it was signed with a specified ABBCCoin address", nullptr));
 #endif // QT_NO_TOOLTIP
-        verifyMessage->setText(QApplication::translate("AddressBookPage", "&Verify Message", 0, QApplication::UnicodeUTF8));
+        verifyMessage->setText(QApplication::translate("AddressBookPage", "&Verify Message", nullptr));
 #ifndef QT_NO_TOOLTIP
-        deleteButton->setToolTip(QApplication::translate("AddressBookPage", "Delete the currently selected address from the list", 0, QApplication::UnicodeUTF8));
+        deleteButton->setToolTip(QApplication::translate("AddressBookPage", "Delete the currently selected address from the list", nullptr));
 #endif // QT_NO_TOOLTIP
-        deleteButton->setText(QApplication::translate("AddressBookPage", "&Delete", 0, QApplication::UnicodeUTF8));
+        deleteButton->setText(QApplication::translate("AddressBookPage", "&Delete", nullptr));
     } // retranslateUi
 
 };

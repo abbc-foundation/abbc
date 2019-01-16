@@ -1,0 +1,69 @@
+\hypertarget{class_c_basic_key_store}{}\section{C\+Basic\+Key\+Store Class Reference}
+\label{class_c_basic_key_store}\index{CBasicKeyStore@{CBasicKeyStore}}
+
+
+{\ttfamily \#include $<$keystore.\+h$>$}
+
+Inheritance diagram for C\+Basic\+Key\+Store\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_basic_key_store}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_a07950fc7f9bba7f2460d89a882ac544b}\label{class_c_basic_key_store_a07950fc7f9bba7f2460d89a882ac544b}} 
+bool {\bfseries Add\+Key} (const \mbox{\hyperlink{class_c_key}{C\+Key}} \&key)
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_afc99762e3e58f93e198d85ecfdf5804a}\label{class_c_basic_key_store_afc99762e3e58f93e198d85ecfdf5804a}} 
+bool {\bfseries Have\+Key} (const \mbox{\hyperlink{class_c_key_i_d}{C\+Key\+ID}} \&address) const
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_a41f3895021dae008582ceb55a98b0891}\label{class_c_basic_key_store_a41f3895021dae008582ceb55a98b0891}} 
+void {\bfseries Get\+Keys} (std\+::set$<$ \mbox{\hyperlink{class_c_key_i_d}{C\+Key\+ID}} $>$ \&set\+Address) const
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_a69328ee642e4234922356f59876e956d}\label{class_c_basic_key_store_a69328ee642e4234922356f59876e956d}} 
+bool {\bfseries Get\+Key} (const \mbox{\hyperlink{class_c_key_i_d}{C\+Key\+ID}} \&address, \mbox{\hyperlink{class_c_key}{C\+Key}} \&key\+Out) const
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_a56249ce3540398999cd397eeb662e836}\label{class_c_basic_key_store_a56249ce3540398999cd397eeb662e836}} 
+virtual bool {\bfseries Add\+C\+Script} (const \mbox{\hyperlink{class_c_script}{C\+Script}} \&redeem\+Script)
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_a499e0a1d117b43e3200883d88a400bf6}\label{class_c_basic_key_store_a499e0a1d117b43e3200883d88a400bf6}} 
+virtual bool {\bfseries Have\+C\+Script} (const \mbox{\hyperlink{class_c_script_i_d}{C\+Script\+ID}} \&hash) const
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_a975abe0f2efa3e0e2270d3714d73010a}\label{class_c_basic_key_store_a975abe0f2efa3e0e2270d3714d73010a}} 
+virtual bool {\bfseries Get\+C\+Script} (const \mbox{\hyperlink{class_c_script_i_d}{C\+Script\+ID}} \&hash, \mbox{\hyperlink{class_c_script}{C\+Script}} \&redeem\+Script\+Out) const
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_a2417d0ae4e654c88cf47a1ba5f71b5a3}\label{class_c_basic_key_store_a2417d0ae4e654c88cf47a1ba5f71b5a3}} 
+virtual bool {\bfseries Add\+Watch\+Only} (const \mbox{\hyperlink{class_c_script}{C\+Script}} \&dest)
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_a20c0eccf943d6d16e24c6e2fb63fb527}\label{class_c_basic_key_store_a20c0eccf943d6d16e24c6e2fb63fb527}} 
+virtual bool {\bfseries Remove\+Watch\+Only} (const \mbox{\hyperlink{class_c_script}{C\+Script}} \&dest)
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_a3ce143be2a1d3e752972614cf7fb7efb}\label{class_c_basic_key_store_a3ce143be2a1d3e752972614cf7fb7efb}} 
+virtual bool {\bfseries Have\+Watch\+Only} (const \mbox{\hyperlink{class_c_script}{C\+Script}} \&dest) const
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_aa6686d4477a180096436e7d491142f10}\label{class_c_basic_key_store_aa6686d4477a180096436e7d491142f10}} 
+virtual bool {\bfseries Have\+Watch\+Only} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_ac520003e5c3d863bf71fde247c6e0672}\label{class_c_basic_key_store_ac520003e5c3d863bf71fde247c6e0672}} 
+Key\+Map {\bfseries map\+Keys}
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_a8e9fa81382129c1535a0ee7b0d9c8f3b}\label{class_c_basic_key_store_a8e9fa81382129c1535a0ee7b0d9c8f3b}} 
+Script\+Map {\bfseries map\+Scripts}
+\item 
+\mbox{\Hypertarget{class_c_basic_key_store_ac3391cb491e315403ad9af6afd1313da}\label{class_c_basic_key_store_ac3391cb491e315403ad9af6afd1313da}} 
+Watch\+Only\+Set {\bfseries set\+Watch\+Only}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic key store, that keeps keys in an address-\/$>$secret map 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+keystore.\+h\item 
+keystore.\+cpp\end{DoxyCompactItemize}

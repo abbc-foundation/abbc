@@ -1,0 +1,143 @@
+\hypertarget{class_c_block}{}\section{C\+Block Class Reference}
+\label{class_c_block}\index{CBlock@{CBlock}}
+
+
+{\ttfamily \#include $<$main.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_block_a5e14734cd6352731b707f047781679e4}\label{class_c_block_a5e14734cd6352731b707f047781679e4}} 
+bool {\bfseries DoS} (int n\+Do\+S\+In, bool f\+In) const
+\item 
+\mbox{\Hypertarget{class_c_block_ac9e1497ee4362b15db0091154a3f4f7b}\label{class_c_block_ac9e1497ee4362b15db0091154a3f4f7b}} 
+{\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE} (R\+E\+A\+D\+W\+R\+I\+TE(this-\/$>$n\+Version);n\+Version=this-\/$>$n\+Version;R\+E\+A\+D\+W\+R\+I\+TE(hash\+Prev\+Block);R\+E\+A\+D\+W\+R\+I\+TE(hash\+Merkle\+Root);R\+E\+A\+D\+W\+R\+I\+TE(n\+Time);R\+E\+A\+D\+W\+R\+I\+TE(n\+Bits);R\+E\+A\+D\+W\+R\+I\+TE(n\+Nonce);if(!(n\+Type \&(S\+E\+R\+\_\+\+G\+E\+T\+H\+A\+SH$\vert$S\+E\+R\+\_\+\+B\+L\+O\+C\+K\+H\+E\+A\+D\+E\+R\+O\+N\+LY))) \{ R\+E\+A\+D\+W\+R\+I\+TE(vtx);R\+E\+A\+D\+W\+R\+I\+TE(vch\+Block\+Sig);\} else if(f\+Read) \{ const\+\_\+cast$<$ \mbox{\hyperlink{class_c_block}{C\+Block}} $\ast$ $>$(this) -\/$>$vtx.\+clear();const\+\_\+cast$<$ \mbox{\hyperlink{class_c_block}{C\+Block}} $\ast$ $>$(this) -\/$>$vch\+Block\+Sig.\+clear();\}) void Set\+Null()
+\item 
+\mbox{\Hypertarget{class_c_block_a2d5c3f93c0a699b003a55347d8b242cb}\label{class_c_block_a2d5c3f93c0a699b003a55347d8b242cb}} 
+bool {\bfseries Is\+Null} () const
+\item 
+\mbox{\Hypertarget{class_c_block_a681acf1fa72ec2ed6c83ea5afc14e0f3}\label{class_c_block_a681acf1fa72ec2ed6c83ea5afc14e0f3}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries Get\+Hash} () const
+\item 
+\mbox{\Hypertarget{class_c_block_a4fa8201373b08e0ee4b4c678b8f2c4aa}\label{class_c_block_a4fa8201373b08e0ee4b4c678b8f2c4aa}} 
+int64\+\_\+t {\bfseries Get\+Block\+Time} () const
+\item 
+\mbox{\Hypertarget{class_c_block_a71bb61e73b1ab6b7d4e1867a0d3a2cf8}\label{class_c_block_a71bb61e73b1ab6b7d4e1867a0d3a2cf8}} 
+void {\bfseries Update\+Time} (const \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex\+Prev)
+\item 
+\mbox{\Hypertarget{class_c_block_a7a7d6c0d7acfee68e90bb536d2772e34}\label{class_c_block_a7a7d6c0d7acfee68e90bb536d2772e34}} 
+unsigned int {\bfseries Get\+Stake\+Entropy\+Bit} () const
+\item 
+\mbox{\Hypertarget{class_c_block_ab70bdac61ff8eca54fd29c835cb4f025}\label{class_c_block_ab70bdac61ff8eca54fd29c835cb4f025}} 
+bool {\bfseries Is\+Proof\+Of\+Stake} () const
+\item 
+\mbox{\Hypertarget{class_c_block_ad3936367b1b6d5289bb60b42967156ea}\label{class_c_block_ad3936367b1b6d5289bb60b42967156ea}} 
+bool {\bfseries Is\+Proof\+Of\+Work} () const
+\item 
+\mbox{\Hypertarget{class_c_block_ab3e641daba5dd1a50fafc450ea8b2230}\label{class_c_block_ab3e641daba5dd1a50fafc450ea8b2230}} 
+std\+::pair$<$ \mbox{\hyperlink{class_c_out_point}{C\+Out\+Point}}, unsigned int $>$ {\bfseries Get\+Proof\+Of\+Stake} () const
+\item 
+\mbox{\Hypertarget{class_c_block_af31184f09c937d798f7ae9ce4a468067}\label{class_c_block_af31184f09c937d798f7ae9ce4a468067}} 
+int64\+\_\+t {\bfseries Get\+Max\+Transaction\+Time} () const
+\item 
+\mbox{\Hypertarget{class_c_block_ad943ecec57cdf564937eee7becaecb88}\label{class_c_block_ad943ecec57cdf564937eee7becaecb88}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries Build\+Merkle\+Tree} () const
+\item 
+\mbox{\Hypertarget{class_c_block_a7a3b82a1d7c641b20f4546f90533bca8}\label{class_c_block_a7a3b82a1d7c641b20f4546f90533bca8}} 
+std\+::vector$<$ \mbox{\hyperlink{classuint256}{uint256}} $>$ {\bfseries Get\+Merkle\+Branch} (int n\+Index) const
+\item 
+\mbox{\Hypertarget{class_c_block_a606df2cab7dc67e5dd11b157d288cf2b}\label{class_c_block_a606df2cab7dc67e5dd11b157d288cf2b}} 
+bool {\bfseries Write\+To\+Disk} (unsigned int \&n\+File\+Ret, unsigned int \&n\+Block\+Pos\+Ret)
+\item 
+\mbox{\Hypertarget{class_c_block_a77a1b1e9902e1e557d762f5a5f325cd8}\label{class_c_block_a77a1b1e9902e1e557d762f5a5f325cd8}} 
+bool {\bfseries Read\+From\+Disk} (unsigned int n\+File, unsigned int n\+Block\+Pos, bool f\+Read\+Transactions=true)
+\item 
+\mbox{\Hypertarget{class_c_block_a0507a658d82d5e4ec55d550460e06ff9}\label{class_c_block_a0507a658d82d5e4ec55d550460e06ff9}} 
+void {\bfseries print} () const
+\item 
+\mbox{\Hypertarget{class_c_block_a9532c041d24701a338ea5c91008b72aa}\label{class_c_block_a9532c041d24701a338ea5c91008b72aa}} 
+bool {\bfseries Disconnect\+Block} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb, \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex)
+\item 
+\mbox{\Hypertarget{class_c_block_a1ae149d97c7b7eadf48f5cea934b6217}\label{class_c_block_a1ae149d97c7b7eadf48f5cea934b6217}} 
+bool {\bfseries Connect\+Block} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb, \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex, bool f\+Just\+Check=false)
+\item 
+\mbox{\Hypertarget{class_c_block_ad31bb55c819816d722ebc0980d85cfc7}\label{class_c_block_ad31bb55c819816d722ebc0980d85cfc7}} 
+bool {\bfseries Read\+From\+Disk} (const \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex, bool f\+Read\+Transactions=true)
+\item 
+\mbox{\Hypertarget{class_c_block_a6e308b2d75d1cfc4a75eda36feb60ca1}\label{class_c_block_a6e308b2d75d1cfc4a75eda36feb60ca1}} 
+bool {\bfseries Set\+Best\+Chain} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb, \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex\+New)
+\item 
+\mbox{\Hypertarget{class_c_block_a52cbb86570e849a9dee6447e88b35875}\label{class_c_block_a52cbb86570e849a9dee6447e88b35875}} 
+bool {\bfseries Add\+To\+Block\+Index} (unsigned int n\+File, unsigned int n\+Block\+Pos, const \mbox{\hyperlink{classuint256}{uint256}} \&hash\+Proof\+Of\+Stake)
+\item 
+\mbox{\Hypertarget{class_c_block_a423d19b5a2bf03e26cd412976df3ab20}\label{class_c_block_a423d19b5a2bf03e26cd412976df3ab20}} 
+bool {\bfseries Check\+Block} (bool f\+Check\+P\+OW=true, bool f\+Check\+Merkle\+Root=true, bool f\+Check\+Sig=true) const
+\item 
+\mbox{\Hypertarget{class_c_block_a3f990a713116bd15c1f221c88b012ccf}\label{class_c_block_a3f990a713116bd15c1f221c88b012ccf}} 
+bool {\bfseries Accept\+Block} ()
+\item 
+\mbox{\Hypertarget{class_c_block_a3a266ee274b641c5f48e2fa7aeec8d1d}\label{class_c_block_a3a266ee274b641c5f48e2fa7aeec8d1d}} 
+bool {\bfseries Get\+Coin\+Age} (uint64\+\_\+t \&n\+Coin\+Age) const
+\item 
+\mbox{\Hypertarget{class_c_block_a12f11b1abfd360100eb619c3880ff752}\label{class_c_block_a12f11b1abfd360100eb619c3880ff752}} 
+bool {\bfseries Sign\+Block} (\mbox{\hyperlink{class_c_wallet}{C\+Wallet}} \&keystore, int64\+\_\+t n\+Fees)
+\item 
+\mbox{\Hypertarget{class_c_block_a2ff0deeda85c23cde1a78365d6fc6c2c}\label{class_c_block_a2ff0deeda85c23cde1a78365d6fc6c2c}} 
+bool {\bfseries Check\+Block\+Signature} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_block_ab0d596c51fb317e3cb6f444015a652a5}\label{class_c_block_ab0d596c51fb317e3cb6f444015a652a5}} 
+static \mbox{\hyperlink{classuint256}{uint256}} {\bfseries Check\+Merkle\+Branch} (\mbox{\hyperlink{classuint256}{uint256}} hash, const std\+::vector$<$ \mbox{\hyperlink{classuint256}{uint256}} $>$ \&v\+Merkle\+Branch, int n\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_block_a6f7ce520ce3c63adc6216f9d41d04476}\label{class_c_block_a6f7ce520ce3c63adc6216f9d41d04476}} 
+int {\bfseries n\+Version}
+\item 
+\mbox{\Hypertarget{class_c_block_ab426862984450319201948c7a856bd09}\label{class_c_block_ab426862984450319201948c7a856bd09}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries hash\+Prev\+Block}
+\item 
+\mbox{\Hypertarget{class_c_block_a42d757b4dd51d517f7877d2a5ece94b4}\label{class_c_block_a42d757b4dd51d517f7877d2a5ece94b4}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries hash\+Merkle\+Root}
+\item 
+\mbox{\Hypertarget{class_c_block_af1a91982c7a291952a279ee341ee1713}\label{class_c_block_af1a91982c7a291952a279ee341ee1713}} 
+unsigned int {\bfseries n\+Time}
+\item 
+\mbox{\Hypertarget{class_c_block_a4b978e9c3c8d0edd8a32031348b4086f}\label{class_c_block_a4b978e9c3c8d0edd8a32031348b4086f}} 
+unsigned int {\bfseries n\+Bits}
+\item 
+\mbox{\Hypertarget{class_c_block_afd78e38be105c00158198be96e1b6f5d}\label{class_c_block_afd78e38be105c00158198be96e1b6f5d}} 
+unsigned int {\bfseries n\+Nonce}
+\item 
+\mbox{\Hypertarget{class_c_block_a9b6508d662722775f3029b980b382b66}\label{class_c_block_a9b6508d662722775f3029b980b382b66}} 
+std\+::vector$<$ \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} $>$ {\bfseries vtx}
+\item 
+\mbox{\Hypertarget{class_c_block_a78f882e24c4416f42039cbc6a67faf6e}\label{class_c_block_a78f882e24c4416f42039cbc6a67faf6e}} 
+std\+::vector$<$ unsigned char $>$ {\bfseries vch\+Block\+Sig}
+\item 
+\mbox{\Hypertarget{class_c_block_a019ae6579acd08974653d3f443dd398a}\label{class_c_block_a019ae6579acd08974653d3f443dd398a}} 
+std\+::vector$<$ \mbox{\hyperlink{classuint256}{uint256}} $>$ {\bfseries v\+Merkle\+Tree}
+\item 
+\mbox{\Hypertarget{class_c_block_a5964dd84b7e1a9585422bed6ad5541ef}\label{class_c_block_a5964dd84b7e1a9585422bed6ad5541ef}} 
+int {\bfseries n\+DoS}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_block_a176c687e9b513ebad07954f2be8b0f6d}\label{class_c_block_a176c687e9b513ebad07954f2be8b0f6d}} 
+static const int {\bfseries C\+U\+R\+R\+E\+N\+T\+\_\+\+V\+E\+R\+S\+I\+ON} =6
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Nodes collect new transactions into a block, hash them into a hash tree, and scan through nonce values to make the block\textquotesingle{}s hash satisfy proof-\/of-\/work requirements. When they solve the proof-\/of-\/work, they broadcast the block to everyone and the block is added to the block chain. The first transaction in the block is a special one that creates a new coin owned by the creator of the block.
+
+Blocks are appended to blk0001.\+dat files on disk. Their location on disk is indexed by \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} objects in memory. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+main.\+h\item 
+main.\+cpp\end{DoxyCompactItemize}

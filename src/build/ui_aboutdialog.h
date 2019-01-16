@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'aboutdialog.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,16 +10,13 @@
 #define UI_ABOUTDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QDialog>
-#include <QtGui/QDialogButtonBox>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QVBoxLayout>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 
@@ -126,16 +123,16 @@ public:
 
     void retranslateUi(QDialog *AboutDialog)
     {
-        AboutDialog->setWindowTitle(QApplication::translate("AboutDialog", "About ABBCCoin", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("AboutDialog", "<b>ABBCCoin</b> version", 0, QApplication::UnicodeUTF8));
+        AboutDialog->setWindowTitle(QApplication::translate("AboutDialog", "About ABBCCoin", nullptr));
+        label->setText(QApplication::translate("AboutDialog", "<b>ABBCCoin</b> version", nullptr));
         copyrightLabel->setText(QApplication::translate("AboutDialog", "Copyright \302\251 2009-2014 The Bitcoin developers\n"
-"Copyright \302\251 2014 The ABBCCoin developers", 0, QApplication::UnicodeUTF8));
+"Copyright \302\251 2014 The ABBCCoin developers", nullptr));
         label_2->setText(QApplication::translate("AboutDialog", "\n"
 "This is experimental software.\n"
 "\n"
 "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.\n"
 "\n"
-"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.", 0, QApplication::UnicodeUTF8));
+"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.", nullptr));
     } // retranslateUi
 
 };

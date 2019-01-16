@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'statisticspage.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,18 +10,15 @@
 #define UI_STATISTICSPAGE_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QFormLayout>
-#include <QtGui/QFrame>
-#include <QtGui/QGridLayout>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QWidget>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -279,34 +276,34 @@ public:
 
     void retranslateUi(QWidget *StatisticsPage)
     {
-        StatisticsPage->setWindowTitle(QApplication::translate("StatisticsPage", "Digging", 0, QApplication::UnicodeUTF8));
-        startButton->setText(QApplication::translate("StatisticsPage", "Update Statistics", 0, QApplication::UnicodeUTF8));
+        StatisticsPage->setWindowTitle(QApplication::translate("StatisticsPage", "Digging", nullptr));
+        startButton->setText(QApplication::translate("StatisticsPage", "Update Statistics", nullptr));
         label->setText(QString());
-        label_14->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Block Height</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        heightBox->setText(QApplication::translate("StatisticsPage", "00000", 0, QApplication::UnicodeUTF8));
-        label_12->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">POW Block Reward</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        rewardBox->setText(QApplication::translate("StatisticsPage", "0", 0, QApplication::UnicodeUTF8));
-        label_17->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">POS Block Reward</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        posrewardBox->setText(QApplication::translate("StatisticsPage", "0", 0, QApplication::UnicodeUTF8));
-        label_13->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">POW Difficulty</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        diffBox->setText(QApplication::translate("StatisticsPage", "0.0002", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">POS Difficulty</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        diffBox2->setText(QApplication::translate("StatisticsPage", "0.0002", 0, QApplication::UnicodeUTF8));
-        pawrateBox->setText(QApplication::translate("StatisticsPage", "0 MH/s", 0, QApplication::UnicodeUTF8));
-        label3_2->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Last Block Time</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        localBox->setText(QApplication::translate("StatisticsPage", "0 KH/s", 0, QApplication::UnicodeUTF8));
-        label1_2->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Connections</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        connectionBox->setText(QApplication::translate("StatisticsPage", "0", 0, QApplication::UnicodeUTF8));
-        label_8->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Money Supply</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        volumeBox->setText(QApplication::translate("StatisticsPage", "250", 0, QApplication::UnicodeUTF8));
-        label_10->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Total Stake Weight</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        minBox->setText(QApplication::translate("StatisticsPage", "0", 0, QApplication::UnicodeUTF8));
-        label_11->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Network Stake Weight</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        maxBox->setText(QApplication::translate("StatisticsPage", "0", 0, QApplication::UnicodeUTF8));
-        label_15->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Mining Phase</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        cBox->setText(QApplication::translate("StatisticsPage", "POW-POS", 0, QApplication::UnicodeUTF8));
-        label_16->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Net Hashrate</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("StatisticsPage", "ABBCCoin Statistics", 0, QApplication::UnicodeUTF8));
+        label_14->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Block Height</span></p></body></html>", nullptr));
+        heightBox->setText(QApplication::translate("StatisticsPage", "00000", nullptr));
+        label_12->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">POW Block Reward</span></p></body></html>", nullptr));
+        rewardBox->setText(QApplication::translate("StatisticsPage", "0", nullptr));
+        label_17->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">POS Block Reward</span></p></body></html>", nullptr));
+        posrewardBox->setText(QApplication::translate("StatisticsPage", "0", nullptr));
+        label_13->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">POW Difficulty</span></p></body></html>", nullptr));
+        diffBox->setText(QApplication::translate("StatisticsPage", "0.0002", nullptr));
+        label_9->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">POS Difficulty</span></p></body></html>", nullptr));
+        diffBox2->setText(QApplication::translate("StatisticsPage", "0.0002", nullptr));
+        pawrateBox->setText(QApplication::translate("StatisticsPage", "0 MH/s", nullptr));
+        label3_2->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Last Block Time</span></p></body></html>", nullptr));
+        localBox->setText(QApplication::translate("StatisticsPage", "0 KH/s", nullptr));
+        label1_2->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Connections</span></p></body></html>", nullptr));
+        connectionBox->setText(QApplication::translate("StatisticsPage", "0", nullptr));
+        label_8->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Money Supply</span></p></body></html>", nullptr));
+        volumeBox->setText(QApplication::translate("StatisticsPage", "250", nullptr));
+        label_10->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Total Stake Weight</span></p></body></html>", nullptr));
+        minBox->setText(QApplication::translate("StatisticsPage", "0", nullptr));
+        label_11->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Network Stake Weight</span></p></body></html>", nullptr));
+        maxBox->setText(QApplication::translate("StatisticsPage", "0", nullptr));
+        label_15->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Mining Phase</span></p></body></html>", nullptr));
+        cBox->setText(QApplication::translate("StatisticsPage", "POW-POS", nullptr));
+        label_16->setText(QApplication::translate("StatisticsPage", "<html><head/><body><p><span style=\" font-weight:600;\">Net Hashrate</span></p></body></html>", nullptr));
+        label_5->setText(QApplication::translate("StatisticsPage", "ABBCCoin Statistics", nullptr));
     } // retranslateUi
 
 };

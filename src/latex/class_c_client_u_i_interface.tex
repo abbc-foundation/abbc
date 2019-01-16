@@ -1,0 +1,143 @@
+\hypertarget{class_c_client_u_i_interface}{}\section{C\+Client\+U\+I\+Interface Class Reference}
+\label{class_c_client_u_i_interface}\index{CClientUIInterface@{CClientUIInterface}}
+
+
+{\ttfamily \#include $<$ui\+\_\+interface.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_client_u_i_interface_a568cf07ecac3fac224d63b42a32e8bc1}{Message\+Box\+Flags}} \{ \newline
+{\bfseries Y\+ES} = 0x00000002, 
+{\bfseries OK} = 0x00000004, 
+{\bfseries NO} = 0x00000008, 
+{\bfseries Y\+E\+S\+\_\+\+NO} = (Y\+E\+S$\vert$\+NO), 
+\newline
+{\bfseries C\+A\+N\+C\+EL} = 0x00000010, 
+{\bfseries A\+P\+P\+LY} = 0x00000020, 
+{\bfseries C\+L\+O\+SE} = 0x00000040, 
+{\bfseries O\+K\+\_\+\+D\+E\+F\+A\+U\+LT} = 0x00000000, 
+\newline
+{\bfseries Y\+E\+S\+\_\+\+D\+E\+F\+A\+U\+LT} = 0x00000000, 
+{\bfseries N\+O\+\_\+\+D\+E\+F\+A\+U\+LT} = 0x00000080, 
+{\bfseries C\+A\+N\+C\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT} = 0x80000000, 
+{\bfseries I\+C\+O\+N\+\_\+\+E\+X\+C\+L\+A\+M\+A\+T\+I\+ON} = 0x00000100, 
+\newline
+{\bfseries I\+C\+O\+N\+\_\+\+H\+A\+ND} = 0x00000200, 
+{\bfseries I\+C\+O\+N\+\_\+\+W\+A\+R\+N\+I\+NG} = I\+C\+O\+N\+\_\+\+E\+X\+C\+L\+A\+M\+A\+T\+I\+ON, 
+{\bfseries I\+C\+O\+N\+\_\+\+E\+R\+R\+OR} = I\+C\+O\+N\+\_\+\+H\+A\+ND, 
+{\bfseries I\+C\+O\+N\+\_\+\+Q\+U\+E\+S\+T\+I\+ON} = 0x00000400, 
+\newline
+{\bfseries I\+C\+O\+N\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON} = 0x00000800, 
+{\bfseries I\+C\+O\+N\+\_\+\+S\+T\+OP} = I\+C\+O\+N\+\_\+\+H\+A\+ND, 
+{\bfseries I\+C\+O\+N\+\_\+\+A\+S\+T\+E\+R\+I\+SK} = I\+C\+O\+N\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON, 
+{\bfseries I\+C\+O\+N\+\_\+\+M\+A\+SK} = (0x00000100$\vert$0x00000200$\vert$0x00000400$\vert$0x00000800), 
+\newline
+{\bfseries F\+O\+R\+W\+A\+RD} = 0x00001000, 
+{\bfseries B\+A\+C\+K\+W\+A\+RD} = 0x00002000, 
+{\bfseries R\+E\+S\+ET} = 0x00004000, 
+{\bfseries H\+E\+LP} = 0x00008000, 
+\newline
+{\bfseries M\+O\+RE} = 0x00010000, 
+{\bfseries S\+E\+T\+UP} = 0x00020000, 
+{\bfseries M\+O\+D\+AL} = 0x00040000
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::signals2\+::signal$<$ void(const std\+::string \&message, const std\+::string \&caption, int style)$>$ \mbox{\hyperlink{class_c_client_u_i_interface_a5bc5d70a8113304ede47126cb6109e8a}{Thread\+Safe\+Message\+Box}}
+\item 
+boost\+::signals2\+::signal$<$ bool(int64\+\_\+t n\+Fee\+Required, const std\+::string \&str\+Caption), boost\+::signals2\+::last\+\_\+value$<$ bool $>$ $>$ \mbox{\hyperlink{class_c_client_u_i_interface_aa234f11720b22eab8693a9f894938702}{Thread\+Safe\+Ask\+Fee}}
+\item 
+boost\+::signals2\+::signal$<$ void(const std\+::string \&str\+U\+RI)$>$ \mbox{\hyperlink{class_c_client_u_i_interface_a307f12eb3aadb694a82eb16714441d75}{Thread\+Safe\+Handle\+U\+RI}}
+\item 
+boost\+::signals2\+::signal$<$ void(const std\+::string \&message)$>$ \mbox{\hyperlink{class_c_client_u_i_interface_abc63cc3f3e5e15632f713d859dbc6bc2}{Init\+Message}}
+\item 
+boost\+::signals2\+::signal$<$ void()$>$ \mbox{\hyperlink{class_c_client_u_i_interface_aaf177167fd4e961bb2c9997b71d53158}{Queue\+Shutdown}}
+\item 
+boost\+::signals2\+::signal$<$ std\+::string(const char $\ast$psz)$>$ \mbox{\hyperlink{class_c_client_u_i_interface_a996160f65965769cf7fc50e6fd17dc9a}{Translate}}
+\item 
+boost\+::signals2\+::signal$<$ void()$>$ \mbox{\hyperlink{class_c_client_u_i_interface_a9abb0fe3e1714ef9ed37f93da2d98e4b}{Notify\+Blocks\+Changed}}
+\item 
+boost\+::signals2\+::signal$<$ void(int new\+Num\+Connections)$>$ \mbox{\hyperlink{class_c_client_u_i_interface_a496995d44db8dc3e3ef84d345e25967d}{Notify\+Num\+Connections\+Changed}}
+\item 
+boost\+::signals2\+::signal$<$ void(const \mbox{\hyperlink{classuint256}{uint256}} \&hash, Change\+Type status)$>$ \mbox{\hyperlink{class_c_client_u_i_interface_a2c42ebdda06512513445cd86881b157a}{Notify\+Alert\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Signals for UI communication. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_client_u_i_interface_a568cf07ecac3fac224d63b42a32e8bc1}\label{class_c_client_u_i_interface_a568cf07ecac3fac224d63b42a32e8bc1}} 
+\index{CClientUIInterface@{CClientUIInterface}!MessageBoxFlags@{MessageBoxFlags}}
+\index{MessageBoxFlags@{MessageBoxFlags}!CClientUIInterface@{CClientUIInterface}}
+\subsubsection{\texorpdfstring{MessageBoxFlags}{MessageBoxFlags}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_client_u_i_interface_a568cf07ecac3fac224d63b42a32e8bc1}{C\+Client\+U\+I\+Interface\+::\+Message\+Box\+Flags}}}
+
+Flags for \mbox{\hyperlink{class_c_client_u_i_interface_a5bc5d70a8113304ede47126cb6109e8a}{C\+Client\+U\+I\+Interface\+::\+Thread\+Safe\+Message\+Box}} 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_client_u_i_interface_abc63cc3f3e5e15632f713d859dbc6bc2}\label{class_c_client_u_i_interface_abc63cc3f3e5e15632f713d859dbc6bc2}} 
+\index{CClientUIInterface@{CClientUIInterface}!InitMessage@{InitMessage}}
+\index{InitMessage@{InitMessage}!CClientUIInterface@{CClientUIInterface}}
+\subsubsection{\texorpdfstring{InitMessage}{InitMessage}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (const std\+::string \&message)$>$ C\+Client\+U\+I\+Interface\+::\+Init\+Message}
+
+Progress message during initialization. \mbox{\Hypertarget{class_c_client_u_i_interface_a2c42ebdda06512513445cd86881b157a}\label{class_c_client_u_i_interface_a2c42ebdda06512513445cd86881b157a}} 
+\index{CClientUIInterface@{CClientUIInterface}!NotifyAlertChanged@{NotifyAlertChanged}}
+\index{NotifyAlertChanged@{NotifyAlertChanged}!CClientUIInterface@{CClientUIInterface}}
+\subsubsection{\texorpdfstring{NotifyAlertChanged}{NotifyAlertChanged}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (const \mbox{\hyperlink{classuint256}{uint256}} \&hash, Change\+Type status)$>$ C\+Client\+U\+I\+Interface\+::\+Notify\+Alert\+Changed}
+
+New, updated or cancelled alert. \begin{DoxyNote}{Note}
+called with lock cs\+\_\+map\+Alerts held. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_c_client_u_i_interface_a9abb0fe3e1714ef9ed37f93da2d98e4b}\label{class_c_client_u_i_interface_a9abb0fe3e1714ef9ed37f93da2d98e4b}} 
+\index{CClientUIInterface@{CClientUIInterface}!NotifyBlocksChanged@{NotifyBlocksChanged}}
+\index{NotifyBlocksChanged@{NotifyBlocksChanged}!CClientUIInterface@{CClientUIInterface}}
+\subsubsection{\texorpdfstring{NotifyBlocksChanged}{NotifyBlocksChanged}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void ()$>$ C\+Client\+U\+I\+Interface\+::\+Notify\+Blocks\+Changed}
+
+Block chain changed. \mbox{\Hypertarget{class_c_client_u_i_interface_a496995d44db8dc3e3ef84d345e25967d}\label{class_c_client_u_i_interface_a496995d44db8dc3e3ef84d345e25967d}} 
+\index{CClientUIInterface@{CClientUIInterface}!NotifyNumConnectionsChanged@{NotifyNumConnectionsChanged}}
+\index{NotifyNumConnectionsChanged@{NotifyNumConnectionsChanged}!CClientUIInterface@{CClientUIInterface}}
+\subsubsection{\texorpdfstring{NotifyNumConnectionsChanged}{NotifyNumConnectionsChanged}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (int new\+Num\+Connections)$>$ C\+Client\+U\+I\+Interface\+::\+Notify\+Num\+Connections\+Changed}
+
+Number of network connections changed. \mbox{\Hypertarget{class_c_client_u_i_interface_aaf177167fd4e961bb2c9997b71d53158}\label{class_c_client_u_i_interface_aaf177167fd4e961bb2c9997b71d53158}} 
+\index{CClientUIInterface@{CClientUIInterface}!QueueShutdown@{QueueShutdown}}
+\index{QueueShutdown@{QueueShutdown}!CClientUIInterface@{CClientUIInterface}}
+\subsubsection{\texorpdfstring{QueueShutdown}{QueueShutdown}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void ()$>$ C\+Client\+U\+I\+Interface\+::\+Queue\+Shutdown}
+
+Initiate client shutdown. \mbox{\Hypertarget{class_c_client_u_i_interface_aa234f11720b22eab8693a9f894938702}\label{class_c_client_u_i_interface_aa234f11720b22eab8693a9f894938702}} 
+\index{CClientUIInterface@{CClientUIInterface}!ThreadSafeAskFee@{ThreadSafeAskFee}}
+\index{ThreadSafeAskFee@{ThreadSafeAskFee}!CClientUIInterface@{CClientUIInterface}}
+\subsubsection{\texorpdfstring{ThreadSafeAskFee}{ThreadSafeAskFee}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$bool (int64\+\_\+t n\+Fee\+Required, const std\+::string\& str\+Caption), boost\+::signals2\+::last\+\_\+value$<$bool$>$ $>$ C\+Client\+U\+I\+Interface\+::\+Thread\+Safe\+Ask\+Fee}
+
+Ask the user whether they want to pay a fee or not. \mbox{\Hypertarget{class_c_client_u_i_interface_a307f12eb3aadb694a82eb16714441d75}\label{class_c_client_u_i_interface_a307f12eb3aadb694a82eb16714441d75}} 
+\index{CClientUIInterface@{CClientUIInterface}!ThreadSafeHandleURI@{ThreadSafeHandleURI}}
+\index{ThreadSafeHandleURI@{ThreadSafeHandleURI}!CClientUIInterface@{CClientUIInterface}}
+\subsubsection{\texorpdfstring{ThreadSafeHandleURI}{ThreadSafeHandleURI}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (const std\+::string\& str\+U\+RI)$>$ C\+Client\+U\+I\+Interface\+::\+Thread\+Safe\+Handle\+U\+RI}
+
+Handle a U\+RL passed at the command line. \mbox{\Hypertarget{class_c_client_u_i_interface_a5bc5d70a8113304ede47126cb6109e8a}\label{class_c_client_u_i_interface_a5bc5d70a8113304ede47126cb6109e8a}} 
+\index{CClientUIInterface@{CClientUIInterface}!ThreadSafeMessageBox@{ThreadSafeMessageBox}}
+\index{ThreadSafeMessageBox@{ThreadSafeMessageBox}!CClientUIInterface@{CClientUIInterface}}
+\subsubsection{\texorpdfstring{ThreadSafeMessageBox}{ThreadSafeMessageBox}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$void (const std\+::string\& message, const std\+::string\& caption, int style)$>$ C\+Client\+U\+I\+Interface\+::\+Thread\+Safe\+Message\+Box}
+
+Show message box. \mbox{\Hypertarget{class_c_client_u_i_interface_a996160f65965769cf7fc50e6fd17dc9a}\label{class_c_client_u_i_interface_a996160f65965769cf7fc50e6fd17dc9a}} 
+\index{CClientUIInterface@{CClientUIInterface}!Translate@{Translate}}
+\index{Translate@{Translate}!CClientUIInterface@{CClientUIInterface}}
+\subsubsection{\texorpdfstring{Translate}{Translate}}
+{\footnotesize\ttfamily boost\+::signals2\+::signal$<$std\+::string (const char$\ast$ psz)$>$ C\+Client\+U\+I\+Interface\+::\+Translate}
+
+Translate a message to the native language of the user. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ui\+\_\+interface.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+\hypertarget{class_c_block_locator}{}\section{C\+Block\+Locator Class Reference}
+\label{class_c_block_locator}\index{CBlockLocator@{CBlockLocator}}
+
+
+{\ttfamily \#include $<$main.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_block_locator_a2f30e0b3334f1cb98c7b3079a89743c9}\label{class_c_block_locator_a2f30e0b3334f1cb98c7b3079a89743c9}} 
+{\bfseries C\+Block\+Locator} (const \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex)
+\item 
+\mbox{\Hypertarget{class_c_block_locator_a16d49c0f443cbe9023de4a1b66af9574}\label{class_c_block_locator_a16d49c0f443cbe9023de4a1b66af9574}} 
+{\bfseries C\+Block\+Locator} (\mbox{\hyperlink{classuint256}{uint256}} hash\+Block)
+\item 
+\mbox{\Hypertarget{class_c_block_locator_a12bd4c9c6f4fc9892e2c1f4c8e083226}\label{class_c_block_locator_a12bd4c9c6f4fc9892e2c1f4c8e083226}} 
+{\bfseries C\+Block\+Locator} (const std\+::vector$<$ \mbox{\hyperlink{classuint256}{uint256}} $>$ \&v\+Have\+In)
+\item 
+\mbox{\Hypertarget{class_c_block_locator_adaac4031fa0ca735f555050b02cda674}\label{class_c_block_locator_adaac4031fa0ca735f555050b02cda674}} 
+{\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE} (if(!(n\+Type \&S\+E\+R\+\_\+\+G\+E\+T\+H\+A\+SH)) R\+E\+A\+D\+W\+R\+I\+TE(n\+Version);R\+E\+A\+D\+W\+R\+I\+TE(v\+Have);) void Set\+Null()
+\item 
+\mbox{\Hypertarget{class_c_block_locator_aa34a6e267a83b4e5b514275f6392ca22}\label{class_c_block_locator_aa34a6e267a83b4e5b514275f6392ca22}} 
+bool {\bfseries Is\+Null} ()
+\item 
+\mbox{\Hypertarget{class_c_block_locator_abe0917322a7d29a0e080402694237a7b}\label{class_c_block_locator_abe0917322a7d29a0e080402694237a7b}} 
+void {\bfseries Set} (const \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex)
+\item 
+\mbox{\Hypertarget{class_c_block_locator_a7106e425b977d437b21b18e765665879}\label{class_c_block_locator_a7106e425b977d437b21b18e765665879}} 
+int {\bfseries Get\+Distance\+Back} ()
+\item 
+\mbox{\Hypertarget{class_c_block_locator_a9109609622705fe47ec42ecc71c59d48}\label{class_c_block_locator_a9109609622705fe47ec42ecc71c59d48}} 
+\mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$ {\bfseries Get\+Block\+Index} ()
+\item 
+\mbox{\Hypertarget{class_c_block_locator_ac15bd658550c7b803eb39171ed65d4aa}\label{class_c_block_locator_ac15bd658550c7b803eb39171ed65d4aa}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries Get\+Block\+Hash} ()
+\item 
+\mbox{\Hypertarget{class_c_block_locator_aea0d210a819144632f4260e1b4d0fe60}\label{class_c_block_locator_aea0d210a819144632f4260e1b4d0fe60}} 
+int {\bfseries Get\+Height} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_block_locator_a745204ecd8c9326b43ac54d7f780534f}\label{class_c_block_locator_a745204ecd8c9326b43ac54d7f780534f}} 
+std\+::vector$<$ \mbox{\hyperlink{classuint256}{uint256}} $>$ {\bfseries v\+Have}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes a place in the block chain to another node such that if the other node doesn\textquotesingle{}t have the same branch, it can find a recent common trunk. The further back it is, the further before the fork it may be. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+main.\+h\end{DoxyCompactItemize}

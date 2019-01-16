@@ -1,0 +1,401 @@
+\hypertarget{sph__hamsi_8h}{}\section{sph\+\_\+hamsi.\+h File Reference}
+\label{sph__hamsi_8h}\index{sph\_hamsi.h@{sph\_hamsi.h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sph\+\_\+types.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsph__hamsi__small__context}{sph\+\_\+hamsi\+\_\+small\+\_\+context}}
+\item 
+struct \mbox{\hyperlink{structsph__hamsi__big__context}{sph\+\_\+hamsi\+\_\+big\+\_\+context}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sph__hamsi_8h_a0737716476ba054bfe6a626ec95baa05}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+hamsi224}}~224
+\item 
+\#define \mbox{\hyperlink{sph__hamsi_8h_a074b7f8781db83a04472b5f13821fce6}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+hamsi256}}~256
+\item 
+\#define \mbox{\hyperlink{sph__hamsi_8h_a89a618824eafbaf160a38425aeb8e9fc}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+hamsi384}}~384
+\item 
+\#define \mbox{\hyperlink{sph__hamsi_8h_a0c1bfe3cc1109560c3dcb88a3876e0ca}{S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+hamsi512}}~512
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{structsph__hamsi__small__context}{sph\+\_\+hamsi\+\_\+small\+\_\+context}} \mbox{\hyperlink{sph__hamsi_8h_a9b07cd7d5e503e5efabd64fb5500bb70}{sph\+\_\+hamsi224\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__hamsi__small__context}{sph\+\_\+hamsi\+\_\+small\+\_\+context}} \mbox{\hyperlink{sph__hamsi_8h_a32096c2767b7da61e376b63dd49ceb7e}{sph\+\_\+hamsi256\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__hamsi__big__context}{sph\+\_\+hamsi\+\_\+big\+\_\+context}} \mbox{\hyperlink{sph__hamsi_8h_a050f6111d3962e4cdf1e7c80588fc32a}{sph\+\_\+hamsi384\+\_\+context}}
+\item 
+typedef \mbox{\hyperlink{structsph__hamsi__big__context}{sph\+\_\+hamsi\+\_\+big\+\_\+context}} \mbox{\hyperlink{sph__hamsi_8h_ac0bb1460c1ad29c92189d3fd74594899}{sph\+\_\+hamsi512\+\_\+context}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_a5f23eb96ecea5067245bf0ac99b35446}{sph\+\_\+hamsi224\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_aeb0ad868e86b919b8c93ab097eb19534}{sph\+\_\+hamsi224}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_ac43d25d27f453af4b8310d07e5a45bd8}{sph\+\_\+hamsi224\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_aead0c2c0a31e7983729b38896457bbbe}{sph\+\_\+hamsi224\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_a4e158aaf398ad95be329538c6d538580}{sph\+\_\+hamsi256\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_aeb3e0eb5857e08eaa17671b1a43043bf}{sph\+\_\+hamsi256}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_aa4590c5004a2df261f768a5db2aa2bb0}{sph\+\_\+hamsi256\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_ab41e8c7d8d42edc2b697f040abcbc960}{sph\+\_\+hamsi256\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_a2d30de908dfc2b95cce0f14383f7556f}{sph\+\_\+hamsi384\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_a700acd06340bdd2322b96e7180cf2354}{sph\+\_\+hamsi384}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_ac07d2348ac9bee84a0b0c6ffbbb67f78}{sph\+\_\+hamsi384\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_a562ecfc4a8c5bd92d6d9b4d775b21246}{sph\+\_\+hamsi384\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_a944219639062ac292f6289983111818f}{sph\+\_\+hamsi512\+\_\+init}} (void $\ast$cc)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_a25781ec63c4c66ea13f349c8f1179101}{sph\+\_\+hamsi512}} (void $\ast$cc, const void $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_aa8a3ba0d049862aa412d546807227c3d}{sph\+\_\+hamsi512\+\_\+close}} (void $\ast$cc, void $\ast$dst)
+\item 
+void \mbox{\hyperlink{sph__hamsi_8h_a7c8e84b9b60a02e75319e4c5e52a3ec7}{sph\+\_\+hamsi512\+\_\+addbits\+\_\+and\+\_\+close}} (void $\ast$cc, unsigned ub, unsigned n, void $\ast$dst)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Hamsi interface. This code implements Hamsi with the recommended parameters for S\+H\+A-\/3, with outputs of 224, 256, 384 and 512 bits.
+
+==========================(L\+I\+C\+E\+N\+SE B\+E\+G\+IN)============================
+
+Copyright (c) 2007-\/2010 Projet R\+N\+RT S\+A\+P\+H\+IR
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE.
+
+===========================(L\+I\+C\+E\+N\+SE E\+ND)=============================
+
+\begin{DoxyAuthor}{Author}
+Thomas Pornin \href{mailto:thomas.pornin@cryptolog.com}{\texttt{ thomas.\+pornin@cryptolog.\+com}} 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{sph__hamsi_8h_a0737716476ba054bfe6a626ec95baa05}\label{sph__hamsi_8h_a0737716476ba054bfe6a626ec95baa05}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!SPH\_SIZE\_hamsi224@{SPH\_SIZE\_hamsi224}}
+\index{SPH\_SIZE\_hamsi224@{SPH\_SIZE\_hamsi224}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_hamsi224}{SPH\_SIZE\_hamsi224}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+hamsi224~224}
+
+Output size (in bits) for Hamsi-\/224. \mbox{\Hypertarget{sph__hamsi_8h_a074b7f8781db83a04472b5f13821fce6}\label{sph__hamsi_8h_a074b7f8781db83a04472b5f13821fce6}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!SPH\_SIZE\_hamsi256@{SPH\_SIZE\_hamsi256}}
+\index{SPH\_SIZE\_hamsi256@{SPH\_SIZE\_hamsi256}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_hamsi256}{SPH\_SIZE\_hamsi256}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+hamsi256~256}
+
+Output size (in bits) for Hamsi-\/256. \mbox{\Hypertarget{sph__hamsi_8h_a89a618824eafbaf160a38425aeb8e9fc}\label{sph__hamsi_8h_a89a618824eafbaf160a38425aeb8e9fc}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!SPH\_SIZE\_hamsi384@{SPH\_SIZE\_hamsi384}}
+\index{SPH\_SIZE\_hamsi384@{SPH\_SIZE\_hamsi384}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_hamsi384}{SPH\_SIZE\_hamsi384}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+hamsi384~384}
+
+Output size (in bits) for Hamsi-\/384. \mbox{\Hypertarget{sph__hamsi_8h_a0c1bfe3cc1109560c3dcb88a3876e0ca}\label{sph__hamsi_8h_a0c1bfe3cc1109560c3dcb88a3876e0ca}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!SPH\_SIZE\_hamsi512@{SPH\_SIZE\_hamsi512}}
+\index{SPH\_SIZE\_hamsi512@{SPH\_SIZE\_hamsi512}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{SPH\_SIZE\_hamsi512}{SPH\_SIZE\_hamsi512}}
+{\footnotesize\ttfamily \#define S\+P\+H\+\_\+\+S\+I\+Z\+E\+\_\+hamsi512~512}
+
+Output size (in bits) for Hamsi-\/512. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{sph__hamsi_8h_a9b07cd7d5e503e5efabd64fb5500bb70}\label{sph__hamsi_8h_a9b07cd7d5e503e5efabd64fb5500bb70}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi224\_context@{sph\_hamsi224\_context}}
+\index{sph\_hamsi224\_context@{sph\_hamsi224\_context}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi224\_context}{sph\_hamsi224\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__hamsi__small__context}{sph\+\_\+hamsi\+\_\+small\+\_\+context}} \mbox{\hyperlink{sph__hamsi_8h_a9b07cd7d5e503e5efabd64fb5500bb70}{sph\+\_\+hamsi224\+\_\+context}}}
+
+This structure is a context for Hamsi-\/224 computations. It is identical to the common {\ttfamily \mbox{\hyperlink{structsph__hamsi__small__context}{sph\+\_\+hamsi\+\_\+small\+\_\+context}}}. \mbox{\Hypertarget{sph__hamsi_8h_a32096c2767b7da61e376b63dd49ceb7e}\label{sph__hamsi_8h_a32096c2767b7da61e376b63dd49ceb7e}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi256\_context@{sph\_hamsi256\_context}}
+\index{sph\_hamsi256\_context@{sph\_hamsi256\_context}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi256\_context}{sph\_hamsi256\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__hamsi__small__context}{sph\+\_\+hamsi\+\_\+small\+\_\+context}} \mbox{\hyperlink{sph__hamsi_8h_a32096c2767b7da61e376b63dd49ceb7e}{sph\+\_\+hamsi256\+\_\+context}}}
+
+This structure is a context for Hamsi-\/256 computations. It is identical to the common {\ttfamily \mbox{\hyperlink{structsph__hamsi__small__context}{sph\+\_\+hamsi\+\_\+small\+\_\+context}}}. \mbox{\Hypertarget{sph__hamsi_8h_a050f6111d3962e4cdf1e7c80588fc32a}\label{sph__hamsi_8h_a050f6111d3962e4cdf1e7c80588fc32a}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi384\_context@{sph\_hamsi384\_context}}
+\index{sph\_hamsi384\_context@{sph\_hamsi384\_context}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi384\_context}{sph\_hamsi384\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__hamsi__big__context}{sph\+\_\+hamsi\+\_\+big\+\_\+context}} \mbox{\hyperlink{sph__hamsi_8h_a050f6111d3962e4cdf1e7c80588fc32a}{sph\+\_\+hamsi384\+\_\+context}}}
+
+This structure is a context for Hamsi-\/384 computations. It is identical to the common {\ttfamily \mbox{\hyperlink{structsph__hamsi__small__context}{sph\+\_\+hamsi\+\_\+small\+\_\+context}}}. \mbox{\Hypertarget{sph__hamsi_8h_ac0bb1460c1ad29c92189d3fd74594899}\label{sph__hamsi_8h_ac0bb1460c1ad29c92189d3fd74594899}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi512\_context@{sph\_hamsi512\_context}}
+\index{sph\_hamsi512\_context@{sph\_hamsi512\_context}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi512\_context}{sph\_hamsi512\_context}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structsph__hamsi__big__context}{sph\+\_\+hamsi\+\_\+big\+\_\+context}} \mbox{\hyperlink{sph__hamsi_8h_ac0bb1460c1ad29c92189d3fd74594899}{sph\+\_\+hamsi512\+\_\+context}}}
+
+This structure is a context for Hamsi-\/512 computations. It is identical to the common {\ttfamily \mbox{\hyperlink{structsph__hamsi__small__context}{sph\+\_\+hamsi\+\_\+small\+\_\+context}}}. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{sph__hamsi_8h_aeb0ad868e86b919b8c93ab097eb19534}\label{sph__hamsi_8h_aeb0ad868e86b919b8c93ab097eb19534}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi224@{sph\_hamsi224}}
+\index{sph\_hamsi224@{sph\_hamsi224}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi224()}{sph\_hamsi224()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi224 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes. It is acceptable that {\ttfamily len} is zero (in which case this function does nothing).
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/224 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_aead0c2c0a31e7983729b38896457bbbe}\label{sph__hamsi_8h_aead0c2c0a31e7983729b38896457bbbe}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi224\_addbits\_and\_close@{sph\_hamsi224\_addbits\_and\_close}}
+\index{sph\_hamsi224\_addbits\_and\_close@{sph\_hamsi224\_addbits\_and\_close}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi224\_addbits\_and\_close()}{sph\_hamsi224\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi224\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Add a few additional bits (0 to 7) to the current computation, then terminate it and output the result in the provided buffer, which must be wide enough to accomodate the result (28 bytes). If bit number i in {\ttfamily ub} has value 2$^\wedge$i, then the extra bits are those numbered 7 downto 8-\/n (this is the big-\/endian convention at the byte level). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/224 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_ac43d25d27f453af4b8310d07e5a45bd8}\label{sph__hamsi_8h_ac43d25d27f453af4b8310d07e5a45bd8}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi224\_close@{sph\_hamsi224\_close}}
+\index{sph\_hamsi224\_close@{sph\_hamsi224\_close}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi224\_close()}{sph\_hamsi224\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi224\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Terminate the current Hamsi-\/224 computation and output the result into the provided buffer. The destination buffer must be wide enough to accomodate the result (28 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/224 context \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_a5f23eb96ecea5067245bf0ac99b35446}\label{sph__hamsi_8h_a5f23eb96ecea5067245bf0ac99b35446}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi224\_init@{sph\_hamsi224\_init}}
+\index{sph\_hamsi224\_init@{sph\_hamsi224\_init}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi224\_init()}{sph\_hamsi224\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi224\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize a Hamsi-\/224 context. This process performs no memory allocation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/224 context (pointer to a {\ttfamily sph\+\_\+hamsi224\+\_\+context}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_aeb3e0eb5857e08eaa17671b1a43043bf}\label{sph__hamsi_8h_aeb3e0eb5857e08eaa17671b1a43043bf}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi256@{sph\_hamsi256}}
+\index{sph\_hamsi256@{sph\_hamsi256}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi256()}{sph\_hamsi256()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi256 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes. It is acceptable that {\ttfamily len} is zero (in which case this function does nothing).
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/256 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_ab41e8c7d8d42edc2b697f040abcbc960}\label{sph__hamsi_8h_ab41e8c7d8d42edc2b697f040abcbc960}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi256\_addbits\_and\_close@{sph\_hamsi256\_addbits\_and\_close}}
+\index{sph\_hamsi256\_addbits\_and\_close@{sph\_hamsi256\_addbits\_and\_close}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi256\_addbits\_and\_close()}{sph\_hamsi256\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi256\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Add a few additional bits (0 to 7) to the current computation, then terminate it and output the result in the provided buffer, which must be wide enough to accomodate the result (32 bytes). If bit number i in {\ttfamily ub} has value 2$^\wedge$i, then the extra bits are those numbered 7 downto 8-\/n (this is the big-\/endian convention at the byte level). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/256 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_aa4590c5004a2df261f768a5db2aa2bb0}\label{sph__hamsi_8h_aa4590c5004a2df261f768a5db2aa2bb0}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi256\_close@{sph\_hamsi256\_close}}
+\index{sph\_hamsi256\_close@{sph\_hamsi256\_close}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi256\_close()}{sph\_hamsi256\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi256\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Terminate the current Hamsi-\/256 computation and output the result into the provided buffer. The destination buffer must be wide enough to accomodate the result (32 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/256 context \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_a4e158aaf398ad95be329538c6d538580}\label{sph__hamsi_8h_a4e158aaf398ad95be329538c6d538580}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi256\_init@{sph\_hamsi256\_init}}
+\index{sph\_hamsi256\_init@{sph\_hamsi256\_init}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi256\_init()}{sph\_hamsi256\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi256\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize a Hamsi-\/256 context. This process performs no memory allocation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/256 context (pointer to a {\ttfamily sph\+\_\+hamsi256\+\_\+context}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_a700acd06340bdd2322b96e7180cf2354}\label{sph__hamsi_8h_a700acd06340bdd2322b96e7180cf2354}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi384@{sph\_hamsi384}}
+\index{sph\_hamsi384@{sph\_hamsi384}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi384()}{sph\_hamsi384()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi384 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes. It is acceptable that {\ttfamily len} is zero (in which case this function does nothing).
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/384 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_a562ecfc4a8c5bd92d6d9b4d775b21246}\label{sph__hamsi_8h_a562ecfc4a8c5bd92d6d9b4d775b21246}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi384\_addbits\_and\_close@{sph\_hamsi384\_addbits\_and\_close}}
+\index{sph\_hamsi384\_addbits\_and\_close@{sph\_hamsi384\_addbits\_and\_close}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi384\_addbits\_and\_close()}{sph\_hamsi384\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi384\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Add a few additional bits (0 to 7) to the current computation, then terminate it and output the result in the provided buffer, which must be wide enough to accomodate the result (48 bytes). If bit number i in {\ttfamily ub} has value 2$^\wedge$i, then the extra bits are those numbered 7 downto 8-\/n (this is the big-\/endian convention at the byte level). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/384 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_ac07d2348ac9bee84a0b0c6ffbbb67f78}\label{sph__hamsi_8h_ac07d2348ac9bee84a0b0c6ffbbb67f78}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi384\_close@{sph\_hamsi384\_close}}
+\index{sph\_hamsi384\_close@{sph\_hamsi384\_close}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi384\_close()}{sph\_hamsi384\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi384\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Terminate the current Hamsi-\/384 computation and output the result into the provided buffer. The destination buffer must be wide enough to accomodate the result (48 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/384 context \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_a2d30de908dfc2b95cce0f14383f7556f}\label{sph__hamsi_8h_a2d30de908dfc2b95cce0f14383f7556f}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi384\_init@{sph\_hamsi384\_init}}
+\index{sph\_hamsi384\_init@{sph\_hamsi384\_init}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi384\_init()}{sph\_hamsi384\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi384\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize a Hamsi-\/384 context. This process performs no memory allocation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/384 context (pointer to a {\ttfamily sph\+\_\+hamsi384\+\_\+context}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_a25781ec63c4c66ea13f349c8f1179101}\label{sph__hamsi_8h_a25781ec63c4c66ea13f349c8f1179101}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi512@{sph\_hamsi512}}
+\index{sph\_hamsi512@{sph\_hamsi512}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi512()}{sph\_hamsi512()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi512 (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Process some data bytes. It is acceptable that {\ttfamily len} is zero (in which case this function does nothing).
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/512 context \\
+\hline
+{\em data} & the input data \\
+\hline
+{\em len} & the input data length (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_a7c8e84b9b60a02e75319e4c5e52a3ec7}\label{sph__hamsi_8h_a7c8e84b9b60a02e75319e4c5e52a3ec7}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi512\_addbits\_and\_close@{sph\_hamsi512\_addbits\_and\_close}}
+\index{sph\_hamsi512\_addbits\_and\_close@{sph\_hamsi512\_addbits\_and\_close}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi512\_addbits\_and\_close()}{sph\_hamsi512\_addbits\_and\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi512\+\_\+addbits\+\_\+and\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{unsigned}]{ub,  }\item[{unsigned}]{n,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Add a few additional bits (0 to 7) to the current computation, then terminate it and output the result in the provided buffer, which must be wide enough to accomodate the result (64 bytes). If bit number i in {\ttfamily ub} has value 2$^\wedge$i, then the extra bits are those numbered 7 downto 8-\/n (this is the big-\/endian convention at the byte level). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/512 context \\
+\hline
+{\em ub} & the extra bits \\
+\hline
+{\em n} & the number of extra bits (0 to 7) \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_aa8a3ba0d049862aa412d546807227c3d}\label{sph__hamsi_8h_aa8a3ba0d049862aa412d546807227c3d}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi512\_close@{sph\_hamsi512\_close}}
+\index{sph\_hamsi512\_close@{sph\_hamsi512\_close}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi512\_close()}{sph\_hamsi512\_close()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi512\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc,  }\item[{void $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Terminate the current Hamsi-\/512 computation and output the result into the provided buffer. The destination buffer must be wide enough to accomodate the result (64 bytes). The context is automatically reinitialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/512 context \\
+\hline
+{\em dst} & the destination buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sph__hamsi_8h_a944219639062ac292f6289983111818f}\label{sph__hamsi_8h_a944219639062ac292f6289983111818f}} 
+\index{sph\_hamsi.h@{sph\_hamsi.h}!sph\_hamsi512\_init@{sph\_hamsi512\_init}}
+\index{sph\_hamsi512\_init@{sph\_hamsi512\_init}!sph\_hamsi.h@{sph\_hamsi.h}}
+\subsubsection{\texorpdfstring{sph\_hamsi512\_init()}{sph\_hamsi512\_init()}}
+{\footnotesize\ttfamily void sph\+\_\+hamsi512\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{cc }\end{DoxyParamCaption})}
+
+Initialize a Hamsi-\/512 context. This process performs no memory allocation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & the Hamsi-\/512 context (pointer to a {\ttfamily sph\+\_\+hamsi512\+\_\+context}) \\
+\hline
+\end{DoxyParams}

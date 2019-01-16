@@ -1,0 +1,42 @@
+\hypertarget{class_c_message_header}{}\section{C\+Message\+Header Class Reference}
+\label{class_c_message_header}\index{CMessageHeader@{CMessageHeader}}
+
+
+{\ttfamily \#include $<$protocol.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_message_header_a4e68c30f9e7e485c13157a27c4ebff8c}\label{class_c_message_header_a4e68c30f9e7e485c13157a27c4ebff8c}} 
+{\bfseries C\+Message\+Header} (const char $\ast$psz\+Command, unsigned int n\+Message\+Size\+In)
+\item 
+\mbox{\Hypertarget{class_c_message_header_ab5b3807481d4b918527b86523f1efee2}\label{class_c_message_header_ab5b3807481d4b918527b86523f1efee2}} 
+std\+::string {\bfseries Get\+Command} () const
+\item 
+\mbox{\Hypertarget{class_c_message_header_a45221ad4c5e867c80d4ca33eb8918f36}\label{class_c_message_header_a45221ad4c5e867c80d4ca33eb8918f36}} 
+bool {\bfseries Is\+Valid} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_message_header_a184e72a78696e72a4ac13b3a7c2e65a9}\label{class_c_message_header_a184e72a78696e72a4ac13b3a7c2e65a9}} 
+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE(R\+E\+A\+D\+W\+R\+I\+TE(F\+L\+A\+T\+D\+A\+TA(pch\+Message\+Start));R\+E\+A\+D\+W\+R\+I\+TE(F\+L\+A\+T\+D\+A\+TA(pch\+Command));R\+E\+A\+D\+W\+R\+I\+TE(n\+Message\+Size);R\+E\+A\+D\+W\+R\+I\+TE(n\+Checksum);) public char {\bfseries pch\+Message\+Start} \mbox{[}M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+T\+A\+R\+T\+\_\+\+S\+I\+ZE\mbox{]}
+\item 
+\mbox{\Hypertarget{class_c_message_header_a87d62b0d9afb3889f318991700a34431}\label{class_c_message_header_a87d62b0d9afb3889f318991700a34431}} 
+char {\bfseries pch\+Command} \mbox{[}C\+O\+M\+M\+A\+N\+D\+\_\+\+S\+I\+ZE\mbox{]}
+\item 
+\mbox{\Hypertarget{class_c_message_header_a67ccb9f1f23af69e309a8d6c8bfff751}\label{class_c_message_header_a67ccb9f1f23af69e309a8d6c8bfff751}} 
+unsigned int {\bfseries n\+Message\+Size}
+\item 
+\mbox{\Hypertarget{class_c_message_header_ab9c6bec3694e2c110b4f358af9e55984}\label{class_c_message_header_ab9c6bec3694e2c110b4f358af9e55984}} 
+unsigned int {\bfseries n\+Checksum}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Message header. (4) message start. (12) command. (4) size. (4) checksum. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+protocol.\+h\item 
+protocol.\+cpp\end{DoxyCompactItemize}

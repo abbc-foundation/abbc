@@ -1,0 +1,285 @@
+\hypertarget{class_c_transaction}{}\section{C\+Transaction Class Reference}
+\label{class_c_transaction}\index{CTransaction@{CTransaction}}
+
+
+{\ttfamily \#include $<$main.\+h$>$}
+
+Inheritance diagram for C\+Transaction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_transaction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_transaction_ae5f57b4b90e5a179bb359bdf72fba753}\label{class_c_transaction_ae5f57b4b90e5a179bb359bdf72fba753}} 
+bool {\bfseries DoS} (int n\+Do\+S\+In, bool f\+In) const
+\item 
+\mbox{\Hypertarget{class_c_transaction_a3ff1ff42b9bf57f476879922b3c20134}\label{class_c_transaction_a3ff1ff42b9bf57f476879922b3c20134}} 
+{\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE} (R\+E\+A\+D\+W\+R\+I\+TE(this-\/$>$n\+Version);n\+Version=this-\/$>$n\+Version;R\+E\+A\+D\+W\+R\+I\+TE(n\+Time);R\+E\+A\+D\+W\+R\+I\+TE(vin);R\+E\+A\+D\+W\+R\+I\+TE(vout);R\+E\+A\+D\+W\+R\+I\+TE(n\+Lock\+Time);) void Set\+Null()
+\item 
+\mbox{\Hypertarget{class_c_transaction_a52965f371d2d3f723e88e60c8e68d6d0}\label{class_c_transaction_a52965f371d2d3f723e88e60c8e68d6d0}} 
+bool {\bfseries Is\+Null} () const
+\item 
+\mbox{\Hypertarget{class_c_transaction_a0b46d80e82ca324e82c2ce3fc1492bfa}\label{class_c_transaction_a0b46d80e82ca324e82c2ce3fc1492bfa}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries Get\+Hash} () const
+\item 
+\mbox{\Hypertarget{class_c_transaction_af8724c9ec3e1602263bc8efc79f5bbf4}\label{class_c_transaction_af8724c9ec3e1602263bc8efc79f5bbf4}} 
+bool {\bfseries Is\+Final} (int n\+Block\+Height=0, int64\+\_\+t n\+Block\+Time=0) const
+\item 
+\mbox{\Hypertarget{class_c_transaction_a3052d1f8bc834e83ab91bd4dd2778241}\label{class_c_transaction_a3052d1f8bc834e83ab91bd4dd2778241}} 
+bool {\bfseries Is\+Newer\+Than} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&old) const
+\item 
+\mbox{\Hypertarget{class_c_transaction_a96256e8ac1bf79ad9c057e48c41132dd}\label{class_c_transaction_a96256e8ac1bf79ad9c057e48c41132dd}} 
+bool {\bfseries Is\+Coin\+Base} () const
+\item 
+\mbox{\Hypertarget{class_c_transaction_ace4278a41a296d40dcf5fb2b9cf007ec}\label{class_c_transaction_ace4278a41a296d40dcf5fb2b9cf007ec}} 
+bool {\bfseries Is\+Coin\+Stake} () const
+\item 
+bool \mbox{\hyperlink{class_c_transaction_a270e669ab6d491a44d50383ad8ce622b}{Is\+Standard}} () const
+\item 
+bool \mbox{\hyperlink{class_c_transaction_a48850ab313a08578c7cf91715eec1730}{Are\+Inputs\+Standard}} (const Map\+Prev\+Tx \&map\+Inputs) const
+\item 
+unsigned int \mbox{\hyperlink{class_c_transaction_aba5dcae9888d51ab2f7c57f833cd2d22}{Get\+Legacy\+Sig\+Op\+Count}} () const
+\item 
+unsigned int \mbox{\hyperlink{class_c_transaction_a39eafe87dc398013919747fb8514611b}{Get\+P2\+S\+H\+Sig\+Op\+Count}} (const Map\+Prev\+Tx \&map\+Inputs) const
+\item 
+int64\+\_\+t \mbox{\hyperlink{class_c_transaction_a9ce7d94c68adb37627d82669b83a7c59}{Get\+Value\+Out}} () const
+\item 
+int64\+\_\+t \mbox{\hyperlink{class_c_transaction_a50051cce0d44bc4ea2018625101dc1b6}{Get\+Value\+In}} (const Map\+Prev\+Tx \&map\+Inputs) const
+\item 
+\mbox{\Hypertarget{class_c_transaction_a304be7b026a1e691f09b18f5c63eb911}\label{class_c_transaction_a304be7b026a1e691f09b18f5c63eb911}} 
+int64\+\_\+t {\bfseries Get\+Min\+Fee} (unsigned int n\+Block\+Size=1, enum Get\+Min\+Fee\+\_\+mode mode=G\+M\+F\+\_\+\+B\+L\+O\+CK, unsigned int n\+Bytes=0) const
+\item 
+\mbox{\Hypertarget{class_c_transaction_ad9d526afecbd816c385343f60c5352fd}\label{class_c_transaction_ad9d526afecbd816c385343f60c5352fd}} 
+bool {\bfseries Read\+From\+Disk} (\mbox{\hyperlink{class_c_disk_tx_pos}{C\+Disk\+Tx\+Pos}} pos, F\+I\+LE $\ast$$\ast$pfile\+Ret=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{class_c_transaction_a53846182baa027693de50a0290073844}\label{class_c_transaction_a53846182baa027693de50a0290073844}} 
+std\+::string {\bfseries To\+String\+Short} () const
+\item 
+\mbox{\Hypertarget{class_c_transaction_a80370923c3ac828de68919295d5d0659}\label{class_c_transaction_a80370923c3ac828de68919295d5d0659}} 
+std\+::string {\bfseries To\+String} () const
+\item 
+\mbox{\Hypertarget{class_c_transaction_a2cfc063a055981ba39f83065eee3b5a2}\label{class_c_transaction_a2cfc063a055981ba39f83065eee3b5a2}} 
+void {\bfseries print} () const
+\item 
+\mbox{\Hypertarget{class_c_transaction_acb9a99f02a15ad1ae12cc2692632dd66}\label{class_c_transaction_acb9a99f02a15ad1ae12cc2692632dd66}} 
+bool {\bfseries Read\+From\+Disk} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb, \mbox{\hyperlink{class_c_out_point}{C\+Out\+Point}} prevout, \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} \&txindex\+Ret)
+\item 
+\mbox{\Hypertarget{class_c_transaction_a2e60de292c5716c06754534ccfc0f22f}\label{class_c_transaction_a2e60de292c5716c06754534ccfc0f22f}} 
+bool {\bfseries Read\+From\+Disk} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb, \mbox{\hyperlink{class_c_out_point}{C\+Out\+Point}} prevout)
+\item 
+\mbox{\Hypertarget{class_c_transaction_a00809ac707875a7c0b1036216833df5e}\label{class_c_transaction_a00809ac707875a7c0b1036216833df5e}} 
+bool {\bfseries Read\+From\+Disk} (\mbox{\hyperlink{class_c_out_point}{C\+Out\+Point}} prevout)
+\item 
+\mbox{\Hypertarget{class_c_transaction_af6bdfe6777edf08927afedb8fe47f514}\label{class_c_transaction_af6bdfe6777edf08927afedb8fe47f514}} 
+bool {\bfseries Disconnect\+Inputs} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb)
+\item 
+bool \mbox{\hyperlink{class_c_transaction_a5a4967303d3b588a120687f3ed1f4b0a}{Fetch\+Inputs}} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb, const std\+::map$<$ \mbox{\hyperlink{classuint256}{uint256}}, \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} $>$ \&map\+Test\+Pool, bool f\+Block, bool f\+Miner, Map\+Prev\+Tx \&inputs\+Ret, bool \&f\+Invalid)
+\item 
+bool \mbox{\hyperlink{class_c_transaction_ad066817ad4fef65c5473cd4a6762e244}{Connect\+Inputs}} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb, Map\+Prev\+Tx inputs, std\+::map$<$ \mbox{\hyperlink{classuint256}{uint256}}, \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} $>$ \&map\+Test\+Pool, const \mbox{\hyperlink{class_c_disk_tx_pos}{C\+Disk\+Tx\+Pos}} \&pos\+This\+Tx, const \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex\+Block, bool f\+Block, bool f\+Miner)
+\item 
+\mbox{\Hypertarget{class_c_transaction_ab2e8dc0837283cc9fd57c30f42b1fac5}\label{class_c_transaction_ab2e8dc0837283cc9fd57c30f42b1fac5}} 
+bool {\bfseries Client\+Connect\+Inputs} ()
+\item 
+\mbox{\Hypertarget{class_c_transaction_a2104329681e2749baeeaaf47c0af482d}\label{class_c_transaction_a2104329681e2749baeeaaf47c0af482d}} 
+bool {\bfseries Check\+Transaction} () const
+\item 
+\mbox{\Hypertarget{class_c_transaction_af7e4e6d8b6d00f2271a8f8b578cc38c8}\label{class_c_transaction_af7e4e6d8b6d00f2271a8f8b578cc38c8}} 
+bool {\bfseries Accept\+To\+Memory\+Pool} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb, bool f\+Check\+Inputs=true, bool $\ast$pf\+Missing\+Inputs=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{class_c_transaction_a87b52d480616a67e9ee91938b41a23cf}\label{class_c_transaction_a87b52d480616a67e9ee91938b41a23cf}} 
+bool {\bfseries Get\+Coin\+Age} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb, uint64\+\_\+t \&n\+Coin\+Age) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_transaction_a6c29bdd822859c7b21b7b6c22dca6825}\label{class_c_transaction_a6c29bdd822859c7b21b7b6c22dca6825}} 
+int {\bfseries n\+Version}
+\item 
+\mbox{\Hypertarget{class_c_transaction_a8ccb4b6020669bc562095e3417715e41}\label{class_c_transaction_a8ccb4b6020669bc562095e3417715e41}} 
+unsigned int {\bfseries n\+Time}
+\item 
+\mbox{\Hypertarget{class_c_transaction_a53fa787e4ea57374b4fa2a28e9a957b2}\label{class_c_transaction_a53fa787e4ea57374b4fa2a28e9a957b2}} 
+std\+::vector$<$ \mbox{\hyperlink{class_c_tx_in}{C\+Tx\+In}} $>$ {\bfseries vin}
+\item 
+\mbox{\Hypertarget{class_c_transaction_ae42c0032a464c3054c508017c7d040ef}\label{class_c_transaction_ae42c0032a464c3054c508017c7d040ef}} 
+std\+::vector$<$ \mbox{\hyperlink{class_c_tx_out}{C\+Tx\+Out}} $>$ {\bfseries vout}
+\item 
+\mbox{\Hypertarget{class_c_transaction_ab01e4e451d2f3f84b01380979c8fdacc}\label{class_c_transaction_ab01e4e451d2f3f84b01380979c8fdacc}} 
+unsigned int {\bfseries n\+Lock\+Time}
+\item 
+\mbox{\Hypertarget{class_c_transaction_a2a1fd6929add85d3df299249da78d015}\label{class_c_transaction_a2a1fd6929add85d3df299249da78d015}} 
+int {\bfseries n\+DoS}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_transaction_aa728c112d5cdd174ee156a67107f1cf4}\label{class_c_transaction_aa728c112d5cdd174ee156a67107f1cf4}} 
+static const int {\bfseries C\+U\+R\+R\+E\+N\+T\+\_\+\+V\+E\+R\+S\+I\+ON} =1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_transaction_a6b7535cbc89183563196d24c3b1d53cd}\label{class_c_transaction_a6b7535cbc89183563196d24c3b1d53cd}} 
+const \mbox{\hyperlink{class_c_tx_out}{C\+Tx\+Out}} \& {\bfseries Get\+Output\+For} (const \mbox{\hyperlink{class_c_tx_in}{C\+Tx\+In}} \&input, const Map\+Prev\+Tx \&inputs) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_transaction_a1afe3b8f0f0daca6f653756ee44c9e44}\label{class_c_transaction_a1afe3b8f0f0daca6f653756ee44c9e44}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&a, const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&b)
+\item 
+\mbox{\Hypertarget{class_c_transaction_ab7c00027d7a2622792736f6a3a579d5d}\label{class_c_transaction_ab7c00027d7a2622792736f6a3a579d5d}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&a, const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The basic transaction that is broadcasted on the network and contained in blocks. A transaction can contain multiple inputs and outputs. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_transaction_a48850ab313a08578c7cf91715eec1730}\label{class_c_transaction_a48850ab313a08578c7cf91715eec1730}} 
+\index{CTransaction@{CTransaction}!AreInputsStandard@{AreInputsStandard}}
+\index{AreInputsStandard@{AreInputsStandard}!CTransaction@{CTransaction}}
+\subsubsection{\texorpdfstring{AreInputsStandard()}{AreInputsStandard()}}
+{\footnotesize\ttfamily bool C\+Transaction\+::\+Are\+Inputs\+Standard (\begin{DoxyParamCaption}\item[{const Map\+Prev\+Tx \&}]{map\+Inputs }\end{DoxyParamCaption}) const}
+
+Check for standard transaction types 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em map\+Inputs} & Map of previous transactions that have outputs we\textquotesingle{}re spending \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if all inputs (script\+Sigs) use only standard transaction forms 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_c_transaction_a5a4967303d3b588a120687f3ed1f4b0a}{C\+Transaction\+::\+Fetch\+Inputs}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_transaction_ad066817ad4fef65c5473cd4a6762e244}\label{class_c_transaction_ad066817ad4fef65c5473cd4a6762e244}} 
+\index{CTransaction@{CTransaction}!ConnectInputs@{ConnectInputs}}
+\index{ConnectInputs@{ConnectInputs}!CTransaction@{CTransaction}}
+\subsubsection{\texorpdfstring{ConnectInputs()}{ConnectInputs()}}
+{\footnotesize\ttfamily bool C\+Transaction\+::\+Connect\+Inputs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&}]{txdb,  }\item[{Map\+Prev\+Tx}]{inputs,  }\item[{std\+::map$<$ \mbox{\hyperlink{classuint256}{uint256}}, \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} $>$ \&}]{map\+Test\+Pool,  }\item[{const \mbox{\hyperlink{class_c_disk_tx_pos}{C\+Disk\+Tx\+Pos}} \&}]{pos\+This\+Tx,  }\item[{const \mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$}]{pindex\+Block,  }\item[{bool}]{f\+Block,  }\item[{bool}]{f\+Miner }\end{DoxyParamCaption})}
+
+Sanity check previous transactions, then, if all checks succeed, mark them as spent by this transaction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em inputs} & Previous transactions (from Fetch\+Inputs) \\
+\hline
+\mbox{\texttt{ out}}  & {\em map\+Test\+Pool} & Keeps track of inputs that need to be updated on disk \\
+\hline
+\mbox{\texttt{ in}}  & {\em pos\+This\+Tx} & Position of this transaction on disk \\
+\hline
+\mbox{\texttt{ in}}  & {\em pindex\+Block} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Block} & true if called from Connect\+Block \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Miner} & true if called from Create\+New\+Block \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if all checks succeed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_transaction_a5a4967303d3b588a120687f3ed1f4b0a}\label{class_c_transaction_a5a4967303d3b588a120687f3ed1f4b0a}} 
+\index{CTransaction@{CTransaction}!FetchInputs@{FetchInputs}}
+\index{FetchInputs@{FetchInputs}!CTransaction@{CTransaction}}
+\subsubsection{\texorpdfstring{FetchInputs()}{FetchInputs()}}
+{\footnotesize\ttfamily bool C\+Transaction\+::\+Fetch\+Inputs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&}]{txdb,  }\item[{const std\+::map$<$ \mbox{\hyperlink{classuint256}{uint256}}, \mbox{\hyperlink{class_c_tx_index}{C\+Tx\+Index}} $>$ \&}]{map\+Test\+Pool,  }\item[{bool}]{f\+Block,  }\item[{bool}]{f\+Miner,  }\item[{Map\+Prev\+Tx \&}]{inputs\+Ret,  }\item[{bool \&}]{f\+Invalid }\end{DoxyParamCaption})}
+
+Fetch from memory and/or disk. inputs\+Ret keys are transaction hashes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em txdb} & Transaction database \\
+\hline
+\mbox{\texttt{ in}}  & {\em map\+Test\+Pool} & List of pending changes to the transaction index database \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Block} & True if being called to add a new best-\/block to the chain \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Miner} & True if being called by Create\+New\+Block \\
+\hline
+\mbox{\texttt{ out}}  & {\em inputs\+Ret} & Pointers to this transaction\textquotesingle{}s inputs \\
+\hline
+\mbox{\texttt{ out}}  & {\em f\+Invalid} & returns true if transaction is invalid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if all inputs are in txdb or map\+Test\+Pool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_transaction_aba5dcae9888d51ab2f7c57f833cd2d22}\label{class_c_transaction_aba5dcae9888d51ab2f7c57f833cd2d22}} 
+\index{CTransaction@{CTransaction}!GetLegacySigOpCount@{GetLegacySigOpCount}}
+\index{GetLegacySigOpCount@{GetLegacySigOpCount}!CTransaction@{CTransaction}}
+\subsubsection{\texorpdfstring{GetLegacySigOpCount()}{GetLegacySigOpCount()}}
+{\footnotesize\ttfamily unsigned int C\+Transaction\+::\+Get\+Legacy\+Sig\+Op\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Count E\+C\+D\+SA signature operations the old-\/fashioned (pre-\/0.\+6) way \begin{DoxyReturn}{Returns}
+number of sigops this transaction\textquotesingle{}s outputs will produce when spent 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_c_transaction_a5a4967303d3b588a120687f3ed1f4b0a}{C\+Transaction\+::\+Fetch\+Inputs}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_transaction_a39eafe87dc398013919747fb8514611b}\label{class_c_transaction_a39eafe87dc398013919747fb8514611b}} 
+\index{CTransaction@{CTransaction}!GetP2SHSigOpCount@{GetP2SHSigOpCount}}
+\index{GetP2SHSigOpCount@{GetP2SHSigOpCount}!CTransaction@{CTransaction}}
+\subsubsection{\texorpdfstring{GetP2SHSigOpCount()}{GetP2SHSigOpCount()}}
+{\footnotesize\ttfamily unsigned int C\+Transaction\+::\+Get\+P2\+S\+H\+Sig\+Op\+Count (\begin{DoxyParamCaption}\item[{const Map\+Prev\+Tx \&}]{map\+Inputs }\end{DoxyParamCaption}) const}
+
+Count E\+C\+D\+SA signature operations in pay-\/to-\/script-\/hash inputs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em map\+Inputs} & Map of previous transactions that have outputs we\textquotesingle{}re spending \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+maximum number of sigops required to validate this transaction\textquotesingle{}s inputs 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_c_transaction_a5a4967303d3b588a120687f3ed1f4b0a}{C\+Transaction\+::\+Fetch\+Inputs}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_transaction_a50051cce0d44bc4ea2018625101dc1b6}\label{class_c_transaction_a50051cce0d44bc4ea2018625101dc1b6}} 
+\index{CTransaction@{CTransaction}!GetValueIn@{GetValueIn}}
+\index{GetValueIn@{GetValueIn}!CTransaction@{CTransaction}}
+\subsubsection{\texorpdfstring{GetValueIn()}{GetValueIn()}}
+{\footnotesize\ttfamily int64\+\_\+t C\+Transaction\+::\+Get\+Value\+In (\begin{DoxyParamCaption}\item[{const Map\+Prev\+Tx \&}]{map\+Inputs }\end{DoxyParamCaption}) const}
+
+Amount of bitcoins coming in to this transaction Note that lightweight clients may not know anything besides the hash of previous transactions, so may not be able to calculate this.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em map\+Inputs} & Map of previous transactions that have outputs we\textquotesingle{}re spending \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sum of value of all inputs (script\+Sigs) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_c_transaction_a5a4967303d3b588a120687f3ed1f4b0a}{C\+Transaction\+::\+Fetch\+Inputs}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_transaction_a9ce7d94c68adb37627d82669b83a7c59}\label{class_c_transaction_a9ce7d94c68adb37627d82669b83a7c59}} 
+\index{CTransaction@{CTransaction}!GetValueOut@{GetValueOut}}
+\index{GetValueOut@{GetValueOut}!CTransaction@{CTransaction}}
+\subsubsection{\texorpdfstring{GetValueOut()}{GetValueOut()}}
+{\footnotesize\ttfamily int64\+\_\+t C\+Transaction\+::\+Get\+Value\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Amount of bitcoins spent by this transaction. \begin{DoxyReturn}{Returns}
+sum of all outputs (note\+: does not include fees) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_transaction_a270e669ab6d491a44d50383ad8ce622b}\label{class_c_transaction_a270e669ab6d491a44d50383ad8ce622b}} 
+\index{CTransaction@{CTransaction}!IsStandard@{IsStandard}}
+\index{IsStandard@{IsStandard}!CTransaction@{CTransaction}}
+\subsubsection{\texorpdfstring{IsStandard()}{IsStandard()}}
+{\footnotesize\ttfamily bool C\+Transaction\+::\+Is\+Standard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Check for standard transaction types \begin{DoxyReturn}{Returns}
+True if all outputs (script\+Pub\+Keys) use only standard transaction forms 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+main.\+h\item 
+main.\+cpp\end{DoxyCompactItemize}

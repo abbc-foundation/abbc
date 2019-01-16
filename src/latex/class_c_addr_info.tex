@@ -1,0 +1,52 @@
+\hypertarget{class_c_addr_info}{}\section{C\+Addr\+Info Class Reference}
+\label{class_c_addr_info}\index{CAddrInfo@{CAddrInfo}}
+
+
+{\ttfamily \#include $<$addrman.\+h$>$}
+
+Inheritance diagram for C\+Addr\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_addr_info}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_addr_info_acc55a53b20a9755d23ad32f1392cc96e}\label{class_c_addr_info_acc55a53b20a9755d23ad32f1392cc96e}} 
+{\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE} (\mbox{\hyperlink{class_c_address}{C\+Address}} $\ast$pthis=(\mbox{\hyperlink{class_c_address}{C\+Address}} $\ast$)(this);R\+E\+A\+D\+W\+R\+I\+TE($\ast$pthis);R\+E\+A\+D\+W\+R\+I\+TE(source);R\+E\+A\+D\+W\+R\+I\+TE(n\+Last\+Success);R\+E\+A\+D\+W\+R\+I\+TE(n\+Attempts);) void Init()
+\item 
+\mbox{\Hypertarget{class_c_addr_info_a27e773233e8d7e7d183f138d24cc40ef}\label{class_c_addr_info_a27e773233e8d7e7d183f138d24cc40ef}} 
+{\bfseries C\+Addr\+Info} (const \mbox{\hyperlink{class_c_address}{C\+Address}} \&addr\+In, const \mbox{\hyperlink{class_c_net_addr}{C\+Net\+Addr}} \&addr\+Source)
+\item 
+\mbox{\Hypertarget{class_c_addr_info_a2a541a16ab155a09afc6666328e920b2}\label{class_c_addr_info_a2a541a16ab155a09afc6666328e920b2}} 
+int {\bfseries Get\+Tried\+Bucket} (const std\+::vector$<$ unsigned char $>$ \&n\+Key) const
+\item 
+\mbox{\Hypertarget{class_c_addr_info_a85faee0bb6c4d2bd6e63ed66c011bc75}\label{class_c_addr_info_a85faee0bb6c4d2bd6e63ed66c011bc75}} 
+int {\bfseries Get\+New\+Bucket} (const std\+::vector$<$ unsigned char $>$ \&n\+Key, const \mbox{\hyperlink{class_c_net_addr}{C\+Net\+Addr}} \&src) const
+\item 
+\mbox{\Hypertarget{class_c_addr_info_af5990f1a51d8b64dfcdf995355eee1d3}\label{class_c_addr_info_af5990f1a51d8b64dfcdf995355eee1d3}} 
+int {\bfseries Get\+New\+Bucket} (const std\+::vector$<$ unsigned char $>$ \&n\+Key) const
+\item 
+\mbox{\Hypertarget{class_c_addr_info_a600725db90b879aee92128a3409af8aa}\label{class_c_addr_info_a600725db90b879aee92128a3409af8aa}} 
+bool {\bfseries Is\+Terrible} (int64\+\_\+t n\+Now=Get\+Adjusted\+Time()) const
+\item 
+\mbox{\Hypertarget{class_c_addr_info_af6788fe5a5364e63896ab9dedb8e5d40}\label{class_c_addr_info_af6788fe5a5364e63896ab9dedb8e5d40}} 
+double {\bfseries Get\+Chance} (int64\+\_\+t n\+Now=Get\+Adjusted\+Time()) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_addr_info_a17ec4e9e560da58786d2ca36092bf83d}\label{class_c_addr_info_a17ec4e9e560da58786d2ca36092bf83d}} 
+class {\bfseries C\+Addr\+Man}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Extended statistics about a \mbox{\hyperlink{class_c_address}{C\+Address}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+addrman.\+h\item 
+addrman.\+cpp\end{DoxyCompactItemize}

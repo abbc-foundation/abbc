@@ -1,0 +1,53 @@
+\hypertarget{class_c_sync_checkpoint}{}\section{C\+Sync\+Checkpoint Class Reference}
+\label{class_c_sync_checkpoint}\index{CSyncCheckpoint@{CSyncCheckpoint}}
+Inheritance diagram for C\+Sync\+Checkpoint\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_sync_checkpoint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_sync_checkpoint_a486fbed4827580fd77a58a29e6d69350}\label{class_c_sync_checkpoint_a486fbed4827580fd77a58a29e6d69350}} 
+{\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE} (R\+E\+A\+D\+W\+R\+I\+TE(vch\+Msg);R\+E\+A\+D\+W\+R\+I\+TE(vch\+Sig);) void Set\+Null()
+\item 
+\mbox{\Hypertarget{class_c_sync_checkpoint_a85528fd507577c5f8aa2c5634234f84a}\label{class_c_sync_checkpoint_a85528fd507577c5f8aa2c5634234f84a}} 
+bool {\bfseries Is\+Null} () const
+\item 
+\mbox{\Hypertarget{class_c_sync_checkpoint_a8b1ea6da296a69c35280c74032cd86a3}\label{class_c_sync_checkpoint_a8b1ea6da296a69c35280c74032cd86a3}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries Get\+Hash} () const
+\item 
+\mbox{\Hypertarget{class_c_sync_checkpoint_a79aa12a33c8bcae9a1748c3fc6469e7d}\label{class_c_sync_checkpoint_a79aa12a33c8bcae9a1748c3fc6469e7d}} 
+bool {\bfseries Relay\+To} (\mbox{\hyperlink{class_c_node}{C\+Node}} $\ast$pnode) const
+\item 
+\mbox{\Hypertarget{class_c_sync_checkpoint_a240894ca0b64430f91c751c8d1fa42a7}\label{class_c_sync_checkpoint_a240894ca0b64430f91c751c8d1fa42a7}} 
+bool {\bfseries Check\+Signature} ()
+\item 
+\mbox{\Hypertarget{class_c_sync_checkpoint_a845c5db7e2fd34b02a162eda7381e908}\label{class_c_sync_checkpoint_a845c5db7e2fd34b02a162eda7381e908}} 
+bool {\bfseries Process\+Sync\+Checkpoint} (\mbox{\hyperlink{class_c_node}{C\+Node}} $\ast$pfrom)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_sync_checkpoint_a8974d80564b97266199d23cc4b35ed66}\label{class_c_sync_checkpoint_a8974d80564b97266199d23cc4b35ed66}} 
+std\+::vector$<$ unsigned char $>$ {\bfseries vch\+Msg}
+\item 
+\mbox{\Hypertarget{class_c_sync_checkpoint_ab63efcc435ebd5fc5ae49fa1d6381b1f}\label{class_c_sync_checkpoint_ab63efcc435ebd5fc5ae49fa1d6381b1f}} 
+std\+::vector$<$ unsigned char $>$ {\bfseries vch\+Sig}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_sync_checkpoint_afb7a4b2294aecf9b422cc6a67a64207a}\label{class_c_sync_checkpoint_afb7a4b2294aecf9b422cc6a67a64207a}} 
+static const std\+::string {\bfseries str\+Master\+Pub\+Key} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{class_c_sync_checkpoint_ab767dc28cb057a4e1e15d847ae1b699d}\label{class_c_sync_checkpoint_ab767dc28cb057a4e1e15d847ae1b699d}} 
+static std\+::string {\bfseries str\+Master\+Priv\+Key} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+checkpoints.\+h\item 
+checkpoints.\+cpp\end{DoxyCompactItemize}

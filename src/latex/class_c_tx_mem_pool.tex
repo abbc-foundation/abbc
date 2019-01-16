@@ -1,0 +1,50 @@
+\hypertarget{class_c_tx_mem_pool}{}\section{C\+Tx\+Mem\+Pool Class Reference}
+\label{class_c_tx_mem_pool}\index{CTxMemPool@{CTxMemPool}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_a8f9fd52b0c330925638cf01c0cd28701}\label{class_c_tx_mem_pool_a8f9fd52b0c330925638cf01c0cd28701}} 
+bool {\bfseries accept} (\mbox{\hyperlink{class_c_tx_d_b}{C\+Tx\+DB}} \&txdb, \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx, bool f\+Check\+Inputs, bool $\ast$pf\+Missing\+Inputs)
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_a1203ac5cf3bdb88af4922705afad555d}\label{class_c_tx_mem_pool_a1203ac5cf3bdb88af4922705afad555d}} 
+bool {\bfseries add\+Unchecked} (const \mbox{\hyperlink{classuint256}{uint256}} \&hash, \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx)
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_a258e23e3a434045d522a8cebc5a039ce}\label{class_c_tx_mem_pool_a258e23e3a434045d522a8cebc5a039ce}} 
+bool {\bfseries remove} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx, bool f\+Recursive=false)
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_ab6f7c0b3ddb8383767d97d22103ffd9b}\label{class_c_tx_mem_pool_ab6f7c0b3ddb8383767d97d22103ffd9b}} 
+bool {\bfseries remove\+Conflicts} (const \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \&tx)
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_a6dba6bce4139392751321438a29b6b09}\label{class_c_tx_mem_pool_a6dba6bce4139392751321438a29b6b09}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_a42fa7d41a45562d02e356f2e7708bb02}\label{class_c_tx_mem_pool_a42fa7d41a45562d02e356f2e7708bb02}} 
+void {\bfseries query\+Hashes} (std\+::vector$<$ \mbox{\hyperlink{classuint256}{uint256}} $>$ \&vtxid)
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_a867f7b452141770f3b2e8697fb3513d8}\label{class_c_tx_mem_pool_a867f7b452141770f3b2e8697fb3513d8}} 
+unsigned long {\bfseries size} ()
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_adba06e79be4a1a092dd2db8290733be7}\label{class_c_tx_mem_pool_adba06e79be4a1a092dd2db8290733be7}} 
+bool {\bfseries exists} (\mbox{\hyperlink{classuint256}{uint256}} hash)
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_ab0a9f0029f9038c42803e1057830def7}\label{class_c_tx_mem_pool_ab0a9f0029f9038c42803e1057830def7}} 
+\mbox{\hyperlink{class_c_transaction}{C\+Transaction}} \& {\bfseries lookup} (\mbox{\hyperlink{classuint256}{uint256}} hash)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_ac7ee8c06837c7d2688e2d7e3d071bdbb}\label{class_c_tx_mem_pool_ac7ee8c06837c7d2688e2d7e3d071bdbb}} 
+C\+Critical\+Section {\bfseries cs}
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_a340d4a897e521b7021e6b22cce951beb}\label{class_c_tx_mem_pool_a340d4a897e521b7021e6b22cce951beb}} 
+std\+::map$<$ \mbox{\hyperlink{classuint256}{uint256}}, \mbox{\hyperlink{class_c_transaction}{C\+Transaction}} $>$ {\bfseries map\+Tx}
+\item 
+\mbox{\Hypertarget{class_c_tx_mem_pool_aae6f1162f0b2e42b369971f32a9f71e8}\label{class_c_tx_mem_pool_aae6f1162f0b2e42b369971f32a9f71e8}} 
+std\+::map$<$ \mbox{\hyperlink{class_c_out_point}{C\+Out\+Point}}, \mbox{\hyperlink{class_c_in_point}{C\+In\+Point}} $>$ {\bfseries map\+Next\+Tx}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+main.\+h\item 
+main.\+cpp\end{DoxyCompactItemize}

@@ -9,7 +9,7 @@
 #include "optionsmodel.h"
 #include "walletmodel.h"
 #include "wallet.h"
-
+#include <QStyle>
 #include <string>
 #include <vector>
 

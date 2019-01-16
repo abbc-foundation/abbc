@@ -5,7 +5,7 @@
 #include "base58.h"
 #include "addressbookpage.h"
 #include "init.h"
-
+#include <QStyle>
 #include <QMessageBox>
 #include <QLineEdit>
 

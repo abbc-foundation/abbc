@@ -1,0 +1,34 @@
+\hypertarget{structsph__hamsi__big__context}{}\section{sph\+\_\+hamsi\+\_\+big\+\_\+context Struct Reference}
+\label{structsph__hamsi__big__context}\index{sph\_hamsi\_big\_context@{sph\_hamsi\_big\_context}}
+
+
+{\ttfamily \#include $<$sph\+\_\+hamsi.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsph__hamsi__big__context_a46d565c14d01caf56b5691faf4abbe83}\label{structsph__hamsi__big__context_a46d565c14d01caf56b5691faf4abbe83}} 
+unsigned char {\bfseries partial} \mbox{[}8\mbox{]}
+\item 
+\mbox{\Hypertarget{structsph__hamsi__big__context_a0c4aa276101d29921ae02cb3ca43e8f6}\label{structsph__hamsi__big__context_a0c4aa276101d29921ae02cb3ca43e8f6}} 
+size\+\_\+t {\bfseries partial\+\_\+len}
+\item 
+\mbox{\Hypertarget{structsph__hamsi__big__context_a91fd548b9edcd19bf53a3d5896a5d045}\label{structsph__hamsi__big__context_a91fd548b9edcd19bf53a3d5896a5d045}} 
+sph\+\_\+u32 {\bfseries h} \mbox{[}16\mbox{]}
+\item 
+\mbox{\Hypertarget{structsph__hamsi__big__context_a31d4c6979c53139e7743b8fd631da54f}\label{structsph__hamsi__big__context_a31d4c6979c53139e7743b8fd631da54f}} 
+sph\+\_\+u32 {\bfseries count\+\_\+high}
+\item 
+\mbox{\Hypertarget{structsph__hamsi__big__context_ac9f4f67420ac9bdfa7983d28ef6ccce7}\label{structsph__hamsi__big__context_ac9f4f67420ac9bdfa7983d28ef6ccce7}} 
+sph\+\_\+u32 {\bfseries count\+\_\+low}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure is a context for Hamsi-\/384 and Hamsi-\/512 computations\+: it contains the intermediate values and some data from the last entered block. Once a Hamsi computation has been performed, the context can be reused for another computation.
+
+The contents of this structure are private. A running Hamsi computation can be cloned by copying the context (e.\+g. with a simple {\ttfamily memcpy()}). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sph__hamsi_8h}{sph\+\_\+hamsi.\+h}}\end{DoxyCompactItemize}

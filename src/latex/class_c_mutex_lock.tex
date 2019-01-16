@@ -1,0 +1,38 @@
+\hypertarget{class_c_mutex_lock}{}\section{C\+Mutex\+Lock$<$ Mutex $>$ Class Template Reference}
+\label{class_c_mutex_lock}\index{CMutexLock$<$ Mutex $>$@{CMutexLock$<$ Mutex $>$}}
+
+
+{\ttfamily \#include $<$sync.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_mutex_lock_a8a9f734c76f1b766445bec41b91393dd}\label{class_c_mutex_lock_a8a9f734c76f1b766445bec41b91393dd}} 
+void {\bfseries Enter} (const char $\ast$psz\+Name, const char $\ast$psz\+File, int n\+Line)
+\item 
+\mbox{\Hypertarget{class_c_mutex_lock_ade2d9e399a2cfcaabe0667fc954f7435}\label{class_c_mutex_lock_ade2d9e399a2cfcaabe0667fc954f7435}} 
+void {\bfseries Leave} ()
+\item 
+\mbox{\Hypertarget{class_c_mutex_lock_a9ba3770fa3e256a183b0ee52ebf048c4}\label{class_c_mutex_lock_a9ba3770fa3e256a183b0ee52ebf048c4}} 
+bool {\bfseries Try\+Enter} (const char $\ast$psz\+Name, const char $\ast$psz\+File, int n\+Line)
+\item 
+\mbox{\Hypertarget{class_c_mutex_lock_ad08e2df1cad4c5732dafb1552abe6106}\label{class_c_mutex_lock_ad08e2df1cad4c5732dafb1552abe6106}} 
+{\bfseries C\+Mutex\+Lock} (Mutex \&mutex\+In, const char $\ast$psz\+Name, const char $\ast$psz\+File, int n\+Line, bool f\+Try=false)
+\item 
+\mbox{\Hypertarget{class_c_mutex_lock_a4358803c87a873252abebdd1b625d293}\label{class_c_mutex_lock_a4358803c87a873252abebdd1b625d293}} 
+{\bfseries operator bool} ()
+\item 
+\mbox{\Hypertarget{class_c_mutex_lock_a1c36fd4b70dea1908280eea6b752d3d3}\label{class_c_mutex_lock_a1c36fd4b70dea1908280eea6b752d3d3}} 
+boost\+::unique\+\_\+lock$<$ Mutex $>$ \& {\bfseries Get\+Lock} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Mutex$>$\newline
+class C\+Mutex\+Lock$<$ Mutex $>$}
+
+Wrapper around boost\+::unique\+\_\+lock$<$\+Mutex$>$ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sync.\+h\end{DoxyCompactItemize}

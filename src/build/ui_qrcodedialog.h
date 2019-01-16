@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'qrcodedialog.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,21 +10,18 @@
 #define UI_QRCODEDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QDialog>
-#include <QtGui/QFormLayout>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QPlainTextEdit>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPlainTextEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 #include "bitcoinamountfield.h"
 
 QT_BEGIN_NAMESPACE
@@ -173,12 +170,12 @@ public:
 
     void retranslateUi(QDialog *QRCodeDialog)
     {
-        QRCodeDialog->setWindowTitle(QApplication::translate("QRCodeDialog", "QR Code Dialog", 0, QApplication::UnicodeUTF8));
-        chkReqPayment->setText(QApplication::translate("QRCodeDialog", "Request Payment", 0, QApplication::UnicodeUTF8));
-        lblLabel->setText(QApplication::translate("QRCodeDialog", "Label:", 0, QApplication::UnicodeUTF8));
-        lblMessage->setText(QApplication::translate("QRCodeDialog", "Message:", 0, QApplication::UnicodeUTF8));
-        lblAmount->setText(QApplication::translate("QRCodeDialog", "Amount:", 0, QApplication::UnicodeUTF8));
-        btnSaveAs->setText(QApplication::translate("QRCodeDialog", "&Save As...", 0, QApplication::UnicodeUTF8));
+        QRCodeDialog->setWindowTitle(QApplication::translate("QRCodeDialog", "QR Code Dialog", nullptr));
+        chkReqPayment->setText(QApplication::translate("QRCodeDialog", "Request Payment", nullptr));
+        lblLabel->setText(QApplication::translate("QRCodeDialog", "Label:", nullptr));
+        lblMessage->setText(QApplication::translate("QRCodeDialog", "Message:", nullptr));
+        lblAmount->setText(QApplication::translate("QRCodeDialog", "Amount:", nullptr));
+        btnSaveAs->setText(QApplication::translate("QRCodeDialog", "&Save As...", nullptr));
     } // retranslateUi
 
 };

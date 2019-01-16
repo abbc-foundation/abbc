@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'overviewpage.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,18 +10,15 @@
 #define UI_OVERVIEWPAGE_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QFormLayout>
-#include <QtGui/QFrame>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QListView>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QListView>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -283,39 +280,39 @@ public:
 
     void retranslateUi(QWidget *OverviewPage)
     {
-        OverviewPage->setWindowTitle(QApplication::translate("OverviewPage", "Form", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("OverviewPage", "Wallet", 0, QApplication::UnicodeUTF8));
+        OverviewPage->setWindowTitle(QApplication::translate("OverviewPage", "Form", nullptr));
+        label_5->setText(QApplication::translate("OverviewPage", "Wallet", nullptr));
 #ifndef QT_NO_TOOLTIP
-        labelWalletStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the ABBCCoin network after a connection is established, but this process has not completed yet.", 0, QApplication::UnicodeUTF8));
+        labelWalletStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the ABBCCoin network after a connection is established, but this process has not completed yet.", nullptr));
 #endif // QT_NO_TOOLTIP
-        label->setText(QApplication::translate("OverviewPage", "Spendable:", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("OverviewPage", "Spendable:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        labelBalance->setToolTip(QApplication::translate("OverviewPage", "Your current spendable balance", 0, QApplication::UnicodeUTF8));
+        labelBalance->setToolTip(QApplication::translate("OverviewPage", "Your current spendable balance", nullptr));
 #endif // QT_NO_TOOLTIP
-        label_6->setText(QApplication::translate("OverviewPage", "Stake:", 0, QApplication::UnicodeUTF8));
+        label_6->setText(QApplication::translate("OverviewPage", "Stake:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        labelStake->setToolTip(QApplication::translate("OverviewPage", "Total of coins that was staked, and do not yet count toward the current balance", 0, QApplication::UnicodeUTF8));
+        labelStake->setToolTip(QApplication::translate("OverviewPage", "Total of coins that was staked, and do not yet count toward the current balance", nullptr));
 #endif // QT_NO_TOOLTIP
-        label_3->setText(QApplication::translate("OverviewPage", "Unconfirmed:", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("OverviewPage", "Unconfirmed:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        labelUnconfirmed->setToolTip(QApplication::translate("OverviewPage", "Total of transactions that have yet to be confirmed, and do not yet count toward the current balance", 0, QApplication::UnicodeUTF8));
+        labelUnconfirmed->setToolTip(QApplication::translate("OverviewPage", "Total of transactions that have yet to be confirmed, and do not yet count toward the current balance", nullptr));
 #endif // QT_NO_TOOLTIP
-        labelImmatureText->setText(QApplication::translate("OverviewPage", "Immature:", 0, QApplication::UnicodeUTF8));
+        labelImmatureText->setText(QApplication::translate("OverviewPage", "Immature:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        labelImmature->setToolTip(QApplication::translate("OverviewPage", "Mined balance that has not yet matured", 0, QApplication::UnicodeUTF8));
+        labelImmature->setToolTip(QApplication::translate("OverviewPage", "Mined balance that has not yet matured", nullptr));
 #endif // QT_NO_TOOLTIP
-        labelTotalText->setText(QApplication::translate("OverviewPage", "Total Balance:", 0, QApplication::UnicodeUTF8));
+        labelTotalText->setText(QApplication::translate("OverviewPage", "Total Balance:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        labelTotal->setToolTip(QApplication::translate("OverviewPage", "Total Stake and Spendable balance", 0, QApplication::UnicodeUTF8));
+        labelTotal->setToolTip(QApplication::translate("OverviewPage", "Total Stake and Spendable balance", nullptr));
 #endif // QT_NO_TOOLTIP
-        labelTotalText1->setText(QApplication::translate("OverviewPage", "Number of transactions:", 0, QApplication::UnicodeUTF8));
+        labelTotalText1->setText(QApplication::translate("OverviewPage", "Number of transactions:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        labelNumTransactions->setToolTip(QApplication::translate("OverviewPage", "Total number of transactions in wallet", 0, QApplication::UnicodeUTF8));
+        labelNumTransactions->setToolTip(QApplication::translate("OverviewPage", "Total number of transactions in wallet", nullptr));
 #endif // QT_NO_TOOLTIP
         label_2->setText(QString());
-        label_4->setText(QApplication::translate("OverviewPage", "<b>Recent transactions</b>", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("OverviewPage", "<b>Recent transactions</b>", nullptr));
 #ifndef QT_NO_TOOLTIP
-        labelTransactionsStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the ABBCCoin network after a connection is established, but this process has not completed yet.", 0, QApplication::UnicodeUTF8));
+        labelTransactionsStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the ABBCCoin network after a connection is established, but this process has not completed yet.", nullptr));
 #endif // QT_NO_TOOLTIP
     } // retranslateUi
 

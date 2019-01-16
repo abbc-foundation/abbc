@@ -1,0 +1,281 @@
+\hypertarget{class_c_node}{}\section{C\+Node Class Reference}
+\label{class_c_node}\index{CNode@{CNode}}
+
+
+{\ttfamily \#include $<$net.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_node_a51556705550511146245b9fb2fec09c1}\label{class_c_node_a51556705550511146245b9fb2fec09c1}} 
+{\bfseries C\+Node} (S\+O\+C\+K\+ET h\+Socket\+In, \mbox{\hyperlink{class_c_address}{C\+Address}} addr\+In, std\+::string addr\+Name\+In=\char`\"{}\char`\"{}, bool f\+Inbound\+In=false)
+\item 
+\mbox{\Hypertarget{class_c_node_a72211aaf51af2e981e6b8a1deb73c836}\label{class_c_node_a72211aaf51af2e981e6b8a1deb73c836}} 
+int {\bfseries Get\+Ref\+Count} ()
+\item 
+\mbox{\Hypertarget{class_c_node_a9d2bbaebcfbb305e3727c5ab57745fff}\label{class_c_node_a9d2bbaebcfbb305e3727c5ab57745fff}} 
+\mbox{\hyperlink{class_c_node}{C\+Node}} $\ast$ {\bfseries Add\+Ref} (int64\+\_\+t n\+Timeout=0)
+\item 
+\mbox{\Hypertarget{class_c_node_af804bf7c7f9794e80a3b916e1befece9}\label{class_c_node_af804bf7c7f9794e80a3b916e1befece9}} 
+void {\bfseries Release} ()
+\item 
+\mbox{\Hypertarget{class_c_node_a1d2cecdd03c9da642d292f6a81ac6ed8}\label{class_c_node_a1d2cecdd03c9da642d292f6a81ac6ed8}} 
+void {\bfseries Add\+Address\+Known} (const \mbox{\hyperlink{class_c_address}{C\+Address}} \&addr)
+\item 
+\mbox{\Hypertarget{class_c_node_a06950a5ce265a1d4df1aad7f28e6fde8}\label{class_c_node_a06950a5ce265a1d4df1aad7f28e6fde8}} 
+void {\bfseries Push\+Address} (const \mbox{\hyperlink{class_c_address}{C\+Address}} \&addr)
+\item 
+\mbox{\Hypertarget{class_c_node_ac3054eb6ade84e8968f032ce3e700f6a}\label{class_c_node_ac3054eb6ade84e8968f032ce3e700f6a}} 
+void {\bfseries Add\+Inventory\+Known} (const \mbox{\hyperlink{class_c_inv}{C\+Inv}} \&inv)
+\item 
+\mbox{\Hypertarget{class_c_node_a7cef2333aa8776127a7e7fcab659eb6a}\label{class_c_node_a7cef2333aa8776127a7e7fcab659eb6a}} 
+void {\bfseries Push\+Inventory} (const \mbox{\hyperlink{class_c_inv}{C\+Inv}} \&inv)
+\item 
+\mbox{\Hypertarget{class_c_node_ae0def1498409407d1612833a7d38c875}\label{class_c_node_ae0def1498409407d1612833a7d38c875}} 
+void {\bfseries Ask\+For} (const \mbox{\hyperlink{class_c_inv}{C\+Inv}} \&inv)
+\item 
+\mbox{\Hypertarget{class_c_node_afdfd046f2404877bebdf8767a80d3f0e}\label{class_c_node_afdfd046f2404877bebdf8767a80d3f0e}} 
+void {\bfseries Begin\+Message} (const char $\ast$psz\+Command)
+\item 
+\mbox{\Hypertarget{class_c_node_a450f4d94e80d97bf0527b75b96c55b2c}\label{class_c_node_a450f4d94e80d97bf0527b75b96c55b2c}} 
+void {\bfseries Abort\+Message} ()
+\item 
+\mbox{\Hypertarget{class_c_node_a056be2dcf7a8eba3bb7e6d83f698f88b}\label{class_c_node_a056be2dcf7a8eba3bb7e6d83f698f88b}} 
+void {\bfseries End\+Message} ()
+\item 
+\mbox{\Hypertarget{class_c_node_aeaf7ae545de93165ed96ac86ffcde1d6}\label{class_c_node_aeaf7ae545de93165ed96ac86ffcde1d6}} 
+void {\bfseries End\+Message\+Abort\+If\+Empty} ()
+\item 
+void \mbox{\hyperlink{class_c_node_a4dbfe4f6c1fd162aaa905e4bd201d536}{Push\+Version}} ()
+\item 
+\mbox{\Hypertarget{class_c_node_a204fda3d33404cb37698c085b1583ab2}\label{class_c_node_a204fda3d33404cb37698c085b1583ab2}} 
+void {\bfseries Push\+Message} (const char $\ast$psz\+Command)
+\item 
+\mbox{\Hypertarget{class_c_node_a07f897794e362a214a1d4d2aa3d68939}\label{class_c_node_a07f897794e362a214a1d4d2aa3d68939}} 
+{\footnotesize template$<$typename T1 $>$ }\\void {\bfseries Push\+Message} (const char $\ast$psz\+Command, const T1 \&a1)
+\item 
+\mbox{\Hypertarget{class_c_node_a67b985781651b8806d7f9976f6fb85a9}\label{class_c_node_a67b985781651b8806d7f9976f6fb85a9}} 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\void {\bfseries Push\+Message} (const char $\ast$psz\+Command, const T1 \&a1, const T2 \&a2)
+\item 
+\mbox{\Hypertarget{class_c_node_a79355956a00c38d855b986a34e7ba444}\label{class_c_node_a79355956a00c38d855b986a34e7ba444}} 
+{\footnotesize template$<$typename T1 , typename T2 , typename T3 $>$ }\\void {\bfseries Push\+Message} (const char $\ast$psz\+Command, const T1 \&a1, const T2 \&a2, const T3 \&a3)
+\item 
+\mbox{\Hypertarget{class_c_node_a2958ee10e2c96ef647787bce80196079}\label{class_c_node_a2958ee10e2c96ef647787bce80196079}} 
+{\footnotesize template$<$typename T1 , typename T2 , typename T3 , typename T4 $>$ }\\void {\bfseries Push\+Message} (const char $\ast$psz\+Command, const T1 \&a1, const T2 \&a2, const T3 \&a3, const T4 \&a4)
+\item 
+\mbox{\Hypertarget{class_c_node_a1f58deeed29baf57c49dae177f8be826}\label{class_c_node_a1f58deeed29baf57c49dae177f8be826}} 
+{\footnotesize template$<$typename T1 , typename T2 , typename T3 , typename T4 , typename T5 $>$ }\\void {\bfseries Push\+Message} (const char $\ast$psz\+Command, const T1 \&a1, const T2 \&a2, const T3 \&a3, const T4 \&a4, const T5 \&a5)
+\item 
+\mbox{\Hypertarget{class_c_node_a4addbff355c502fb2f8c10451e76373d}\label{class_c_node_a4addbff355c502fb2f8c10451e76373d}} 
+{\footnotesize template$<$typename T1 , typename T2 , typename T3 , typename T4 , typename T5 , typename T6 $>$ }\\void {\bfseries Push\+Message} (const char $\ast$psz\+Command, const T1 \&a1, const T2 \&a2, const T3 \&a3, const T4 \&a4, const T5 \&a5, const T6 \&a6)
+\item 
+\mbox{\Hypertarget{class_c_node_ab3611cdb08d5f25a4da05fe140e48625}\label{class_c_node_ab3611cdb08d5f25a4da05fe140e48625}} 
+{\footnotesize template$<$typename T1 , typename T2 , typename T3 , typename T4 , typename T5 , typename T6 , typename T7 $>$ }\\void {\bfseries Push\+Message} (const char $\ast$psz\+Command, const T1 \&a1, const T2 \&a2, const T3 \&a3, const T4 \&a4, const T5 \&a5, const T6 \&a6, const T7 \&a7)
+\item 
+\mbox{\Hypertarget{class_c_node_af91d09012aa7e879be4b488b0bba903d}\label{class_c_node_af91d09012aa7e879be4b488b0bba903d}} 
+{\footnotesize template$<$typename T1 , typename T2 , typename T3 , typename T4 , typename T5 , typename T6 , typename T7 , typename T8 $>$ }\\void {\bfseries Push\+Message} (const char $\ast$psz\+Command, const T1 \&a1, const T2 \&a2, const T3 \&a3, const T4 \&a4, const T5 \&a5, const T6 \&a6, const T7 \&a7, const T8 \&a8)
+\item 
+\mbox{\Hypertarget{class_c_node_a1af04d8219e8e6aafe5b6446000cd9ff}\label{class_c_node_a1af04d8219e8e6aafe5b6446000cd9ff}} 
+{\footnotesize template$<$typename T1 , typename T2 , typename T3 , typename T4 , typename T5 , typename T6 , typename T7 , typename T8 , typename T9 $>$ }\\void {\bfseries Push\+Message} (const char $\ast$psz\+Command, const T1 \&a1, const T2 \&a2, const T3 \&a3, const T4 \&a4, const T5 \&a5, const T6 \&a6, const T7 \&a7, const T8 \&a8, const T9 \&a9)
+\item 
+\mbox{\Hypertarget{class_c_node_a50fa5e53e4a5b7b201238d3b5100e869}\label{class_c_node_a50fa5e53e4a5b7b201238d3b5100e869}} 
+void {\bfseries Push\+Request} (const char $\ast$psz\+Command, void($\ast$fn)(void $\ast$, \mbox{\hyperlink{class_c_data_stream}{C\+Data\+Stream}} \&), void $\ast$param1)
+\item 
+\mbox{\Hypertarget{class_c_node_ab3a8e3bf56a7ad8892d8aeeef671e086}\label{class_c_node_ab3a8e3bf56a7ad8892d8aeeef671e086}} 
+{\footnotesize template$<$typename T1 $>$ }\\void {\bfseries Push\+Request} (const char $\ast$psz\+Command, const T1 \&a1, void($\ast$fn)(void $\ast$, \mbox{\hyperlink{class_c_data_stream}{C\+Data\+Stream}} \&), void $\ast$param1)
+\item 
+\mbox{\Hypertarget{class_c_node_afe73133d21440cb87db728813645239d}\label{class_c_node_afe73133d21440cb87db728813645239d}} 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\void {\bfseries Push\+Request} (const char $\ast$psz\+Command, const T1 \&a1, const T2 \&a2, void($\ast$fn)(void $\ast$, \mbox{\hyperlink{class_c_data_stream}{C\+Data\+Stream}} \&), void $\ast$param1)
+\item 
+\mbox{\Hypertarget{class_c_node_a067738331c342d96e51aff02228c5d0d}\label{class_c_node_a067738331c342d96e51aff02228c5d0d}} 
+void {\bfseries Push\+Get\+Blocks} (\mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex\+Begin, \mbox{\hyperlink{classuint256}{uint256}} hash\+End)
+\item 
+\mbox{\Hypertarget{class_c_node_a2309cc5f763bce683337201ea5a640a2}\label{class_c_node_a2309cc5f763bce683337201ea5a640a2}} 
+bool {\bfseries Is\+Subscribed} (unsigned int n\+Channel)
+\item 
+\mbox{\Hypertarget{class_c_node_a47f2a21abf98bd2d2dba2894124d3114}\label{class_c_node_a47f2a21abf98bd2d2dba2894124d3114}} 
+void {\bfseries Subscribe} (unsigned int n\+Channel, unsigned int n\+Hops=0)
+\item 
+\mbox{\Hypertarget{class_c_node_ac1be1dbc7917e7f5956dd063bd6f271d}\label{class_c_node_ac1be1dbc7917e7f5956dd063bd6f271d}} 
+void {\bfseries Cancel\+Subscribe} (unsigned int n\+Channel)
+\item 
+\mbox{\Hypertarget{class_c_node_a63a6091a0b0fc0987d9436e1ec708423}\label{class_c_node_a63a6091a0b0fc0987d9436e1ec708423}} 
+void {\bfseries Close\+Socket\+Disconnect} ()
+\item 
+\mbox{\Hypertarget{class_c_node_a3220e5f99d9e5c31fba2f3b6508c9425}\label{class_c_node_a3220e5f99d9e5c31fba2f3b6508c9425}} 
+void {\bfseries Cleanup} ()
+\item 
+\mbox{\Hypertarget{class_c_node_a1923dffc7124eeedcc4bb58c2cd75754}\label{class_c_node_a1923dffc7124eeedcc4bb58c2cd75754}} 
+bool {\bfseries Misbehaving} (int howmuch)
+\item 
+\mbox{\Hypertarget{class_c_node_aaa77188d9df85b80e3f8a30292acf6a9}\label{class_c_node_aaa77188d9df85b80e3f8a30292acf6a9}} 
+void {\bfseries copy\+Stats} (\mbox{\hyperlink{class_c_node_stats}{C\+Node\+Stats}} \&stats)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_node_ad75b43ab81213b74446163211c24246a}\label{class_c_node_ad75b43ab81213b74446163211c24246a}} 
+static void {\bfseries Clear\+Banned} ()
+\item 
+\mbox{\Hypertarget{class_c_node_aefa8b81afa53b4c6635dc4c6c024211a}\label{class_c_node_aefa8b81afa53b4c6635dc4c6c024211a}} 
+static bool {\bfseries Is\+Banned} (\mbox{\hyperlink{class_c_net_addr}{C\+Net\+Addr}} ip)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_node_a8259db81211f6837585c6f82f89414ff}\label{class_c_node_a8259db81211f6837585c6f82f89414ff}} 
+uint64\+\_\+t {\bfseries n\+Services}
+\item 
+\mbox{\Hypertarget{class_c_node_a7cda6efa6a9ef9db3eebe70fc3bdd45a}\label{class_c_node_a7cda6efa6a9ef9db3eebe70fc3bdd45a}} 
+S\+O\+C\+K\+ET {\bfseries h\+Socket}
+\item 
+\mbox{\Hypertarget{class_c_node_a83b67ba7421d484930b3112647bcdd80}\label{class_c_node_a83b67ba7421d484930b3112647bcdd80}} 
+\mbox{\hyperlink{class_c_data_stream}{C\+Data\+Stream}} {\bfseries v\+Send}
+\item 
+\mbox{\Hypertarget{class_c_node_ab14b75caba80952dd7e042c0cac3854c}\label{class_c_node_ab14b75caba80952dd7e042c0cac3854c}} 
+\mbox{\hyperlink{class_c_data_stream}{C\+Data\+Stream}} {\bfseries v\+Recv}
+\item 
+\mbox{\Hypertarget{class_c_node_a79edcac83fc5067567c7b41c26fcc56f}\label{class_c_node_a79edcac83fc5067567c7b41c26fcc56f}} 
+C\+Critical\+Section {\bfseries cs\+\_\+v\+Send}
+\item 
+\mbox{\Hypertarget{class_c_node_a0fd361cd13fd9815c5eae1ae38333e53}\label{class_c_node_a0fd361cd13fd9815c5eae1ae38333e53}} 
+C\+Critical\+Section {\bfseries cs\+\_\+v\+Recv}
+\item 
+\mbox{\Hypertarget{class_c_node_af39253ad525733ca64ab3fc785dfc4eb}\label{class_c_node_af39253ad525733ca64ab3fc785dfc4eb}} 
+int64\+\_\+t {\bfseries n\+Last\+Send}
+\item 
+\mbox{\Hypertarget{class_c_node_afb40f43a51ba686de93256727351af07}\label{class_c_node_afb40f43a51ba686de93256727351af07}} 
+int64\+\_\+t {\bfseries n\+Last\+Recv}
+\item 
+\mbox{\Hypertarget{class_c_node_a99cb4a03bb751f5a6bf1e0802d5c40fb}\label{class_c_node_a99cb4a03bb751f5a6bf1e0802d5c40fb}} 
+int64\+\_\+t {\bfseries n\+Last\+Send\+Empty}
+\item 
+\mbox{\Hypertarget{class_c_node_abb39393ef08cb5668ded6cb14cdbc147}\label{class_c_node_abb39393ef08cb5668ded6cb14cdbc147}} 
+int64\+\_\+t {\bfseries n\+Time\+Connected}
+\item 
+\mbox{\Hypertarget{class_c_node_a3237fe6ccbe57ee142b43a180bdc4f59}\label{class_c_node_a3237fe6ccbe57ee142b43a180bdc4f59}} 
+int {\bfseries n\+Header\+Start}
+\item 
+\mbox{\Hypertarget{class_c_node_a611b359810f57aa96dec2baac469eeb3}\label{class_c_node_a611b359810f57aa96dec2baac469eeb3}} 
+unsigned int {\bfseries n\+Message\+Start}
+\item 
+\mbox{\Hypertarget{class_c_node_a3993ecb1de2a2135a3cf0904346a6f88}\label{class_c_node_a3993ecb1de2a2135a3cf0904346a6f88}} 
+\mbox{\hyperlink{class_c_address}{C\+Address}} {\bfseries addr}
+\item 
+\mbox{\Hypertarget{class_c_node_a3155cd313d85ec3ff691f8259a5f5345}\label{class_c_node_a3155cd313d85ec3ff691f8259a5f5345}} 
+std\+::string {\bfseries addr\+Name}
+\item 
+\mbox{\Hypertarget{class_c_node_a1b6517682efa0709f44780a95384c4ec}\label{class_c_node_a1b6517682efa0709f44780a95384c4ec}} 
+\mbox{\hyperlink{class_c_service}{C\+Service}} {\bfseries addr\+Local}
+\item 
+\mbox{\Hypertarget{class_c_node_a99173eb3cef17e699ba21a5249ac33d2}\label{class_c_node_a99173eb3cef17e699ba21a5249ac33d2}} 
+int {\bfseries n\+Version}
+\item 
+\mbox{\Hypertarget{class_c_node_afb24fb33019af5c4085412fe3898cf01}\label{class_c_node_afb24fb33019af5c4085412fe3898cf01}} 
+std\+::string {\bfseries str\+Sub\+Ver}
+\item 
+\mbox{\Hypertarget{class_c_node_a2bb91c9968a9f855c05b1121100a8797}\label{class_c_node_a2bb91c9968a9f855c05b1121100a8797}} 
+bool {\bfseries f\+One\+Shot}
+\item 
+\mbox{\Hypertarget{class_c_node_a721e2470c2c961b7599768a14be68781}\label{class_c_node_a721e2470c2c961b7599768a14be68781}} 
+bool {\bfseries f\+Client}
+\item 
+\mbox{\Hypertarget{class_c_node_a64b2550ec558b6106ebc122d450ad35b}\label{class_c_node_a64b2550ec558b6106ebc122d450ad35b}} 
+bool {\bfseries f\+Inbound}
+\item 
+\mbox{\Hypertarget{class_c_node_a933adb2b192939545a01d602b1d7b53a}\label{class_c_node_a933adb2b192939545a01d602b1d7b53a}} 
+bool {\bfseries f\+Network\+Node}
+\item 
+\mbox{\Hypertarget{class_c_node_ab58c1772b2698e348d86002f34254119}\label{class_c_node_ab58c1772b2698e348d86002f34254119}} 
+bool {\bfseries f\+Successfully\+Connected}
+\item 
+\mbox{\Hypertarget{class_c_node_af2f7ea958313974e8a948292f060922e}\label{class_c_node_af2f7ea958313974e8a948292f060922e}} 
+bool {\bfseries f\+Disconnect}
+\item 
+\mbox{\Hypertarget{class_c_node_a4bb25f8bdeeaff5e8cb08abc97bbc44d}\label{class_c_node_a4bb25f8bdeeaff5e8cb08abc97bbc44d}} 
+\mbox{\hyperlink{class_c_semaphore_grant}{C\+Semaphore\+Grant}} {\bfseries grant\+Outbound}
+\item 
+\mbox{\Hypertarget{class_c_node_a01f8cac776bef676651f9b8f3f80ae98}\label{class_c_node_a01f8cac776bef676651f9b8f3f80ae98}} 
+int {\bfseries n\+Ref\+Count}
+\item 
+\mbox{\Hypertarget{class_c_node_ab257d67d213356bfd9a7679a7196cb22}\label{class_c_node_ab257d67d213356bfd9a7679a7196cb22}} 
+int64\+\_\+t {\bfseries n\+Release\+Time}
+\item 
+\mbox{\Hypertarget{class_c_node_a3531ba0585ead8ea14916d9536cc8933}\label{class_c_node_a3531ba0585ead8ea14916d9536cc8933}} 
+std\+::map$<$ \mbox{\hyperlink{classuint256}{uint256}}, \mbox{\hyperlink{class_c_request_tracker}{C\+Request\+Tracker}} $>$ {\bfseries map\+Requests}
+\item 
+\mbox{\Hypertarget{class_c_node_a67929054c9a79d1eeb1239c39c59884d}\label{class_c_node_a67929054c9a79d1eeb1239c39c59884d}} 
+C\+Critical\+Section {\bfseries cs\+\_\+map\+Requests}
+\item 
+\mbox{\Hypertarget{class_c_node_a1a1c0d94de0197c5c4abf5a8d13364f3}\label{class_c_node_a1a1c0d94de0197c5c4abf5a8d13364f3}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries hash\+Continue}
+\item 
+\mbox{\Hypertarget{class_c_node_ac655c80f7fbef266417985776043785b}\label{class_c_node_ac655c80f7fbef266417985776043785b}} 
+\mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$ {\bfseries pindex\+Last\+Get\+Blocks\+Begin}
+\item 
+\mbox{\Hypertarget{class_c_node_a00f1eb04110387df966dd9c3ff3c53fb}\label{class_c_node_a00f1eb04110387df966dd9c3ff3c53fb}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries hash\+Last\+Get\+Blocks\+End}
+\item 
+\mbox{\Hypertarget{class_c_node_a597b41bd64e2ac9391b7211e65aeb52a}\label{class_c_node_a597b41bd64e2ac9391b7211e65aeb52a}} 
+int {\bfseries n\+Starting\+Height}
+\item 
+\mbox{\Hypertarget{class_c_node_a9b2d9b9182ff111c79f704594c4aa2e1}\label{class_c_node_a9b2d9b9182ff111c79f704594c4aa2e1}} 
+std\+::vector$<$ \mbox{\hyperlink{class_c_address}{C\+Address}} $>$ {\bfseries v\+Addr\+To\+Send}
+\item 
+\mbox{\Hypertarget{class_c_node_acc87ca522712199a5586bc9caaab345e}\label{class_c_node_acc87ca522712199a5586bc9caaab345e}} 
+std\+::set$<$ \mbox{\hyperlink{class_c_address}{C\+Address}} $>$ {\bfseries set\+Addr\+Known}
+\item 
+\mbox{\Hypertarget{class_c_node_a3da9c559959e182aff8439cd004ff624}\label{class_c_node_a3da9c559959e182aff8439cd004ff624}} 
+bool {\bfseries f\+Get\+Addr}
+\item 
+\mbox{\Hypertarget{class_c_node_ab1b30fa8e48005752f6b0bcf43eca478}\label{class_c_node_ab1b30fa8e48005752f6b0bcf43eca478}} 
+std\+::set$<$ \mbox{\hyperlink{classuint256}{uint256}} $>$ {\bfseries set\+Known}
+\item 
+\mbox{\Hypertarget{class_c_node_af1b7e1316a44a8ed4995413366ed6b8a}\label{class_c_node_af1b7e1316a44a8ed4995413366ed6b8a}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries hash\+Checkpoint\+Known}
+\item 
+\mbox{\Hypertarget{class_c_node_ae15aa9a971040800c26bc87b1250220f}\label{class_c_node_ae15aa9a971040800c26bc87b1250220f}} 
+\mbox{\hyperlink{classmruset}{mruset}}$<$ \mbox{\hyperlink{class_c_inv}{C\+Inv}} $>$ {\bfseries set\+Inventory\+Known}
+\item 
+\mbox{\Hypertarget{class_c_node_abcd24c9478bc1ab5ba6de6b369080cec}\label{class_c_node_abcd24c9478bc1ab5ba6de6b369080cec}} 
+std\+::vector$<$ \mbox{\hyperlink{class_c_inv}{C\+Inv}} $>$ {\bfseries v\+Inventory\+To\+Send}
+\item 
+\mbox{\Hypertarget{class_c_node_a1e8b0784cc82f33edc2dc4e2834d1ff0}\label{class_c_node_a1e8b0784cc82f33edc2dc4e2834d1ff0}} 
+C\+Critical\+Section {\bfseries cs\+\_\+inventory}
+\item 
+\mbox{\Hypertarget{class_c_node_a7593dfbd76c34a81169e3fb2aa0e0cf7}\label{class_c_node_a7593dfbd76c34a81169e3fb2aa0e0cf7}} 
+std\+::multimap$<$ int64\+\_\+t, \mbox{\hyperlink{class_c_inv}{C\+Inv}} $>$ {\bfseries map\+Ask\+For}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_node_a442ac1857129bccaea4642d23d94ee58}\label{class_c_node_a442ac1857129bccaea4642d23d94ee58}} 
+int {\bfseries n\+Misbehavior}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_node_adf22d1873c1012ab3edb8a52253b203e}\label{class_c_node_adf22d1873c1012ab3edb8a52253b203e}} 
+static std\+::map$<$ \mbox{\hyperlink{class_c_net_addr}{C\+Net\+Addr}}, int64\+\_\+t $>$ {\bfseries set\+Banned}
+\item 
+\mbox{\Hypertarget{class_c_node_a9ff9a6f07a280aa07d77713ae43d383a}\label{class_c_node_a9ff9a6f07a280aa07d77713ae43d383a}} 
+static C\+Critical\+Section {\bfseries cs\+\_\+set\+Banned}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Information about a peer 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_node_a4dbfe4f6c1fd162aaa905e4bd201d536}\label{class_c_node_a4dbfe4f6c1fd162aaa905e4bd201d536}} 
+\index{CNode@{CNode}!PushVersion@{PushVersion}}
+\index{PushVersion@{PushVersion}!CNode@{CNode}}
+\subsubsection{\texorpdfstring{PushVersion()}{PushVersion()}}
+{\footnotesize\ttfamily void C\+Node\+::\+Push\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+when N\+TP implemented, change to just n\+Time = Get\+Adjusted\+Time() 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+net.\+h\item 
+net.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+\hypertarget{class_c_address}{}\section{C\+Address Class Reference}
+\label{class_c_address}\index{CAddress@{CAddress}}
+
+
+{\ttfamily \#include $<$protocol.\+h$>$}
+
+Inheritance diagram for C\+Address\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_address}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_address_a806e75f363ec49bfab92a686a8774ac3}\label{class_c_address_a806e75f363ec49bfab92a686a8774ac3}} 
+{\bfseries C\+Address} (\mbox{\hyperlink{class_c_service}{C\+Service}} ip\+In, uint64\+\_\+t n\+Services\+In=N\+O\+D\+E\+\_\+\+N\+E\+T\+W\+O\+RK)
+\item 
+\mbox{\Hypertarget{class_c_address_ac060c84dcf47b8ccfae0142c9b29a243}\label{class_c_address_ac060c84dcf47b8ccfae0142c9b29a243}} 
+void {\bfseries Init} ()
+\item 
+\mbox{\Hypertarget{class_c_address_a52b774fdae8136098146391c6cdca2c4}\label{class_c_address_a52b774fdae8136098146391c6cdca2c4}} 
+{\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE} (\mbox{\hyperlink{class_c_address}{C\+Address}} $\ast$pthis=const\+\_\+cast$<$ \mbox{\hyperlink{class_c_address}{C\+Address}} $\ast$ $>$(this);\mbox{\hyperlink{class_c_service}{C\+Service}} $\ast$pip=(\mbox{\hyperlink{class_c_service}{C\+Service}} $\ast$) pthis;if(f\+Read) pthis-\/$>$Init();if(n\+Type \&S\+E\+R\+\_\+\+D\+I\+SK) R\+E\+A\+D\+W\+R\+I\+TE(n\+Version);if((n\+Type \&S\+E\+R\+\_\+\+D\+I\+SK)$\vert$$\vert$(n\+Version $>$=C\+A\+D\+D\+R\+\_\+\+T\+I\+M\+E\+\_\+\+V\+E\+R\+S\+I\+ON \&\&!(n\+Type \&S\+E\+R\+\_\+\+G\+E\+T\+H\+A\+SH))) R\+E\+A\+D\+W\+R\+I\+TE(n\+Time);R\+E\+A\+D\+W\+R\+I\+TE(n\+Services);R\+E\+A\+D\+W\+R\+I\+TE($\ast$pip);) void print() const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_address_a6a4a6aa020d0d558f238c7d04dd986c3}\label{class_c_address_a6a4a6aa020d0d558f238c7d04dd986c3}} 
+uint64\+\_\+t {\bfseries n\+Services}
+\item 
+\mbox{\Hypertarget{class_c_address_ac1c44aac968b11f90ce529b133ae4e9b}\label{class_c_address_ac1c44aac968b11f90ce529b133ae4e9b}} 
+unsigned int {\bfseries n\+Time}
+\item 
+\mbox{\Hypertarget{class_c_address_abcf198429efe135fa2424f7dbc0048b0}\label{class_c_address_abcf198429efe135fa2424f7dbc0048b0}} 
+int64\+\_\+t {\bfseries n\+Last\+Try}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{class_c_service}{C\+Service}} with information about it as peer 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+protocol.\+h\item 
+protocol.\+cpp\end{DoxyCompactItemize}

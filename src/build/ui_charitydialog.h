@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'charitydialog.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,14 +10,12 @@
 #define UI_CHARITYDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QPushButton>
-#include <QtGui/QWidget>
+#include <QtGui/QIcon>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -99,62 +97,64 @@ public:
 
     void retranslateUi(QWidget *StakeForCharityDialog)
     {
-        StakeForCharityDialog->setWindowTitle(QApplication::translate("StakeForCharityDialog", "Stake For Charity", 0, QApplication::UnicodeUTF8));
+        StakeForCharityDialog->setWindowTitle(QApplication::translate("StakeForCharityDialog", "Stake For Charity", nullptr));
 #ifndef QT_NO_TOOLTIP
-        charityPercentEdit->setToolTip(QApplication::translate("StakeForCharityDialog", "Enter whole numbers 1 - 100", 0, QApplication::UnicodeUTF8));
+        charityPercentEdit->setToolTip(QApplication::translate("StakeForCharityDialog", "Enter whole numbers 1 - 100", nullptr));
 #endif // QT_NO_TOOLTIP
-        charityPercentEdit->setPlaceholderText(QApplication::translate("StakeForCharityDialog", "Enter % to Give (1-100)", 0, QApplication::UnicodeUTF8));
+        charityPercentEdit->setPlaceholderText(QApplication::translate("StakeForCharityDialog", "Enter % to Give (1-100)", nullptr));
 #ifndef QT_NO_TOOLTIP
         charityAddressEdit->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
-        charityAddressEdit->setPlaceholderText(QApplication::translate("StakeForCharityDialog", "Enter Address to Send to", 0, QApplication::UnicodeUTF8));
+        charityAddressEdit->setPlaceholderText(QApplication::translate("StakeForCharityDialog", "Enter Address to Send to", nullptr));
         label_12->setText(QApplication::translate("StakeForCharityDialog", "MultiSend allows you to automatically send up to 100% of your Stake to a list of other ABBCCoin address after it matures.\n"
 "To Add: enter percentage to give and ABBCCoin address to add to the MultiSend vector. \n"
 "To Delete: Enter address to delete and press delete.\n"
-"MultiSend will not be activated unless you have clicked Activate.", 0, QApplication::UnicodeUTF8));
+"MultiSend will not be activated unless you have clicked Activate.", nullptr));
         message->setText(QString());
 #ifndef QT_NO_TOOLTIP
         addButton->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_STATUSTIP
-        addButton->setStatusTip(QApplication::translate("StakeForCharityDialog", "Add to MultiSend Vector", 0, QApplication::UnicodeUTF8));
+        addButton->setStatusTip(QApplication::translate("StakeForCharityDialog", "Add to MultiSend Vector", nullptr));
 #endif // QT_NO_STATUSTIP
-        addButton->setText(QApplication::translate("StakeForCharityDialog", "Add", 0, QApplication::UnicodeUTF8));
+        addButton->setText(QApplication::translate("StakeForCharityDialog", "Add", nullptr));
 #ifndef QT_NO_STATUSTIP
-        disableButton->setStatusTip(QApplication::translate("StakeForCharityDialog", "Deactivate MultiSend", 0, QApplication::UnicodeUTF8));
+        disableButton->setStatusTip(QApplication::translate("StakeForCharityDialog", "Deactivate MultiSend", nullptr));
 #endif // QT_NO_STATUSTIP
-        disableButton->setText(QApplication::translate("StakeForCharityDialog", "Deactivate", 0, QApplication::UnicodeUTF8));
+        disableButton->setText(QApplication::translate("StakeForCharityDialog", "Deactivate", nullptr));
 #ifndef QT_NO_TOOLTIP
-        addressBookButton->setToolTip(QApplication::translate("StakeForCharityDialog", "Choose an address from the address book", 0, QApplication::UnicodeUTF8));
+        addressBookButton->setToolTip(QApplication::translate("StakeForCharityDialog", "Choose an address from the address book", nullptr));
 #endif // QT_NO_TOOLTIP
         addressBookButton->setText(QString());
-        addressBookButton->setShortcut(QApplication::translate("StakeForCharityDialog", "Alt+A", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_SHORTCUT
+        addressBookButton->setShortcut(QApplication::translate("StakeForCharityDialog", "Alt+A", nullptr));
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
-        label->setToolTip(QApplication::translate("StakeForCharityDialog", "Percentage of stake to send", 0, QApplication::UnicodeUTF8));
+        label->setToolTip(QApplication::translate("StakeForCharityDialog", "Percentage of stake to send", nullptr));
 #endif // QT_NO_TOOLTIP
-        label->setText(QApplication::translate("StakeForCharityDialog", "Percentage:", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("StakeForCharityDialog", "Percentage:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        label_5->setToolTip(QApplication::translate("StakeForCharityDialog", "Address to send portion of stake to", 0, QApplication::UnicodeUTF8));
+        label_5->setToolTip(QApplication::translate("StakeForCharityDialog", "Address to send portion of stake to", nullptr));
 #endif // QT_NO_TOOLTIP
-        label_5->setText(QApplication::translate("StakeForCharityDialog", "Address:", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("StakeForCharityDialog", "Address:", nullptr));
 #ifndef QT_NO_TOOLTIP
         deleteButton->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_STATUSTIP
-        deleteButton->setStatusTip(QApplication::translate("StakeForCharityDialog", "Delete Address From MultiSend Vector", 0, QApplication::UnicodeUTF8));
+        deleteButton->setStatusTip(QApplication::translate("StakeForCharityDialog", "Delete Address From MultiSend Vector", nullptr));
 #endif // QT_NO_STATUSTIP
-        deleteButton->setText(QApplication::translate("StakeForCharityDialog", "Delete", 0, QApplication::UnicodeUTF8));
+        deleteButton->setText(QApplication::translate("StakeForCharityDialog", "Delete", nullptr));
 #ifndef QT_NO_STATUSTIP
-        activateButton->setStatusTip(QApplication::translate("StakeForCharityDialog", "Activate MultiSend", 0, QApplication::UnicodeUTF8));
+        activateButton->setStatusTip(QApplication::translate("StakeForCharityDialog", "Activate MultiSend", nullptr));
 #endif // QT_NO_STATUSTIP
-        activateButton->setText(QApplication::translate("StakeForCharityDialog", "Activate", 0, QApplication::UnicodeUTF8));
+        activateButton->setText(QApplication::translate("StakeForCharityDialog", "Activate", nullptr));
 #ifndef QT_NO_TOOLTIP
         viewButton->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_STATUSTIP
-        viewButton->setStatusTip(QApplication::translate("StakeForCharityDialog", "View MultiSend Vector", 0, QApplication::UnicodeUTF8));
+        viewButton->setStatusTip(QApplication::translate("StakeForCharityDialog", "View MultiSend Vector", nullptr));
 #endif // QT_NO_STATUSTIP
-        viewButton->setText(QApplication::translate("StakeForCharityDialog", "View MultiSend", 0, QApplication::UnicodeUTF8));
+        viewButton->setText(QApplication::translate("StakeForCharityDialog", "View MultiSend", nullptr));
         imagelabel->setText(QString());
     } // retranslateUi
 

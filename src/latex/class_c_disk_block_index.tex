@@ -1,0 +1,45 @@
+\hypertarget{class_c_disk_block_index}{}\section{C\+Disk\+Block\+Index Class Reference}
+\label{class_c_disk_block_index}\index{CDiskBlockIndex@{CDiskBlockIndex}}
+
+
+{\ttfamily \#include $<$main.\+h$>$}
+
+Inheritance diagram for C\+Disk\+Block\+Index\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_disk_block_index}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_disk_block_index_a1407006c4526260b57ec2d8b3abc707d}\label{class_c_disk_block_index_a1407006c4526260b57ec2d8b3abc707d}} 
+{\bfseries C\+Disk\+Block\+Index} (\mbox{\hyperlink{class_c_block_index}{C\+Block\+Index}} $\ast$pindex)
+\item 
+\mbox{\Hypertarget{class_c_disk_block_index_a0901cba3e54402461bc9c1a0af5639a4}\label{class_c_disk_block_index_a0901cba3e54402461bc9c1a0af5639a4}} 
+{\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+I\+A\+L\+I\+ZE} (if(!(n\+Type \&S\+E\+R\+\_\+\+G\+E\+T\+H\+A\+SH)) R\+E\+A\+D\+W\+R\+I\+TE(n\+Version);R\+E\+A\+D\+W\+R\+I\+TE(hash\+Next);R\+E\+A\+D\+W\+R\+I\+TE(n\+File);R\+E\+A\+D\+W\+R\+I\+TE(n\+Block\+Pos);R\+E\+A\+D\+W\+R\+I\+TE(n\+Height);R\+E\+A\+D\+W\+R\+I\+TE(n\+Mint);R\+E\+A\+D\+W\+R\+I\+TE(n\+Money\+Supply);R\+E\+A\+D\+W\+R\+I\+TE(n\+Flags);R\+E\+A\+D\+W\+R\+I\+TE(n\+Stake\+Modifier);if(Is\+Proof\+Of\+Stake()) \{ R\+E\+A\+D\+W\+R\+I\+TE(prevout\+Stake);R\+E\+A\+D\+W\+R\+I\+TE(n\+Stake\+Time);R\+E\+A\+D\+W\+R\+I\+TE(hash\+Proof\+Of\+Stake);\} else if(f\+Read) \{ const\+\_\+cast$<$ \mbox{\hyperlink{class_c_disk_block_index}{C\+Disk\+Block\+Index}} $\ast$ $>$(this) -\/$>$prevout\+Stake.\+Set\+Null();const\+\_\+cast$<$ \mbox{\hyperlink{class_c_disk_block_index}{C\+Disk\+Block\+Index}} $\ast$ $>$(this) -\/$>$n\+Stake\+Time=0;const\+\_\+cast$<$ \mbox{\hyperlink{class_c_disk_block_index}{C\+Disk\+Block\+Index}} $\ast$ $>$(this) -\/$>$hash\+Proof\+Of\+Stake=0;\} R\+E\+A\+D\+W\+R\+I\+TE(this-\/$>$n\+Version);R\+E\+A\+D\+W\+R\+I\+TE(hash\+Prev);R\+E\+A\+D\+W\+R\+I\+TE(hash\+Merkle\+Root);R\+E\+A\+D\+W\+R\+I\+TE(n\+Time);R\+E\+A\+D\+W\+R\+I\+TE(n\+Bits);R\+E\+A\+D\+W\+R\+I\+TE(n\+Nonce);R\+E\+A\+D\+W\+R\+I\+TE(block\+Hash);) \mbox{\hyperlink{classuint256}{uint256}} Get\+Block\+Hash() const
+\item 
+\mbox{\Hypertarget{class_c_disk_block_index_a347eafa0667f8641f73062b48c217d61}\label{class_c_disk_block_index_a347eafa0667f8641f73062b48c217d61}} 
+std\+::string {\bfseries To\+String} () const
+\item 
+\mbox{\Hypertarget{class_c_disk_block_index_a06d1341c16b006c7d12ca0f62ffb2b10}\label{class_c_disk_block_index_a06d1341c16b006c7d12ca0f62ffb2b10}} 
+void {\bfseries print} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_disk_block_index_a3a1730201a8523fb947c4d4f632a4212}\label{class_c_disk_block_index_a3a1730201a8523fb947c4d4f632a4212}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries hash\+Prev}
+\item 
+\mbox{\Hypertarget{class_c_disk_block_index_a0dda572f44335a5317de18001c3594a8}\label{class_c_disk_block_index_a0dda572f44335a5317de18001c3594a8}} 
+\mbox{\hyperlink{classuint256}{uint256}} {\bfseries hash\+Next}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Used to marshal pointers into hashes for db storage. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+main.\+h\end{DoxyCompactItemize}

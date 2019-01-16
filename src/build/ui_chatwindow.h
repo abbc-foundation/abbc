@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'chatwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,15 +10,13 @@
 #define UI_CHATWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QTabWidget>
-#include <QtGui/QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -127,17 +125,19 @@ public:
 
     void retranslateUi(QWidget *ChatWindowClass)
     {
-        actionQuit->setText(QApplication::translate("ChatWindowClass", "Quitter", 0, QApplication::UnicodeUTF8));
-        actionQuit->setShortcut(QApplication::translate("ChatWindowClass", "Ctrl+Q", 0, QApplication::UnicodeUTF8));
-        actionCloseTab->setText(QApplication::translate("ChatWindowClass", "Fermer l'onglet", 0, QApplication::UnicodeUTF8));
-        tab->setTabText(tab->indexOf(widget_4), QApplication::translate("ChatWindowClass", "Tab 1", 0, QApplication::UnicodeUTF8));
-        tab->setTabText(tab->indexOf(tab_5), QApplication::translate("ChatWindowClass", "Tab 2", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><span style=\" font-size:20px; font-weight:600; color:#000000;\">ABBCCoin IRC Chat</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><a href=https://twitter.com/ColossusCoin/ style=\" text-decoration: underline; color:#0000ff;\"><img src=\":/icons/twitter\"/></span></a></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_3->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><a href=https://www.facebook.com/ColossusCoin style=\" text-decoration: underline; color:#0000ff;\"><img src=\":/icons/face\"/></span></a></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_4->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><a href=http://www.reddit.com/r/ColossusCoin/ style=\" text-decoration: underline; color:#0000ff;\"><img src=\":/icons/reddit\"/></span></a></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><a href=https://www.youtube.com/channel/UCnxsRfsbyeBwz1hn0f7tHjw style=\" text-decoration: underline; color:#0000ff;\"><img src=\":/icons/youtube\"/></span></a></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><a href=http://colossuscointalk.org style=\" text-decoration: underline; color:#0000ff;\"><img src=\":/icons/forums\"/></span></a></p></body></html>", 0, QApplication::UnicodeUTF8));
+        actionQuit->setText(QApplication::translate("ChatWindowClass", "Quitter", nullptr));
+#ifndef QT_NO_SHORTCUT
+        actionQuit->setShortcut(QApplication::translate("ChatWindowClass", "Ctrl+Q", nullptr));
+#endif // QT_NO_SHORTCUT
+        actionCloseTab->setText(QApplication::translate("ChatWindowClass", "Fermer l'onglet", nullptr));
+        tab->setTabText(tab->indexOf(widget_4), QApplication::translate("ChatWindowClass", "Tab 1", nullptr));
+        tab->setTabText(tab->indexOf(tab_5), QApplication::translate("ChatWindowClass", "Tab 2", nullptr));
+        label_9->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><span style=\" font-size:20px; font-weight:600; color:#000000;\">ABBCCoin IRC Chat</span></p></body></html>", nullptr));
+        label->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><a href=https://twitter.com/ColossusCoin/ style=\" text-decoration: underline; color:#0000ff;\"><img src=\":/icons/twitter\"/></span></a></p></body></html>", nullptr));
+        label_3->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><a href=https://www.facebook.com/ColossusCoin style=\" text-decoration: underline; color:#0000ff;\"><img src=\":/icons/face\"/></span></a></p></body></html>", nullptr));
+        label_4->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><a href=http://www.reddit.com/r/ColossusCoin/ style=\" text-decoration: underline; color:#0000ff;\"><img src=\":/icons/reddit\"/></span></a></p></body></html>", nullptr));
+        label_6->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><a href=https://www.youtube.com/channel/UCnxsRfsbyeBwz1hn0f7tHjw style=\" text-decoration: underline; color:#0000ff;\"><img src=\":/icons/youtube\"/></span></a></p></body></html>", nullptr));
+        label_7->setText(QApplication::translate("ChatWindowClass", "<html><head/><body><p align=\"center\"><a href=http://colossuscointalk.org style=\" text-decoration: underline; color:#0000ff;\"><img src=\":/icons/forums\"/></span></a></p></body></html>", nullptr));
         Q_UNUSED(ChatWindowClass);
     } // retranslateUi
 

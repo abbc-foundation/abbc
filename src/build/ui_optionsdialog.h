@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'optionsdialog.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,20 +10,17 @@
 #define UI_OPTIONSDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QDialog>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QTabWidget>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 #include "bitcoinamountfield.h"
 #include "qvalidatedlineedit.h"
 #include "qvaluecombobox.h"
@@ -374,75 +371,75 @@ public:
 
     void retranslateUi(QDialog *OptionsDialog)
     {
-        OptionsDialog->setWindowTitle(QApplication::translate("OptionsDialog", "Options", 0, QApplication::UnicodeUTF8));
-        transactionFeeInfoLabel->setText(QApplication::translate("OptionsDialog", "Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.", 0, QApplication::UnicodeUTF8));
-        transactionFeeLabel->setText(QApplication::translate("OptionsDialog", "Pay transaction &fee", 0, QApplication::UnicodeUTF8));
-        reserveBalanceInfoLabel->setText(QApplication::translate("OptionsDialog", "Reserved amount does not participate in staking and is therefore spendable at any time.", 0, QApplication::UnicodeUTF8));
-        reserveBalanceLabel->setText(QApplication::translate("OptionsDialog", "Reserve", 0, QApplication::UnicodeUTF8));
+        OptionsDialog->setWindowTitle(QApplication::translate("OptionsDialog", "Options", nullptr));
+        transactionFeeInfoLabel->setText(QApplication::translate("OptionsDialog", "Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.", nullptr));
+        transactionFeeLabel->setText(QApplication::translate("OptionsDialog", "Pay transaction &fee", nullptr));
+        reserveBalanceInfoLabel->setText(QApplication::translate("OptionsDialog", "Reserved amount does not participate in staking and is therefore spendable at any time.", nullptr));
+        reserveBalanceLabel->setText(QApplication::translate("OptionsDialog", "Reserve", nullptr));
 #ifndef QT_NO_TOOLTIP
-        bitcoinAtStartup->setToolTip(QApplication::translate("OptionsDialog", "Automatically start ABBCCoin after logging in to the system.", 0, QApplication::UnicodeUTF8));
+        bitcoinAtStartup->setToolTip(QApplication::translate("OptionsDialog", "Automatically start ABBCCoin after logging in to the system.", nullptr));
 #endif // QT_NO_TOOLTIP
-        bitcoinAtStartup->setText(QApplication::translate("OptionsDialog", "&Start ABBCCoin on system login", 0, QApplication::UnicodeUTF8));
+        bitcoinAtStartup->setText(QApplication::translate("OptionsDialog", "&Start ABBCCoin on system login", nullptr));
 #ifndef QT_NO_TOOLTIP
-        detachDatabases->setToolTip(QApplication::translate("OptionsDialog", "Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.", 0, QApplication::UnicodeUTF8));
+        detachDatabases->setToolTip(QApplication::translate("OptionsDialog", "Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.", nullptr));
 #endif // QT_NO_TOOLTIP
-        detachDatabases->setText(QApplication::translate("OptionsDialog", "&Detach databases at shutdown", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tabMain), QApplication::translate("OptionsDialog", "&Main", 0, QApplication::UnicodeUTF8));
+        detachDatabases->setText(QApplication::translate("OptionsDialog", "&Detach databases at shutdown", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabMain), QApplication::translate("OptionsDialog", "&Main", nullptr));
 #ifndef QT_NO_TOOLTIP
-        mapPortUpnp->setToolTip(QApplication::translate("OptionsDialog", "Automatically open the ABBCCoin client port on the router. This only works when your router supports UPnP and it is enabled.", 0, QApplication::UnicodeUTF8));
+        mapPortUpnp->setToolTip(QApplication::translate("OptionsDialog", "Automatically open the ABBCCoin client port on the router. This only works when your router supports UPnP and it is enabled.", nullptr));
 #endif // QT_NO_TOOLTIP
-        mapPortUpnp->setText(QApplication::translate("OptionsDialog", "Map port using &UPnP", 0, QApplication::UnicodeUTF8));
+        mapPortUpnp->setText(QApplication::translate("OptionsDialog", "Map port using &UPnP", nullptr));
 #ifndef QT_NO_TOOLTIP
-        connectSocks->setToolTip(QApplication::translate("OptionsDialog", "Connect to the ABBCCoin network through a SOCKS proxy (e.g. when connecting through Tor).", 0, QApplication::UnicodeUTF8));
+        connectSocks->setToolTip(QApplication::translate("OptionsDialog", "Connect to the ABBCCoin network through a SOCKS proxy (e.g. when connecting through Tor).", nullptr));
 #endif // QT_NO_TOOLTIP
-        connectSocks->setText(QApplication::translate("OptionsDialog", "&Connect through SOCKS proxy:", 0, QApplication::UnicodeUTF8));
-        proxyIpLabel->setText(QApplication::translate("OptionsDialog", "Proxy &IP:", 0, QApplication::UnicodeUTF8));
+        connectSocks->setText(QApplication::translate("OptionsDialog", "&Connect through SOCKS proxy:", nullptr));
+        proxyIpLabel->setText(QApplication::translate("OptionsDialog", "Proxy &IP:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        proxyIp->setToolTip(QApplication::translate("OptionsDialog", "IP address of the proxy (e.g. 127.0.0.1)", 0, QApplication::UnicodeUTF8));
+        proxyIp->setToolTip(QApplication::translate("OptionsDialog", "IP address of the proxy (e.g. 127.0.0.1)", nullptr));
 #endif // QT_NO_TOOLTIP
-        proxyPortLabel->setText(QApplication::translate("OptionsDialog", "&Port:", 0, QApplication::UnicodeUTF8));
+        proxyPortLabel->setText(QApplication::translate("OptionsDialog", "&Port:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        proxyPort->setToolTip(QApplication::translate("OptionsDialog", "Port of the proxy (e.g. 9050)", 0, QApplication::UnicodeUTF8));
+        proxyPort->setToolTip(QApplication::translate("OptionsDialog", "Port of the proxy (e.g. 9050)", nullptr));
 #endif // QT_NO_TOOLTIP
-        socksVersionLabel->setText(QApplication::translate("OptionsDialog", "SOCKS &Version:", 0, QApplication::UnicodeUTF8));
+        socksVersionLabel->setText(QApplication::translate("OptionsDialog", "SOCKS &Version:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        socksVersion->setToolTip(QApplication::translate("OptionsDialog", "SOCKS version of the proxy (e.g. 5)", 0, QApplication::UnicodeUTF8));
+        socksVersion->setToolTip(QApplication::translate("OptionsDialog", "SOCKS version of the proxy (e.g. 5)", nullptr));
 #endif // QT_NO_TOOLTIP
-        tabWidget->setTabText(tabWidget->indexOf(tabNetwork), QApplication::translate("OptionsDialog", "&Network", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tabNetwork), QApplication::translate("OptionsDialog", "&Network", nullptr));
 #ifndef QT_NO_TOOLTIP
-        minimizeToTray->setToolTip(QApplication::translate("OptionsDialog", "Show only a tray icon after minimizing the window.", 0, QApplication::UnicodeUTF8));
+        minimizeToTray->setToolTip(QApplication::translate("OptionsDialog", "Show only a tray icon after minimizing the window.", nullptr));
 #endif // QT_NO_TOOLTIP
-        minimizeToTray->setText(QApplication::translate("OptionsDialog", "&Minimize to the tray instead of the taskbar", 0, QApplication::UnicodeUTF8));
+        minimizeToTray->setText(QApplication::translate("OptionsDialog", "&Minimize to the tray instead of the taskbar", nullptr));
 #ifndef QT_NO_TOOLTIP
-        minimizeOnClose->setToolTip(QApplication::translate("OptionsDialog", "Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.", 0, QApplication::UnicodeUTF8));
+        minimizeOnClose->setToolTip(QApplication::translate("OptionsDialog", "Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.", nullptr));
 #endif // QT_NO_TOOLTIP
-        minimizeOnClose->setText(QApplication::translate("OptionsDialog", "M&inimize on close", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tabWindow), QApplication::translate("OptionsDialog", "&Window", 0, QApplication::UnicodeUTF8));
-        langLabel->setText(QApplication::translate("OptionsDialog", "User Interface &language:", 0, QApplication::UnicodeUTF8));
+        minimizeOnClose->setText(QApplication::translate("OptionsDialog", "M&inimize on close", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabWindow), QApplication::translate("OptionsDialog", "&Window", nullptr));
+        langLabel->setText(QApplication::translate("OptionsDialog", "User Interface &language:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        lang->setToolTip(QApplication::translate("OptionsDialog", "The user interface language can be set here. This setting will take effect after restarting ABBCCoin.", 0, QApplication::UnicodeUTF8));
+        lang->setToolTip(QApplication::translate("OptionsDialog", "The user interface language can be set here. This setting will take effect after restarting ABBCCoin.", nullptr));
 #endif // QT_NO_TOOLTIP
-        unitLabel->setText(QApplication::translate("OptionsDialog", "&Unit to show amounts in:", 0, QApplication::UnicodeUTF8));
+        unitLabel->setText(QApplication::translate("OptionsDialog", "&Unit to show amounts in:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        unit->setToolTip(QApplication::translate("OptionsDialog", "Choose the default subdivision unit to show in the interface and when sending coins.", 0, QApplication::UnicodeUTF8));
+        unit->setToolTip(QApplication::translate("OptionsDialog", "Choose the default subdivision unit to show in the interface and when sending coins.", nullptr));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
-        displayAddresses->setToolTip(QApplication::translate("OptionsDialog", "Whether to show ABBCCoin addresses in the transaction list or not.", 0, QApplication::UnicodeUTF8));
+        displayAddresses->setToolTip(QApplication::translate("OptionsDialog", "Whether to show ABBCCoin addresses in the transaction list or not.", nullptr));
 #endif // QT_NO_TOOLTIP
-        displayAddresses->setText(QApplication::translate("OptionsDialog", "&Display addresses in transaction list", 0, QApplication::UnicodeUTF8));
+        displayAddresses->setText(QApplication::translate("OptionsDialog", "&Display addresses in transaction list", nullptr));
 #ifndef QT_NO_TOOLTIP
-        coinControlFeatures->setToolTip(QApplication::translate("OptionsDialog", "Whether to show coin control features or not.", 0, QApplication::UnicodeUTF8));
+        coinControlFeatures->setToolTip(QApplication::translate("OptionsDialog", "Whether to show coin control features or not.", nullptr));
 #endif // QT_NO_TOOLTIP
-        coinControlFeatures->setText(QApplication::translate("OptionsDialog", "Display coin &control features (experts only!)", 0, QApplication::UnicodeUTF8));
+        coinControlFeatures->setText(QApplication::translate("OptionsDialog", "Display coin &control features (experts only!)", nullptr));
 #ifndef QT_NO_TOOLTIP
-        minimizeCoinAge->setToolTip(QApplication::translate("OptionsDialog", "Whether to select the coin outputs randomly or with minimal coin age.", 0, QApplication::UnicodeUTF8));
+        minimizeCoinAge->setToolTip(QApplication::translate("OptionsDialog", "Whether to select the coin outputs randomly or with minimal coin age.", nullptr));
 #endif // QT_NO_TOOLTIP
-        minimizeCoinAge->setText(QApplication::translate("OptionsDialog", "Minimize weight consumption (experimental)", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tabDisplay), QApplication::translate("OptionsDialog", "&Display", 0, QApplication::UnicodeUTF8));
+        minimizeCoinAge->setText(QApplication::translate("OptionsDialog", "Minimize weight consumption (experimental)", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabDisplay), QApplication::translate("OptionsDialog", "&Display", nullptr));
         statusLabel->setText(QString());
-        okButton->setText(QApplication::translate("OptionsDialog", "&OK", 0, QApplication::UnicodeUTF8));
-        cancelButton->setText(QApplication::translate("OptionsDialog", "&Cancel", 0, QApplication::UnicodeUTF8));
-        applyButton->setText(QApplication::translate("OptionsDialog", "&Apply", 0, QApplication::UnicodeUTF8));
+        okButton->setText(QApplication::translate("OptionsDialog", "&OK", nullptr));
+        cancelButton->setText(QApplication::translate("OptionsDialog", "&Cancel", nullptr));
+        applyButton->setText(QApplication::translate("OptionsDialog", "&Apply", nullptr));
     } // retranslateUi
 
 };
