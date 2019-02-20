@@ -8,14 +8,14 @@ Intro
 ==========================
 ABBCOIN is a true optional anonymous, untraceable, and secure hybrid cryptocurrency.
 
-Ticker: D
+Ticker: ABBC
 
-ABBCOIN [D] is an anonymous, untraceable, energy efficient, Proof-of-Work  and Proof-of-Stake cryptocurrency.
-10,000,000 D will be created in approx. about 3 years during the PoW phase. ABBCOIN had a 10% Premine of 1,000,000 D for bounties, distribution, and marketing.
+ABBCOIN is an anonymous, untraceable, energy efficient, Proof-of-Work  and Proof-of-Stake cryptocurrency.
+1002157050.0106 ABBCOIN will be created in approx. about 1 years during the PoW phase. 
 
 Specifications
 ==========================
-* Total number of coins: 10,000,000 D
+* Total number of coins: 1002157050.0106 ABBCOIN
 * Ideal block time: 30 seconds
 * Confirmations: 6 blocks
 * P2P Port: 27464
