@@ -37,7 +37,7 @@ LINKS
 * Official Website(https://wwww.abbcfoundation.com/)
 * Official Forums(https://bitcointalk.org/index.php?topic=4803288.20)
 * ABBCOIN Twitter(https://twitter.com/abbcfoundation?lang=en)
-* ABBCOIN Discord Chat(https://discord.gg/C64HXbc)
+ 
 
  
 
