@@ -1,12 +1,6 @@
 # ABBCOIN [D]
-Tribus Algo PoW/PoS Hybrid Cryptocurrency
-
-![logo](http://i.imgur.com/gIe5vnw.png)
-
-[![GitHub version](https://img.shields.io/github/release/carsenk/ABBCOIN.svg)](https://badge.fury.io/gh/carsenk%2FABBCOIN)
-[![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/carsenk/ABBCOIN/blob/master/COPYING)
-[![ABBCOIN downloads](https://img.shields.io/github/downloads/carsenk/ABBCOIN/total.svg?maxAge=2592000)](https://github.com/carsenk/ABBCOIN/releases)
-[![Join the chat at https://discord.gg/AcThv2y](https://img.shields.io/badge/Discord-Chat-blue.svg?logo=discord)](https://discord.gg/AcThv2y)
+PoW/PoS Hybrid Cryptocurrency
+ 
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carsenk/ABBCOIN.svg) ![GitHub repo size in bytes](https://img.shields.io/github/repo-size/carsenk/ABBCOIN.svg)
 
