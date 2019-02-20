@@ -47,11 +47,7 @@ Compile the latest ABBCOIN QT (Graphical Wallet) Ubuntu 16.04 or Ubuntu 18.04.1
 
 Compiles ABBCOIN QT Ubuntu 16.04 or 18.04, Grabs latest chaindata, and populates ABBCOIN.conf with addnodes or can update a previous compile to the latest master branch.  
 ```bash -c "$(wget -O - https://github.com/abbc-foundation/abbc/tree/master/binaries/Linux"```  
-
-To turn on nativetor in ABBCOIN.conf  
-```nativetor=1```  
-
-![ABBCOIN Installer Menu](https://github.com/abbc-foundation/abbc/tree/master/binaries/Linux)  
+ 
 
 Development process
 ===========================
