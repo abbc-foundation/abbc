@@ -76,3 +76,9 @@ in this manner will have their corresponding issue labeled 'stagnant'.
 Issues with no commits will be given a similar warning, and closed after
 15 days from their last activity. Issues closed in this manner will be
 labeled 'stale'.
+
+
+Additional Information
+===========================
+
+ABBC Coin (ABBC) is a cryptocurrency. Users are able to generate ABBC through the process of mining. ABBC Coin has a current supply of 1,002,157,050 ABBC with ? ABBC in circulation. The last known price of ABBC Coin is $0.068541 USD and is up 2.61% over the last 24 hours. It is currently trading on 16 active market(s) with $19,352,826 USD traded over the last 24 hours. 
